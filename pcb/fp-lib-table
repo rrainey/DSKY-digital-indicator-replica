@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name led-project)(type KiCad)(uri ${KIPRJMOD}/DSKY_led_display.pretty)(options "")(descr ""))
+)

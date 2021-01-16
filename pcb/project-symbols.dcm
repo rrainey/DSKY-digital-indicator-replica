@@ -1,0 +1,13 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 105133-0001
+F 0.50 USD
+$ENDCMP
+#
+$CMP LP5030
+D 30-Channel 12-Bit PWM Ultra-low Quiescent Current I2C RGB LED Driver
+K PWM LED driver I2C
+F http://www.ti.com/lit/ds/symlink/lp5036.pdf
+$ENDCMP
+#
+#End Doc Library
