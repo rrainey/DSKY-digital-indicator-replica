@@ -21,3 +21,5 @@ fp-info-cache
 *.dsn
 *.ses
 
+#Mac files
+.DS_Store
