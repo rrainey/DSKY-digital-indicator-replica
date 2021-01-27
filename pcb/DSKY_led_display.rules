@@ -1,0 +1,173 @@
+
+(rules PCB DSKY_led_display
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (eu.mihosoft.freerouting.autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 456)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.8)
+      (against_preferred_direction_trace_costs 3.5)
+    )
+    (layer_rule In1.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.6)
+    )
+    (layer_rule In2.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.7)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.8)
+      (against_preferred_direction_trace_costs 2.4)
+    )
+  )
+  (rule
+    (width 200.0)
+    (clear 150.2)
+    (clear 100.0 (type smd_to_turn_gap))
+    (clear 37.6 (type smd_smd))
+  )
+  (padstack "Via[0-3]_600:300_um"
+    (shape
+      (circle F.Cu 600.0 0.0 0.0)
+    )
+    (shape
+      (circle In1.Cu 600.0 0.0 0.0)
+    )
+    (shape
+      (circle In2.Cu 600.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 600.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-3]_600:300_um" "Via[0-3]_600:300_um" default
+  )
+  (via 
+    "Via[0-3]_600:300_um-kicad_default" "Via[0-3]_600:300_um" "kicad_default"
+  )
+  (via 
+    "Via[0-3]_600:300_um-Data" "Via[0-3]_600:300_um" Data
+  )
+  (via 
+    "Via[0-3]_600:300_um-Power" "Via[0-3]_600:300_um" Power
+  )
+  (via_rule
+    default "Via[0-3]_600:300_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-3]_600:300_um-kicad_default"
+  )
+  (via_rule
+    Data "Via[0-3]_600:300_um-Data"
+  )
+  (via_rule
+    Power "Via[0-3]_600:300_um-Power"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 200.0)
+    )
+    (circuit 
+      (use_layer F.Cu In1.Cu In2.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    "Net-(R5-Pad1)" /D+ "/D-" "Net-(R1-Pad2)" "Net-(R2-Pad2)" "Net-(R3-Pad2)" "Net-(R6-Pad2)" "Net-(D1-Pad2)"
+    "Net-(D2-Pad2)" g0bus0 g0bus2 g1bus0 g1bus3 g0bus3 g1bus1 g1bus2
+    g0bus1 g0bus6 g0bus5 g0bus4 g0bus7 dbus0 dbus7 dbus5
+    dbus12 dbus1 dbus8 dbus6 dbus13 dbus2 dbus9 dbus4
+    dbus11 dbus3 dbus10 g2bus0 g2bus3 g3bus0 g3bus3 g2bus1
+    g2bus2 g3bus1 g3bus2 ebus0 ebus7 fbus0 fbus7 ebus5
+    ebus12 ebus1 ebus8 fbus5 fbus12 fbus1 fbus8 ebus6
+    ebus13 fbus6 fbus13 ebus2 ebus9 ebus4 ebus11 fbus2
+    fbus9 fbus4 fbus11 ebus3 ebus10 fbus3 fbus10 g4bus0
+    g4bus1 g4bus2 g4bus3 abus0 abus7 abus14 abus21 abus28
+    sabus0 abus5 abus1 abus12 abus19 abus8 abus15 abus26
+    abus33 abus22 abus29 abus6 sabus1 abus13 abus20 abus27
+    abus34 abus2 abus4 abus9 abus16 abus11 abus18 abus23
+    abus30 abus25 abus32 abus3 sabus2 abus10 abus17 abus24
+    abus31 g5bus0 g5bus1 g5bus2 g5bus3 bbus0 sbbus0 bbus7
+    bbus14 bbus21 bbus28 bbus5 bbus1 bbus12 bbus19 bbus8
+    bbus15 bbus26 bbus33 bbus22 bbus29 sbbus1 bbus6 bbus13
+    bbus20 bbus27 bbus34 bbus2 bbus4 bbus9 bbus16 bbus11
+    bbus18 bbus23 bbus30 bbus25 bbus32 sbbus2 bbus3 bbus10
+    bbus17 bbus24 bbus31 g6bus0 g6bus1 g6bus2 g6bus3 scbus0
+    cbus0 cbus7 cbus14 cbus21 cbus28 cbus5 cbus1 cbus12
+    cbus19 scbus1 cbus8 cbus15 cbus26 cbus33 cbus22 cbus29
+    cbus6 cbus13 cbus20 cbus27 cbus34 cbus2 scbus2 cbus4
+    cbus9 cbus16 cbus11 cbus18 cbus23 cbus30 cbus25 cbus32
+    cbus3 cbus10 cbus17 cbus24 cbus31 "Net-(J1-Pad4)" "Net-(U1-Pad4)" "Net-(U2-Pad36)"
+    "Net-(U3-Pad36)" "Net-(U4-Pad36)" "Net-(U6-Pad27)" "Net-(U6-Pad25)" "Net-(U6-Pad24)" "Net-(U6-Pad21)" "Net-(U6-Pad20)" "Net-(U6-Pad19)"
+    "Net-(U6-Pad18)" "Net-(U6-Pad17)" "Net-(U6-Pad16)" "Net-(U6-Pad15)" "Net-(U6-Pad14)" "Net-(U6-Pad8)" "Net-(U6-Pad7)" "Net-(U6-Pad6)"
+    "Net-(U6-Pad5)" "Net-(U6-Pad4)" "Net-(U6-Pad3)" "Net-(U7-Pad36)" "Net-(U7-Pad35)" "Net-(U7-Pad34)" "Net-(U7-Pad33)" "Net-(U7-Pad32)"
+    "Net-(U7-Pad31)" "Net-(U7-Pad30)" "Net-(U7-Pad29)" "Net-(U7-Pad28)" "Net-(U7-Pad27)" "Net-(U7-Pad26)" "Net-(U7-Pad25)" "Net-(U7-Pad24)"
+    "Net-(U7-Pad23)" "Net-(U7-Pad22)" "Net-(U7-Pad21)" "Net-(U7-Pad20)" "Net-(U7-Pad19)" "Net-(U7-Pad18)" "Net-(U7-Pad17)" "Net-(U7-Pad16)"
+    "Net-(U7-Pad15)" "Net-(U7-Pad14)" "Net-(U7-Pad13)" "Net-(U8-Pad36)" "Net-(R15-Pad1)" "Net-(R16-Pad1)" "Net-(R17-Pad1)" "Net-(R18-Pad1)"
+    "Net-(R19-Pad1)" "Net-(R20-Pad1)" "Net-(SW1-PadB')" "Net-(J2-Pad10)" "Net-(J2-Pad8)" "Net-(J2-Pad7)" "Net-(J2-Pad6)" "Net-(J3-Pad4)"
+    "Net-(J3-Pad2)" "Net-(D191-Pad1)" VBUS "Net-(C8-Pad1)" "Net-(J1-PadS2)" "Net-(C9-Pad1)" "Net-(C10-Pad1)" "Net-(C11-Pad1)"
+    "Net-(C12-Pad1)" "Net-(C13-Pad1)" "Net-(C14-Pad1)"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 200.0)
+    )
+    (circuit 
+      (use_layer F.Cu In1.Cu In2.Cu B.Cu)
+    )
+  )
+  (class Data
+    /EN0 /EN1 /SDA /SCL /3EN0 /3EN1 /3SDA /3SCL
+    /SWCLK /SWDIO
+    (clearance_class Data)
+    (via_rule Data)
+    (rule
+      (width 200.0)
+    )
+    (circuit 
+      (use_layer F.Cu In1.Cu In2.Cu B.Cu)
+    )
+  )
+  (class Power
+    +3V3 +5V
+    (clearance_class Power)
+    (via_rule Power)
+    (rule
+      (width 200.0)
+    )
+    (circuit 
+      (use_layer F.Cu In1.Cu In2.Cu B.Cu)
+    )
+  )
+  (class GND
+    GND
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 200.0)
+    )
+    (circuit 
+      (use_layer F.Cu In1.Cu In2.Cu B.Cu)
+    )
+  )
+)
