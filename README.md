@@ -23,13 +23,13 @@ The PCB has been designed but has not yet been tested. As of mid-January 2021, I
 I ordered parts from Digi-Key; you will find Digi-Key part numbers as part of the KiCad
 component list in the schematic.
 
-I use a solder reflow oven in my shop. I plan to use a [two step process](https://www.instructables.com/Making-double-side-boards-in-reflow-oven/) to first reflow the back (LED) side using Sn63/Pb37 paste, then reflow the front side using a lower temerature solder paste (Bi57Sn42Ag1).
+I use a solder reflow oven in my shop. I plan to use a [two step process](https://www.instructables.com/Making-double-side-boards-in-reflow-oven/) to first reflow the back (LED) side using Sn63/Pb37 paste, then reflow the front side using a lower temperature solder paste (Bi57Sn42Ag1).
 
 ## Painting
 
 The original NASA drawings for all variants of this component, [1006387D for example,](https://archive.org/stream/apertureCardBox439Part2NARASW_images#page/n409/mode/1up) point to [this NASA paint specification [1008809-1]](https://archive.org/stream/apertureCardBox443NARASW_images#page/n504/mode/1up). It states [FED-STD 36231](http://federalstandard595.com/36231/) as the external color of the unit.  Good quality historial photos (examples [here](https://www.icollector.com/Apollo-CM-DSKY_i21861898) and [here](http://nassp.sourceforge.net/wiki/File:DSKY.jpg)) seem to imply a slightly different shade of gray, though. 
 
-I haven't decided how to reconcile this difference yet. I may custom mix using Nazdar pigments, or I might simply use [an aircraft-grade epoxy premix](https://www.skygeek.com/deft-01-series-epoxy-topcoat-gray-36231-mil-prf-227750g.html) of FS36231.
+I may custom mix using Nazdar pigments, or I might simply use [an aircraft-grade epoxy premix](https://www.skygeek.com/deft-01-series-epoxy-topcoat-gray-36231-mil-prf-227750g.html) of FS36231. For now, I am simply using Krylon brand [Ultra Matte Finish - 4102 Misty Gray](https://www.google.com/search?q=Ultra+Matte+Finish+-+4102+Misty+Gray&rlz=1C1AFAB_enUS475US475&oq=Ultra+Matte+Finish+-+4102+Misty+Gray&aqs=chrome..69i57.432j0j7&sourceid=chrome&ie=UTF-8) paint.
 
 ## Credits and Related Projects
 
