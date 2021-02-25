@@ -10,4 +10,8 @@ K PWM LED driver I2C
 F http://www.ti.com/lit/ds/symlink/lp5036.pdf
 $ENDCMP
 #
+$CMP TCA9548APWR
+D Low-Voltage 8-Channel I2C Switch with Reset
+$ENDCMP
+#
 #End Doc Library

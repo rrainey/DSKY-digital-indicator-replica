@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 456)
+    (start_pass_no 4134)
     (layer_rule F.Cu
       (active on)
       (preferred_direction vertical)
@@ -68,7 +68,13 @@
     "Via[0-3]_600:300_um-Data" "Via[0-3]_600:300_um" Data
   )
   (via 
+    "Via[0-3]_600:300_um-GND" "Via[0-3]_600:300_um" GND
+  )
+  (via 
     "Via[0-3]_600:300_um-Power" "Via[0-3]_600:300_um" Power
+  )
+  (via 
+    "Via[0-3]_600:300_um-VCC" "Via[0-3]_600:300_um" VCC
   )
   (via_rule
     default "Via[0-3]_600:300_um"
@@ -80,7 +86,13 @@
     Data "Via[0-3]_600:300_um-Data"
   )
   (via_rule
+    GND "Via[0-3]_600:300_um-GND"
+  )
+  (via_rule
     Power "Via[0-3]_600:300_um-Power"
+  )
+  (via_rule
+    VCC "Via[0-3]_600:300_um-VCC"
   )
   (class default
     (clearance_class default)
@@ -118,15 +130,16 @@
     cbus6 cbus13 cbus20 cbus27 cbus34 cbus2 scbus2 cbus4
     cbus9 cbus16 cbus11 cbus18 cbus23 cbus30 cbus25 cbus32
     cbus3 cbus10 cbus17 cbus24 cbus31 "Net-(J1-Pad4)" "Net-(U1-Pad4)" "Net-(U2-Pad36)"
-    "Net-(U3-Pad36)" "Net-(U4-Pad36)" "Net-(U6-Pad27)" "Net-(U6-Pad25)" "Net-(U6-Pad24)" "Net-(U6-Pad21)" "Net-(U6-Pad20)" "Net-(U6-Pad19)"
-    "Net-(U6-Pad18)" "Net-(U6-Pad17)" "Net-(U6-Pad16)" "Net-(U6-Pad15)" "Net-(U6-Pad14)" "Net-(U6-Pad8)" "Net-(U6-Pad7)" "Net-(U6-Pad6)"
-    "Net-(U6-Pad5)" "Net-(U6-Pad4)" "Net-(U6-Pad3)" "Net-(U7-Pad36)" "Net-(U7-Pad35)" "Net-(U7-Pad34)" "Net-(U7-Pad33)" "Net-(U7-Pad32)"
-    "Net-(U7-Pad31)" "Net-(U7-Pad30)" "Net-(U7-Pad29)" "Net-(U7-Pad28)" "Net-(U7-Pad27)" "Net-(U7-Pad26)" "Net-(U7-Pad25)" "Net-(U7-Pad24)"
-    "Net-(U7-Pad23)" "Net-(U7-Pad22)" "Net-(U7-Pad21)" "Net-(U7-Pad20)" "Net-(U7-Pad19)" "Net-(U7-Pad18)" "Net-(U7-Pad17)" "Net-(U7-Pad16)"
-    "Net-(U7-Pad15)" "Net-(U7-Pad14)" "Net-(U7-Pad13)" "Net-(U8-Pad36)" "Net-(R15-Pad1)" "Net-(R16-Pad1)" "Net-(R17-Pad1)" "Net-(R18-Pad1)"
-    "Net-(R19-Pad1)" "Net-(R20-Pad1)" "Net-(SW1-PadB')" "Net-(J2-Pad10)" "Net-(J2-Pad8)" "Net-(J2-Pad7)" "Net-(J2-Pad6)" "Net-(J3-Pad4)"
-    "Net-(J3-Pad2)" "Net-(D191-Pad1)" VBUS "Net-(C8-Pad1)" "Net-(J1-PadS2)" "Net-(C9-Pad1)" "Net-(C10-Pad1)" "Net-(C11-Pad1)"
-    "Net-(C12-Pad1)" "Net-(C13-Pad1)" "Net-(C14-Pad1)"
+    "Net-(U3-Pad36)" "Net-(U4-Pad36)" "Net-(U6-Pad27)" "Net-(U6-Pad25)" "Net-(U6-Pad21)" "Net-(U6-Pad20)" "Net-(U6-Pad19)" "Net-(U6-Pad18)"
+    "Net-(U6-Pad17)" "Net-(U6-Pad16)" "Net-(U6-Pad15)" "Net-(U6-Pad14)" "Net-(U6-Pad8)" "Net-(U6-Pad7)" "Net-(U6-Pad6)" "Net-(U6-Pad5)"
+    "Net-(U6-Pad4)" "Net-(U7-Pad36)" "Net-(U7-Pad35)" "Net-(U7-Pad34)" "Net-(U7-Pad33)" "Net-(U7-Pad32)" "Net-(U7-Pad31)" "Net-(U7-Pad30)"
+    "Net-(U7-Pad29)" "Net-(U7-Pad28)" "Net-(U7-Pad27)" "Net-(U7-Pad26)" "Net-(U7-Pad25)" "Net-(U7-Pad24)" "Net-(U7-Pad23)" "Net-(U7-Pad22)"
+    "Net-(U7-Pad21)" "Net-(U7-Pad20)" "Net-(U7-Pad19)" "Net-(U7-Pad18)" "Net-(U7-Pad17)" "Net-(U7-Pad16)" "Net-(U7-Pad15)" "Net-(U7-Pad14)"
+    "Net-(U7-Pad13)" "Net-(U8-Pad36)" "Net-(R15-Pad1)" "Net-(R16-Pad1)" "Net-(R17-Pad1)" "Net-(R18-Pad1)" "Net-(R19-Pad1)" "Net-(R20-Pad1)"
+    "Net-(SW1-PadB')" "Net-(J2-Pad10)" "Net-(J2-Pad8)" "Net-(J2-Pad7)" "Net-(J2-Pad6)" "Net-(J3-Pad4)" "Net-(J3-Pad2)" "Net-(D191-Pad1)"
+    "Net-(C8-Pad1)" "Net-(J1-PadS2)" "Net-(C9-Pad1)" "Net-(C10-Pad1)" "Net-(C11-Pad1)" "Net-(C12-Pad1)" "Net-(C13-Pad1)" "Net-(C14-Pad1)"
+    /SCL0 /SDA0 /SCL1 /SDA1 "Net-(R11-Pad2)" "Net-(R12-Pad2)" "Net-(U6-Pad22)" /BRESET
+    "Net-(U6-Pad2)" "Net-(U6-Pad1)" "Net-(U9-Pad11)" "Net-(U9-Pad8)" "Net-(U9-Pad4)"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
@@ -137,8 +150,7 @@
     )
   )
   (class Data
-    /EN0 /EN1 /SDA /SCL /3EN0 /3EN1 /3SDA /3SCL
-    /SWCLK /SWDIO
+    /3SDA /3SCL /SWCLK /SWDIO
     (clearance_class Data)
     (via_rule Data)
     (rule
@@ -148,8 +160,19 @@
       (use_layer F.Cu In1.Cu In2.Cu B.Cu)
     )
   )
+  (class GND
+    GND
+    (clearance_class GND)
+    (via_rule GND)
+    (rule
+      (width 200.0)
+    )
+    (circuit 
+      (use_layer F.Cu In1.Cu In2.Cu B.Cu)
+    )
+  )
   (class Power
-    +3V3 +5V
+    +3V3 VBUS
     (clearance_class Power)
     (via_rule Power)
     (rule
@@ -159,12 +182,12 @@
       (use_layer F.Cu In1.Cu In2.Cu B.Cu)
     )
   )
-  (class GND
-    GND
-    (clearance_class default)
-    (via_rule default)
+  (class VCC
+    VCC
+    (clearance_class VCC)
+    (via_rule VCC)
     (rule
-      (width 200.0)
+      (width 450.0)
     )
     (circuit 
       (use_layer F.Cu In1.Cu In2.Cu B.Cu)

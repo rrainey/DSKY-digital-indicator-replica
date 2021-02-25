@@ -1,4 +1,4 @@
-update=1/24/2021 9:48:23 PM
+update=2/24/2021 6:05:53 PM
 version=1
 last_client=kicad
 [general]
@@ -32,6 +32,7 @@ TrackWidth1=0.2
 TrackWidth2=0.1
 TrackWidth3=0.15
 TrackWidth4=0.2
+TrackWidth5=0.6
 ViaDiameter1=0.6
 ViaDrill1=0.3
 dPairWidth1=0.2
@@ -272,10 +273,21 @@ uViaDrill=0.1
 dPairWidth=0.2
 dPairGap=0.25
 dPairViaGap=0.25
+[pcbnew/Netclasses/4]
+Name=VCC
+Clearance=0.15
+TrackWidth=0.45
+ViaDiameter=0.6
+ViaDrill=0.3
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.2
+dPairGap=0.25
+dPairViaGap=0.25
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=
+PlotDirectoryName=gerber-V3
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=Pcbnew
