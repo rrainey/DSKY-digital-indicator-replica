@@ -9,21 +9,23 @@ designed to be part of a larger replica of the Display and Keyboard (DSKY) modul
 
 This project is composed of these component subfolders:
 
-* artwork - artwork to be printed or silk-screened onto the glass/acrylic cover.
+* **artwork** - artwork to be printed or silk-screened onto the glass/acrylic cover.
 
-* pcb - KiCad project for the controller PCB design
+* **pcb** - KiCad project for the controller PCB design
 
-* firmware - Arduino-based controller firmware.  This module is designed to be controlled via a USB serial interface.
+* **firmware** - Arduino-based controller firmware.  This module is designed to be controlled via the USB serial interface.
 
-* hardware - 3D-printable frame components designed using Fusion 360. STEP and Fusion source files available. Hardware models used in thie replica were derived from models found in the [AGC Mechanical CAD project](https://github.com/rrainey/agc-mechanical-cad).
+* **hardware** - 3D-printable frame components designed using Fusion 360. STEP and Fusion source files available. Hardware models used in thie replica were derived from models found in the [AGC Mechanical CAD project](https://github.com/rrainey/agc-mechanical-cad).
 
 ## Printed Circuit Board Status and Assembly
 
-The PCB has been designed but has not yet been tested. As of mid-January 2021, I have ordered an initial batch of bare V1 PCBs and components for testing. 
+Summary below. You will find more detailed notes in the [./pcb folder](./pcb/PCB-NOTES.md).
+
+As of late February, 2021, I am preparing to test version V3 of the PCB. I hope this will be the version suitable for general use. 
 I ordered parts from Digi-Key; you will find Digi-Key part numbers as part of the KiCad
 component list in the schematic.
 
-I use a solder reflow oven in my shop. I plan to use a [two step process](https://www.instructables.com/Making-double-side-boards-in-reflow-oven/) to first reflow the back (LED) side using Sn63/Pb37 paste, then reflow the front side using a lower temperature solder paste (Bi57Sn42Ag1).
+I use a solder reflow oven in my shop. I plan to use a [two step process](https://www.instructables.com/Making-double-side-boards-in-reflow-oven/) to first reflow the back (LED) side using Sn63/Pb37 paste, then reflow the front side using a lower temperature solder paste (Bi57Sn42Ag1).  
 
 ## Painting
 
