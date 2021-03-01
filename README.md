@@ -17,6 +17,12 @@ This project is composed of these component subfolders:
 
 * **hardware** - 3D-printable frame components designed using Fusion 360. STEP and Fusion source files available. Hardware models used in thie replica were derived from models found in the [AGC Mechanical CAD project](https://github.com/rrainey/agc-mechanical-cad).
 
+## Interfaces
+
+* USB 2.0 Micro-B port
+* J-LINK-compatible SWD debugging interface (10-pin header)
+* Power: +3.3VDC via a 4-pin header (2.1A maximum (estimated; software limited))
+
 ## Printed Circuit Board Status and Assembly
 
 Summary below. You will find more detailed notes in the [./pcb folder](./pcb/PCB-NOTES.md).
