@@ -26,25 +26,26 @@ SOFTWARE.
 #include "wiring_private.h">
 
 /*
- * DSKY LED Display Driver for V2 board (V2 is now obsolete)
+ * DSKY LED Display Driver for V3 board (V2 is now obsolete)
  * 
- * This board design includes six Texas Instruments LP5036 LED driver ICs, each capable of driving 36 LEDs.
+ * This board design includes six Texas Instruments LP5036 LED driver ICs, each capable of directly driving 36 LEDs.
  * LP5036 ICs are controlled via an I2C interface but only support four distinct I2C addresses. Since we're
- * using six chips, we group the LP5036 chips into two banks -- four on bank 0 and two on bank 1. We connect two extra
- * SAMD21 output lines to the EN line of each chip and use those as "bank selectors".
- * 
- * NOTE: this approach turns out not to be entrirely correct. The last two ICs need their own dedicated I2C bus, which I plan to
- * add on a "V3" board.
- * 
+ * using six chips, we group the LP5036 chips into two banks -- four on bank 0 and two on bank 1. We use a TI TCA9543A as an
+ * I2C bank / channel selector.
+ *
+ * References: [1] TI TCA9543A I2C multiplexor data sheet https://www.ti.com/lit/ds/symlink/tca9543a.pdf?ts=1626710180580
+ *             [2] https://www.ti.com/lit/ds/symlink/lp5036.pdf?ts=1613336395802&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FLP5036
  */
 
 /*
+ * LED - Macro used to compress the addressing information for each discrete LED.
+ * 
  * +--------------+-------------+--------------------------+
  * | bank(4-bits) | ic (2-bits) |   line (6-bits) [0..35]  |
  * +--------------+-------------+--------------------------+
  */
 
-#define LED(bank,ic,line) (unsigned short)(line | (ic<<6) | (bank<<8))
+#define LED(bank,ic,line) (unsigned short)((line & 0x3F) | ((ic & 0x3) << 6) | ((bank & 0xF) << 8))
 
 /*
  * An LED group is a set of discrete LEDs; it is identified with bank set to 0xf
@@ -59,14 +60,36 @@ SOFTWARE.
 // Pin definitions
 
 #define PIN_RED_LED 13
-#define PIN_EN0  0      // SAMD21 PA00 line -- connected to EN on the first four LP5036 ICs
-#define PIN_EN1  1      // SAMD21 PA01 line -- connected to EN on the second two LP5036 ICs
+#define PIN_TCA9543A_RESET 3 // 0 = RESET; 1 = NORMAL; SAMD21 PA02
+
+/**
+ * I2C address for TCA9543A I2C Multiplexor IC
+ */
+#define TCAADDR 0x70
+
+#define RESET_I2C_MUX_ON_BOOT 0
+
+/**
+ * I2C Addressing for the six LP5036 ICs
+ * 
+ * Bank / I2C Address
+ *  0        0x30
+ *  0        0x31
+ *  0        0x32
+ *  0        0x33
+ *  0        0x34
+ * 
+ *  1        0x30
+ *  1        0x31
+ */
 
 const char packet_start_char = '[';  //Uses this character to indicate start of packet when receiving data via USB serial link
 
 /*
- * The segments of each digit have a single LED illiminating it.  For larger regions on the display, though, groups of LEDS are used.
- * The "group" table defines the discrete LEDs that comprise each logical group.
+ * LED Group table
+ * 
+ * The segments of each digit have a single LED illuminating it.  For larger regions on the display, though, groups of LEDS are used.
+ * The "group" table defines the discrete LEDs that comprise each group.
  */
 
 #define LED_GROUP_SIZE 8
@@ -195,27 +218,59 @@ int op_mode = 2;  // 1 = boot in "attract mode" light show mode.  Upon receiving
                   // 0 = boot in serial mode -- just display characters received via USB serial
 
 void setup() 
-{ 
+{
 
   pinMode(PIN_RED_LED, OUTPUT);
   digitalWrite(PIN_RED_LED, LOW);
 
-  pinMode(PIN_EN0, OUTPUT);
-  pinMode(PIN_EN1, OUTPUT);
-  digitalWrite(PIN_EN0, HIGH);
-  digitalWrite(PIN_EN1, LOW);  // V2 boards should not have EN0 and EN1 enabled simultaneously
+  /*
+   * Force a hardware reset on the I2C multiplexor
+   */
+  pinMode(PIN_TCA9543A_RESET, OUTPUT);
+  digitalWrite(PIN_TCA9543A_RESET, HIGH);
+
+  if ( RESET_I2C_MUX_ON_BOOT == 1 ) {
+    delay(1);
+    digitalWrite(PIN_TCA9543A_RESET, LOW);
+    delay(1); // datasheet says 500ns minimum
+    digitalWrite(PIN_TCA9543A_RESET, HIGH);
+    delay(1); // datasheet says "0ns"
+  }
+  
+  while (!Serial);
+  delay(1000);
 
   // Start I2C
   Wire.begin();
 
   // Start USB Serial
-  Serial.begin(9600);
+  Serial.begin(115200);
+  Serial.println("\nTCAScanner ready!");
+
+  //scan();
+
+  for (uint8_t t=0; t<2; t++) {
+    tcaselect(t);
+    Serial.print("TCA Channel #"); Serial.println(t);
+
+    for (uint8_t addr = 0; addr<=127; addr++) {
+      if (addr == TCAADDR) continue;
+
+      Wire.beginTransmission(addr);
+      if (!Wire.endTransmission()) {
+        Serial.print("Found I2C 0x");  Serial.println(addr,HEX);
+      }
+    }
+  }
+  Serial.println("\ndone");
 
   // Enable LP5036 ICs
   configureChip(0,0);
   configureChip(0,1);
   configureChip(0,2);
   configureChip(0,3);
+  configureChip(1,0);
+  configureChip(1,1);
 
   delay(50);
 
@@ -223,39 +278,41 @@ void setup()
   verifyChip(0,1);
   verifyChip(0,2);
   verifyChip(0,3);
+  verifyChip(1,0);
+  verifyChip(1,1);
   
 }
 
 void configureChip(int bank, int ic)
 {
   int ic_addr = 0x30 | ic;
-  if (bank == 0) {
-    Wire.beginTransmission(ic_addr);
-    Wire.write((unsigned char) DEVICE_CONFIG0 );
-    Wire.write((unsigned char) CHIP_EN );
-    Wire.endTransmission();
-  }
+  tcaselect (bank);
+  Wire.beginTransmission(ic_addr);
+  Wire.write((unsigned char) DEVICE_CONFIG0 );
+  Wire.write((unsigned char) CHIP_EN );
+  Wire.endTransmission();
 }
 
 void verifyChip(int bank, int ic)
 {
   int ic_addr = 0x30 | ic;
-  if (bank == 0) {
-    Wire.beginTransmission(ic_addr);
-    Wire.write((unsigned char) DEVICE_CONFIG0 );
-    Wire.endTransmission();
+  tcaselect ( bank );
+  
+  Wire.beginTransmission(ic_addr);
+  Wire.write((unsigned char) DEVICE_CONFIG0 );
+  Wire.endTransmission();
 
-    Wire.requestFrom(ic_addr, 1);
+  Wire.requestFrom(ic_addr, 1);
 
-    while (Wire.available()) {
-      char c = Wire.read();
-      Serial.print("LP5036 ");
-      Serial.print(ic_names[ic]);
-      Serial.print(" ");
-      Serial.print(c & CHIP_EN ? "enabled" : "not enabled");
-      Serial.println();
-    }
+  while (Wire.available()) {
+    char c = Wire.read();
+    Serial.print("LP5036 ");
+    Serial.print(ic_names[ic]);
+    Serial.print(" ");
+    Serial.print(c & CHIP_EN ? "enabled" : "not enabled");
+    Serial.println();
   }
+
 }
 
 void setLEDState( uint16_t lamp, boolean state) {
@@ -278,15 +335,12 @@ void setLEDState( uint16_t lamp, boolean state) {
     }
   }
   else {
-    // ignore bank 1 for now ... (addressed with V3 board)
-    if (bank == 0) {
-      
-      int ic_addr = 0x30 | ic;
-      Wire.beginTransmission(ic_addr);
-      Wire.write((unsigned char) OUT_COLOR_BASE+line);
-      Wire.write(state ? global_brightness : 0);                 
-      Wire.endTransmission();
-    }
+    tcaselect( bank );
+    int ic_addr = 0x30 | ic;
+    Wire.beginTransmission(ic_addr);
+    Wire.write((unsigned char) OUT_COLOR_BASE+line);
+    Wire.write(state ? global_brightness : 0);                 
+    Wire.endTransmission();
   }
 }
 
@@ -497,6 +551,10 @@ void DSKY_format_5dig(char * s, int intval)
 
 
 void loop() {
+
+  while(1) {
+    
+  }
   
   static int char_pos = 0;
   static int i, j;
@@ -619,6 +677,80 @@ void loop() {
       delay(5);
     }
   }
+
+/**
+ * TCA I2C Channel Select
+ * 
+ * i - Select Channel 0 or 1
+ * See reference [1], page 15
+ */
+
+static uint8_t curChannel = 2;
+
+void tcaselect(uint8_t i) {
+
+  Serial.print("tcaselect "); Serial.println(i);
+  
+  if (i > 1) return;
+
+  // channel not what we already have selected? Change it
+  
+  if (i != curChannel) {
+ 
+    Wire.beginTransmission(TCAADDR);
+  
+    // 0x01 == enable i2c channel 0
+    // 0x02 == enable i2c channel 1
+    
+    Wire.write (1 << i);
+    
+    Wire.endTransmission();
+
+    curChannel = i;
+  }
+}
+
+#ifdef notdef
+void scan()
+{
+    byte error, address;
+    int nDevices;
+ 
+    Serial.println("Scanning...");
+ 
+    nDevices = 0;
+    for(address = 1; address < 127; address++ )
+    {
+        Wire.beginTransmission(address);
+        error = Wire.endTransmission();
+ 
+        Wire.beginTransmission(address+1);
+ 
+    if (error == 0 && Wire.endTransmission() != 0 ) // Special flag for SAMD Series
+    {
+        Serial.print("I2C device found at address 0x");
+        if (address<16)
+            Serial.print("0");
+        Serial.print(address,HEX);
+        Serial.println("!");
+ 
+        nDevices++;
+    }
+    else if (error==4) 
+    {
+        Serial.print("Unknown error at address 0x");
+        if (address<16) 
+            Serial.print("0");
+        Serial.println(address,HEX);
+    }
+    }
+    if (nDevices == 0)
+        Serial.println("No I2C devices found\n");
+    else
+        Serial.println("done\n");
+}
+#endif
+
 
 
 
