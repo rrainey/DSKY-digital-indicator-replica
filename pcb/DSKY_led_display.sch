@@ -5,8 +5,8 @@ $Descr A1 33110 23386
 encoding utf-8
 Sheet 1 1
 Title "DSKY LED Display Indicator"
-Date "2021-02-23"
-Rev "V3"
+Date "2021-07-31"
+Rev "V4"
 Comp "Riley Rainey"
 Comment1 "https://github.com/rrainey/DSKY-display-indicator"
 Comment2 ""
@@ -27,19 +27,6 @@ F 5 "ATSAMD21E18A-AU-ND" H 4250 5450 50  0001 C CNN "Digi-Key_PN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Regulator_Linear:AP2204K-3.3 U1
-U 1 1 5FF14918
-P 2350 2850
-F 0 "U1" H 2350 3192 50  0000 C CNN
-F 1 "AP2204K-3.3" H 2350 3101 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 2350 3175 50  0001 C CNN
-F 3 "https://www.diodes.com/assets/Datasheets/AP2204.pdf" H 2350 2950 50  0001 C CNN
-F 4 "IC REG LINEAR 3.3V 150MA SOT23-5	" H 2350 2850 50  0001 C CNN "Description"
-F 5 "	AP2204K-3.3TRG1DICT-ND" H 2350 2850 50  0001 C CNN "Digi-Key_PN"
-	1    2350 2850
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR028
 U 1 1 5FF31C69
 P 4250 7350
@@ -50,69 +37,12 @@ F 3 "" H 4250 7350 50  0001 C CNN
 	1    4250 7350
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR014
-U 1 1 5FF397FB
-P 3100 2950
-F 0 "#PWR014" H 3100 2700 50  0001 C CNN
-F 1 "GND" H 3105 2777 50  0000 C CNN
-F 2 "" H 3100 2950 50  0001 C CNN
-F 3 "" H 3100 2950 50  0001 C CNN
-	1    3100 2950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C5
-U 1 1 5FF3D1F2
-P 3100 2850
-F 0 "C5" H 3192 2896 50  0000 L CNN
-F 1 "10 uF" H 3192 2805 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 3100 2850 50  0001 C CNN
-F 3 "~" H 3100 2850 50  0001 C CNN
-F 4 "CAP CER 10UF 25V X5R 0603" H 3100 2850 50  0001 C CNN "Description"
-F 5 "	311-3494-1-ND" H 3100 2850 50  0001 C CNN "Digi-Key_PN"
-	1    3100 2850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4150 3350 4150 3550
 Wire Wire Line
 	4150 3350 4550 3350
 Wire Wire Line
 	4550 3350 4550 3550
-$Comp
-L power:VBUS #PWR08
-U 1 1 5FF45D5E
-P 1750 2300
-F 0 "#PWR08" H 1750 2150 50  0001 C CNN
-F 1 "VBUS" H 1765 2473 50  0000 C CNN
-F 2 "" H 1750 2300 50  0001 C CNN
-F 3 "" H 1750 2300 50  0001 C CNN
-	1    1750 2300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2050 2750 1750 2750
-Wire Wire Line
-	1750 2750 1750 2600
-$Comp
-L power:+3V3 #PWR012
-U 1 1 5FF472F3
-P 2850 2750
-F 0 "#PWR012" H 2850 2600 50  0001 C CNN
-F 1 "+3V3" H 2865 2923 50  0000 C CNN
-F 2 "" H 2850 2750 50  0001 C CNN
-F 3 "" H 2850 2750 50  0001 C CNN
-	1    2850 2750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2850 2750 2650 2750
-Wire Wire Line
-	2050 2850 1750 2850
-Wire Wire Line
-	1750 2850 1750 2750
-Connection ~ 1750 2750
 $Comp
 L power:GND #PWR018
 U 1 1 5FF582B7
@@ -159,7 +89,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 18950 12050 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 18950 12050 50  0001 C CNN "Digi-Key_PN"
 	1    18950 12050
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D85
@@ -172,7 +102,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 18950 12850 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 18950 12850 50  0001 C CNN "Digi-Key_PN"
 	1    18950 12850
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D101
@@ -185,7 +115,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 19000 13450 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 19000 13450 50  0001 C CNN "Digi-Key_PN"
 	1    19000 13450
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D76
@@ -198,7 +128,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 19350 12450 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 19350 12450 50  0001 C CNN "Digi-Key_PN"
 	1    19350 12450
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D91
@@ -211,7 +141,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 19350 13050 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 19350 13050 50  0001 C CNN "Digi-Key_PN"
 	1    19350 13050
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D92
@@ -224,7 +154,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 18650 13100 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 18650 13100 50  0001 C CNN "Digi-Key_PN"
 	1    18650 13100
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D75
@@ -237,7 +167,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 18600 12400 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 18600 12400 50  0001 C CNN "Digi-Key_PN"
 	1    18600 12400
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D70
@@ -250,7 +180,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 20300 12100 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 20300 12100 50  0001 C CNN "Digi-Key_PN"
 	1    20300 12100
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D87
@@ -263,7 +193,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 20300 12900 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 20300 12900 50  0001 C CNN "Digi-Key_PN"
 	1    20300 12900
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D103
@@ -276,7 +206,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 20350 13500 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 20350 13500 50  0001 C CNN "Digi-Key_PN"
 	1    20350 13500
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D79
@@ -289,7 +219,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 20700 12500 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 20700 12500 50  0001 C CNN "Digi-Key_PN"
 	1    20700 12500
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D93
@@ -302,7 +232,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 20700 13100 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 20700 13100 50  0001 C CNN "Digi-Key_PN"
 	1    20700 13100
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D95
@@ -315,7 +245,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 20000 13150 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 20000 13150 50  0001 C CNN "Digi-Key_PN"
 	1    20000 13150
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D77
@@ -328,7 +258,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 19950 12450 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 19950 12450 50  0001 C CNN "Digi-Key_PN"
 	1    19950 12450
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D71
@@ -341,7 +271,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 21650 12100 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 21650 12100 50  0001 C CNN "Digi-Key_PN"
 	1    21650 12100
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D88
@@ -354,7 +284,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 21650 12900 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 21650 12900 50  0001 C CNN "Digi-Key_PN"
 	1    21650 12900
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D104
@@ -367,7 +297,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 21700 13500 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 21700 13500 50  0001 C CNN "Digi-Key_PN"
 	1    21700 13500
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D80
@@ -380,7 +310,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 22050 12500 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 22050 12500 50  0001 C CNN "Digi-Key_PN"
 	1    22050 12500
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D94
@@ -393,7 +323,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 22050 13100 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 22050 13100 50  0001 C CNN "Digi-Key_PN"
 	1    22050 13100
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D96
@@ -406,7 +336,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 21350 13150 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 21350 13150 50  0001 C CNN "Digi-Key_PN"
 	1    21350 13150
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D78
@@ -419,7 +349,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 21300 12450 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 21300 12450 50  0001 C CNN "Digi-Key_PN"
 	1    21300 12450
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D72
@@ -432,7 +362,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 23000 12150 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 23000 12150 50  0001 C CNN "Digi-Key_PN"
 	1    23000 12150
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D89
@@ -445,7 +375,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 23000 12950 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 23000 12950 50  0001 C CNN "Digi-Key_PN"
 	1    23000 12950
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D105
@@ -458,7 +388,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 23050 13550 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 23050 13550 50  0001 C CNN "Digi-Key_PN"
 	1    23050 13550
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D83
@@ -471,7 +401,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 23400 12550 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 23400 12550 50  0001 C CNN "Digi-Key_PN"
 	1    23400 12550
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D97
@@ -484,7 +414,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 23400 13150 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 23400 13150 50  0001 C CNN "Digi-Key_PN"
 	1    23400 13150
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D99
@@ -497,7 +427,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 22700 13200 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 22700 13200 50  0001 C CNN "Digi-Key_PN"
 	1    22700 13200
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D81
@@ -510,7 +440,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 22650 12500 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 22650 12500 50  0001 C CNN "Digi-Key_PN"
 	1    22650 12500
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D73
@@ -523,7 +453,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 24350 12150 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 24350 12150 50  0001 C CNN "Digi-Key_PN"
 	1    24350 12150
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D90
@@ -536,7 +466,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 24350 12950 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 24350 12950 50  0001 C CNN "Digi-Key_PN"
 	1    24350 12950
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D106
@@ -549,7 +479,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 24400 13550 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 24400 13550 50  0001 C CNN "Digi-Key_PN"
 	1    24400 13550
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D84
@@ -562,7 +492,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 24750 12550 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 24750 12550 50  0001 C CNN "Digi-Key_PN"
 	1    24750 12550
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D98
@@ -575,7 +505,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 24750 13150 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 24750 13150 50  0001 C CNN "Digi-Key_PN"
 	1    24750 13150
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D100
@@ -588,7 +518,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 24050 13200 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 24050 13200 50  0001 C CNN "Digi-Key_PN"
 	1    24050 13200
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D82
@@ -601,7 +531,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 24000 12500 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 24000 12500 50  0001 C CNN "Digi-Key_PN"
 	1    24000 12500
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D13
@@ -614,7 +544,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 18550 3050 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 18550 3050 50  0001 C CNN "Digi-Key_PN"
 	1    18550 3050
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D10
@@ -627,7 +557,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 18600 2000 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 18600 2000 50  0001 C CNN "Digi-Key_PN"
 	1    18600 2000
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D14
@@ -640,7 +570,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 20500 3050 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 20500 3050 50  0001 C CNN "Digi-Key_PN"
 	1    20500 3050
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D11
@@ -653,7 +583,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 20550 2000 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 20550 2000 50  0001 C CNN "Digi-Key_PN"
 	1    20550 2000
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D12
@@ -666,7 +596,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 19550 2600 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 19550 2600 50  0001 C CNN "Digi-Key_PN"
 	1    19550 2600
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D7
@@ -679,7 +609,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 19600 1550 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 19600 1550 50  0001 C CNN "Digi-Key_PN"
 	1    19600 1550
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D8
@@ -692,7 +622,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 22950 1650 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 22950 1650 50  0001 C CNN "Digi-Key_PN"
 	1    22950 1650
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D5
@@ -705,7 +635,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 22950 1000 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 22950 1000 50  0001 C CNN "Digi-Key_PN"
 	1    22950 1000
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D9
@@ -718,7 +648,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 24600 1650 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 24600 1650 50  0001 C CNN "Digi-Key_PN"
 	1    24600 1650
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D6
@@ -731,7 +661,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 24600 1000 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 24600 1000 50  0001 C CNN "Digi-Key_PN"
 	1    24600 1000
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D3
@@ -744,7 +674,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 18650 1000 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 18650 1000 50  0001 C CNN "Digi-Key_PN"
 	1    18650 1000
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D4
@@ -757,7 +687,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 20600 1000 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 20600 1000 50  0001 C CNN "Digi-Key_PN"
 	1    20600 1000
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D74
@@ -770,7 +700,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 17150 12350 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 17150 12350 50  0001 C CNN "Digi-Key_PN"
 	1    17150 12350
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D86
@@ -783,7 +713,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 17150 12900 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 17150 12900 50  0001 C CNN "Digi-Key_PN"
 	1    17150 12900
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D102
@@ -796,19 +726,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 17150 13500 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 17150 13500 50  0001 C CNN "Digi-Key_PN"
 	1    17150 13500
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:LED D1
-U 1 1 600B7B63
-P 2850 3300
-F 0 "D1" H 2843 3517 50  0000 C CNN
-F 1 "PWR LED" H 2843 3426 50  0000 C CNN
-F 2 "LED_SMD:LED_0805_2012Metric" H 2850 3300 50  0001 C CNN
-F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S85AT%20Series_V1.1.pdf" H 2850 3300 50  0001 C CNN
-F 4 "LTST-C190GKT ED GREEN CLEAR CHIP SMD" H 2850 3300 50  0001 C CNN "Description"
-	1    2850 3300
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D2
@@ -880,54 +798,6 @@ Wire Wire Line
 	3000 4850 3000 5050
 Wire Wire Line
 	3000 5050 2900 5050
-$Comp
-L Device:R R4
-U 1 1 60004567
-P 2850 2900
-F 0 "R4" V 2643 2900 50  0000 C CNN
-F 1 "1.5K" V 2734 2900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 2780 2900 50  0001 C CNN
-F 3 "~" H 2850 2900 50  0001 C CNN
-F 4 "RES SMD 1.5K OHM 1% 1/10W 0603	" H 2850 2900 50  0001 C CNN "Description"
-F 5 "541-1781-1-ND" H 2850 2900 50  0001 C CNN "Digi-Key_PN"
-	1    2850 2900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2850 3050 2850 3150
-Connection ~ 2850 2750
-$Comp
-L power:GND #PWR016
-U 1 1 60012925
-P 2850 3450
-F 0 "#PWR016" H 2850 3200 50  0001 C CNN
-F 1 "GND" H 2855 3277 50  0000 C CNN
-F 2 "" H 2850 3450 50  0001 C CNN
-F 3 "" H 2850 3450 50  0001 C CNN
-	1    2850 3450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR015
-U 1 1 6001EAA5
-P 2350 3450
-F 0 "#PWR015" H 2350 3200 50  0001 C CNN
-F 1 "GND" H 2355 3277 50  0000 C CNN
-F 2 "" H 2350 3450 50  0001 C CNN
-F 3 "" H 2350 3450 50  0001 C CNN
-	1    2350 3450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2350 3150 2350 3450
-Wire Wire Line
-	3100 2750 2850 2750
-Wire Wire Line
-	3100 2750 4150 2750
-Connection ~ 3100 2750
-Wire Wire Line
-	4150 2750 4150 3350
-Connection ~ 4150 3350
 Wire Notes Line
 	21200 500  21200 3700
 Wire Notes Line
@@ -1008,36 +878,10 @@ F 5 "	296-LP5036RJVRCT-ND" H 10150 10300 50  0001 C CNN "Digi-Key_PN"
 	1    10150 10300
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R R1
-U 1 1 5FFD7E9D
-P 9200 2800
-F 0 "R1" V 8993 2800 50  0000 C CNN
-F 1 "4.7K" V 9084 2800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 9130 2800 50  0001 C CNN
-F 3 "~" H 9200 2800 50  0001 C CNN
-F 4 "RES SMD 4.7K OHM 5% 1/10W 0603	" H 9200 2800 50  0001 C CNN "Description"
-F 5 "	541-4.7KGCT-ND" H 9200 2800 50  0001 C CNN "Digi-Key_PN"
-	1    9200 2800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9450 3500 9200 3500
 Wire Wire Line
 	11700 3550 11450 3550
-$Comp
-L Device:R R2
-U 1 1 6000C7E7
-P 14000 2800
-F 0 "R2" V 13793 2800 50  0000 C CNN
-F 1 "4.7K" V 13884 2800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 13930 2800 50  0001 C CNN
-F 3 "~" H 14000 2800 50  0001 C CNN
-F 4 "RES SMD 4.7K OHM 5% 1/10W 0603	" H 14000 2800 50  0001 C CNN "Description"
-F 5 "	541-4.7KGCT-ND" H 14000 2800 50  0001 C CNN "Digi-Key_PN"
-	1    14000 2800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	14000 3500 14000 3200
 Wire Wire Line
@@ -1097,19 +941,6 @@ Wire Wire Line
 	9650 8900 9400 8900
 Wire Wire Line
 	9400 8900 9400 9100
-$Comp
-L Device:R R6
-U 1 1 60033AE3
-P 9400 8100
-F 0 "R6" V 9193 8100 50  0000 C CNN
-F 1 "4.7K" V 9284 8100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 9330 8100 50  0001 C CNN
-F 3 "~" H 9400 8100 50  0001 C CNN
-F 4 "RES SMD 4.7K OHM 5% 1/10W 0603	" H 9400 8100 50  0001 C CNN "Description"
-F 5 "	541-4.7KGCT-ND" H 9400 8100 50  0001 C CNN "Digi-Key_PN"
-	1    9400 8100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9400 8800 9400 8500
 Wire Wire Line
@@ -1372,8 +1203,6 @@ Wire Wire Line
 Wire Wire Line
 	19450 12900 19350 12900
 Wire Wire Line
-	19500 11800 19500 13450
-Wire Wire Line
 	19500 13450 19150 13450
 Wire Wire Line
 	19550 11850 19550 13650
@@ -1396,8 +1225,6 @@ Wire Wire Line
 Wire Wire Line
 	18150 13750 18150 12200
 Wire Wire Line
-	18150 12200 19100 12200
-Wire Wire Line
 	19100 12200 19100 12850
 Wire Wire Line
 	20450 11750 20450 12100
@@ -1411,8 +1238,6 @@ Wire Wire Line
 	20800 11600 20800 13500
 Wire Wire Line
 	20800 13500 20500 13500
-Wire Wire Line
-	20850 11550 20850 13550
 Wire Wire Line
 	20850 13550 19800 13550
 Wire Wire Line
@@ -1436,8 +1261,6 @@ Wire Wire Line
 Wire Wire Line
 	20450 12200 20450 12900
 Wire Wire Line
-	19700 13650 20950 13650
-Wire Wire Line
 	21000 11700 21800 11700
 Wire Wire Line
 	21800 11700 21800 12100
@@ -1447,8 +1270,6 @@ Wire Wire Line
 	22150 11600 22150 12950
 Wire Wire Line
 	22150 12950 22050 12950
-Wire Wire Line
-	22200 11550 22200 13500
 Wire Wire Line
 	22200 13500 21850 13500
 Wire Wire Line
@@ -1470,11 +1291,7 @@ Wire Wire Line
 Wire Wire Line
 	22350 11400 22350 13650
 Wire Wire Line
-	22350 13650 21050 13650
-Wire Wire Line
 	21050 13650 21050 12250
-Wire Wire Line
-	21050 12250 21800 12250
 Wire Wire Line
 	21800 12250 21800 12900
 Wire Wire Line
@@ -1562,8 +1379,6 @@ Wire Wire Line
 Wire Wire Line
 	22000 11200 23550 11200
 Wire Wire Line
-	23550 11200 23550 13550
-Wire Wire Line
 	23550 13550 23200 13550
 Wire Wire Line
 	22100 10550 22100 11150
@@ -1594,11 +1409,7 @@ Wire Wire Line
 Wire Wire Line
 	23700 11050 23700 13700
 Wire Wire Line
-	23700 13700 22400 13700
-Wire Wire Line
 	22400 13700 22400 12300
-Wire Wire Line
-	22400 12300 23150 12300
 Wire Wire Line
 	23150 12300 23150 12950
 Wire Wire Line
@@ -1627,8 +1438,6 @@ Wire Wire Line
 	22700 10550 22700 10850
 Wire Wire Line
 	22700 10850 24900 10850
-Wire Wire Line
-	24900 10850 24900 13550
 Wire Wire Line
 	24900 13550 24550 13550
 Wire Wire Line
@@ -1660,8 +1469,6 @@ Wire Wire Line
 Wire Wire Line
 	25050 10700 25050 13700
 Wire Wire Line
-	25050 13700 23750 13700
-Wire Wire Line
 	23750 13700 23750 12250
 Wire Wire Line
 	23750 12250 24500 12250
@@ -1689,33 +1496,10 @@ Wire Wire Line
 	21200 11600 22150 11600
 Wire Wire Line
 	21000 10550 21000 11700
-$Comp
-L power:GND #PWR0111
-U 1 1 602AF6F8
-P 18650 13450
-F 0 "#PWR0111" H 18650 13200 50  0001 C CNN
-F 1 "GND" H 18655 13277 50  0000 C CNN
-F 2 "" H 18650 13450 50  0001 C CNN
-F 3 "" H 18650 13450 50  0001 C CNN
-	1    18650 13450
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	18650 13250 18650 13450
 Wire Wire Line
 	18850 13450 18650 13450
-Connection ~ 18650 13450
-$Comp
-L power:GND #PWR098
-U 1 1 6044F00D
-P 18600 12700
-F 0 "#PWR098" H 18600 12450 50  0001 C CNN
-F 1 "GND" H 18605 12527 50  0000 C CNN
-F 2 "" H 18600 12700 50  0001 C CNN
-F 3 "" H 18600 12700 50  0001 C CNN
-	1    18600 12700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	18600 12550 18600 12650
 Wire Wire Line
@@ -1728,72 +1512,6 @@ Wire Wire Line
 Wire Wire Line
 	18800 12050 18800 12650
 Connection ~ 18800 12650
-$Comp
-L power:GND #PWR0106
-U 1 1 60497EB3
-P 19350 13200
-F 0 "#PWR0106" H 19350 12950 50  0001 C CNN
-F 1 "GND" H 19355 13027 50  0000 C CNN
-F 2 "" H 19350 13200 50  0001 C CNN
-F 3 "" H 19350 13200 50  0001 C CNN
-	1    19350 13200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR095
-U 1 1 6049B9AE
-P 19350 12600
-F 0 "#PWR095" H 19350 12350 50  0001 C CNN
-F 1 "GND" H 19355 12427 50  0000 C CNN
-F 2 "" H 19350 12600 50  0001 C CNN
-F 3 "" H 19350 12600 50  0001 C CNN
-	1    19350 12600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0101
-U 1 1 60596454
-P 19950 12750
-F 0 "#PWR0101" H 19950 12500 50  0001 C CNN
-F 1 "GND" H 19955 12577 50  0000 C CNN
-F 2 "" H 19950 12750 50  0001 C CNN
-F 3 "" H 19950 12750 50  0001 C CNN
-	1    19950 12750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0112
-U 1 1 60598BC2
-P 20000 13450
-F 0 "#PWR0112" H 20000 13200 50  0001 C CNN
-F 1 "GND" H 20005 13277 50  0000 C CNN
-F 2 "" H 20000 13450 50  0001 C CNN
-F 3 "" H 20000 13450 50  0001 C CNN
-	1    20000 13450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR096
-U 1 1 6059B0F3
-P 20700 12650
-F 0 "#PWR096" H 20700 12400 50  0001 C CNN
-F 1 "GND" H 20705 12477 50  0000 C CNN
-F 2 "" H 20700 12650 50  0001 C CNN
-F 3 "" H 20700 12650 50  0001 C CNN
-	1    20700 12650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0107
-U 1 1 6059D548
-P 20700 13250
-F 0 "#PWR0107" H 20700 13000 50  0001 C CNN
-F 1 "GND" H 20705 13077 50  0000 C CNN
-F 2 "" H 20700 13250 50  0001 C CNN
-F 3 "" H 20700 13250 50  0001 C CNN
-	1    20700 13250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	20000 13300 20000 13400
 Wire Wire Line
@@ -1810,55 +1528,9 @@ Wire Wire Line
 Wire Wire Line
 	20150 12650 19950 12650
 Connection ~ 19950 12650
-Wire Wire Line
-	19950 12650 19950 12750
 Connection ~ 20150 12650
 Wire Wire Line
 	20150 12100 20150 12650
-$Comp
-L power:GND #PWR0102
-U 1 1 60635353
-P 21300 12750
-F 0 "#PWR0102" H 21300 12500 50  0001 C CNN
-F 1 "GND" H 21305 12577 50  0000 C CNN
-F 2 "" H 21300 12750 50  0001 C CNN
-F 3 "" H 21300 12750 50  0001 C CNN
-	1    21300 12750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0113
-U 1 1 60636047
-P 21350 13450
-F 0 "#PWR0113" H 21350 13200 50  0001 C CNN
-F 1 "GND" H 21355 13277 50  0000 C CNN
-F 2 "" H 21350 13450 50  0001 C CNN
-F 3 "" H 21350 13450 50  0001 C CNN
-	1    21350 13450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0108
-U 1 1 6063A09E
-P 22050 13250
-F 0 "#PWR0108" H 22050 13000 50  0001 C CNN
-F 1 "GND" H 22055 13077 50  0000 C CNN
-F 2 "" H 22050 13250 50  0001 C CNN
-F 3 "" H 22050 13250 50  0001 C CNN
-	1    22050 13250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR097
-U 1 1 6063AE70
-P 22050 12650
-F 0 "#PWR097" H 22050 12400 50  0001 C CNN
-F 1 "GND" H 22055 12477 50  0000 C CNN
-F 2 "" H 22050 12650 50  0001 C CNN
-F 3 "" H 22050 12650 50  0001 C CNN
-	1    22050 12650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	21300 12600 21300 12700
 Wire Wire Line
@@ -1880,94 +1552,6 @@ Wire Wire Line
 Wire Wire Line
 	21500 12100 21500 12700
 Connection ~ 21500 12700
-$Comp
-L power:GND #PWR0103
-U 1 1 606D8E7F
-P 22650 12800
-F 0 "#PWR0103" H 22650 12550 50  0001 C CNN
-F 1 "GND" H 22655 12627 50  0000 C CNN
-F 2 "" H 22650 12800 50  0001 C CNN
-F 3 "" H 22650 12800 50  0001 C CNN
-	1    22650 12800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0114
-U 1 1 606DCEDD
-P 22700 13500
-F 0 "#PWR0114" H 22700 13250 50  0001 C CNN
-F 1 "GND" H 22705 13327 50  0000 C CNN
-F 2 "" H 22700 13500 50  0001 C CNN
-F 3 "" H 22700 13500 50  0001 C CNN
-	1    22700 13500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR099
-U 1 1 606DF442
-P 23400 12700
-F 0 "#PWR099" H 23400 12450 50  0001 C CNN
-F 1 "GND" H 23405 12527 50  0000 C CNN
-F 2 "" H 23400 12700 50  0001 C CNN
-F 3 "" H 23400 12700 50  0001 C CNN
-	1    23400 12700
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0109
-U 1 1 606DFD5E
-P 23400 13300
-F 0 "#PWR0109" H 23400 13050 50  0001 C CNN
-F 1 "GND" H 23405 13127 50  0000 C CNN
-F 2 "" H 23400 13300 50  0001 C CNN
-F 3 "" H 23400 13300 50  0001 C CNN
-	1    23400 13300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0104
-U 1 1 606E4016
-P 24000 12800
-F 0 "#PWR0104" H 24000 12550 50  0001 C CNN
-F 1 "GND" H 24005 12627 50  0000 C CNN
-F 2 "" H 24000 12800 50  0001 C CNN
-F 3 "" H 24000 12800 50  0001 C CNN
-	1    24000 12800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0115
-U 1 1 606E4D44
-P 24050 13500
-F 0 "#PWR0115" H 24050 13250 50  0001 C CNN
-F 1 "GND" H 24055 13327 50  0000 C CNN
-F 2 "" H 24050 13500 50  0001 C CNN
-F 3 "" H 24050 13500 50  0001 C CNN
-	1    24050 13500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0100
-U 1 1 606E749E
-P 24750 12700
-F 0 "#PWR0100" H 24750 12450 50  0001 C CNN
-F 1 "GND" H 24755 12527 50  0000 C CNN
-F 2 "" H 24750 12700 50  0001 C CNN
-F 3 "" H 24750 12700 50  0001 C CNN
-	1    24750 12700
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0110
-U 1 1 606E9925
-P 24750 13300
-F 0 "#PWR0110" H 24750 13050 50  0001 C CNN
-F 1 "GND" H 24755 13127 50  0000 C CNN
-F 2 "" H 24750 13300 50  0001 C CNN
-F 3 "" H 24750 13300 50  0001 C CNN
-	1    24750 13300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	24000 12650 24000 12700
 Wire Wire Line
@@ -2021,7 +1605,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 18950 16600 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 18950 16600 50  0001 C CNN "Digi-Key_PN"
 	1    18950 16600
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D128
@@ -2034,7 +1618,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 18950 17400 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 18950 17400 50  0001 C CNN "Digi-Key_PN"
 	1    18950 17400
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D144
@@ -2047,7 +1631,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 19000 18000 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 19000 18000 50  0001 C CNN "Digi-Key_PN"
 	1    19000 18000
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D118
@@ -2060,7 +1644,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 19350 17000 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 19350 17000 50  0001 C CNN "Digi-Key_PN"
 	1    19350 17000
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D133
@@ -2073,7 +1657,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 19350 17600 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 19350 17600 50  0001 C CNN "Digi-Key_PN"
 	1    19350 17600
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D134
@@ -2086,7 +1670,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 18650 17650 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 18650 17650 50  0001 C CNN "Digi-Key_PN"
 	1    18650 17650
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D117
@@ -2099,7 +1683,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 18600 16950 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 18600 16950 50  0001 C CNN "Digi-Key_PN"
 	1    18600 16950
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D113
@@ -2112,7 +1696,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 20300 16650 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 20300 16650 50  0001 C CNN "Digi-Key_PN"
 	1    20300 16650
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D129
@@ -2125,7 +1709,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 20300 17450 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 20300 17450 50  0001 C CNN "Digi-Key_PN"
 	1    20300 17450
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D145
@@ -2138,7 +1722,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 20350 18050 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 20350 18050 50  0001 C CNN "Digi-Key_PN"
 	1    20350 18050
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D121
@@ -2151,7 +1735,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 20700 17050 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 20700 17050 50  0001 C CNN "Digi-Key_PN"
 	1    20700 17050
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D135
@@ -2164,7 +1748,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 20700 17650 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 20700 17650 50  0001 C CNN "Digi-Key_PN"
 	1    20700 17650
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D137
@@ -2177,7 +1761,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 20000 17700 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 20000 17700 50  0001 C CNN "Digi-Key_PN"
 	1    20000 17700
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D119
@@ -2190,7 +1774,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 19950 17000 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 19950 17000 50  0001 C CNN "Digi-Key_PN"
 	1    19950 17000
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D114
@@ -2203,7 +1787,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 21650 16650 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 21650 16650 50  0001 C CNN "Digi-Key_PN"
 	1    21650 16650
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D130
@@ -2216,7 +1800,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 21650 17450 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 21650 17450 50  0001 C CNN "Digi-Key_PN"
 	1    21650 17450
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D146
@@ -2229,7 +1813,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 21700 18050 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 21700 18050 50  0001 C CNN "Digi-Key_PN"
 	1    21700 18050
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D122
@@ -2242,7 +1826,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 22050 17050 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 22050 17050 50  0001 C CNN "Digi-Key_PN"
 	1    22050 17050
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D136
@@ -2255,7 +1839,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 22050 17650 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 22050 17650 50  0001 C CNN "Digi-Key_PN"
 	1    22050 17650
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D138
@@ -2268,7 +1852,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 21350 17700 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 21350 17700 50  0001 C CNN "Digi-Key_PN"
 	1    21350 17700
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D120
@@ -2281,7 +1865,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 21300 17000 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 21300 17000 50  0001 C CNN "Digi-Key_PN"
 	1    21300 17000
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D115
@@ -2294,7 +1878,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 23000 16700 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 23000 16700 50  0001 C CNN "Digi-Key_PN"
 	1    23000 16700
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D131
@@ -2307,7 +1891,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 23000 17500 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 23000 17500 50  0001 C CNN "Digi-Key_PN"
 	1    23000 17500
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D147
@@ -2320,7 +1904,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 23050 18100 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 23050 18100 50  0001 C CNN "Digi-Key_PN"
 	1    23050 18100
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D125
@@ -2333,7 +1917,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 23400 17100 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 23400 17100 50  0001 C CNN "Digi-Key_PN"
 	1    23400 17100
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D139
@@ -2346,7 +1930,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 23400 17700 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 23400 17700 50  0001 C CNN "Digi-Key_PN"
 	1    23400 17700
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D141
@@ -2359,7 +1943,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 22700 17750 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 22700 17750 50  0001 C CNN "Digi-Key_PN"
 	1    22700 17750
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D123
@@ -2372,7 +1956,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 22650 17050 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 22650 17050 50  0001 C CNN "Digi-Key_PN"
 	1    22650 17050
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D116
@@ -2385,7 +1969,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 24350 16700 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 24350 16700 50  0001 C CNN "Digi-Key_PN"
 	1    24350 16700
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D132
@@ -2398,7 +1982,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 24350 17500 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 24350 17500 50  0001 C CNN "Digi-Key_PN"
 	1    24350 17500
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D148
@@ -2411,7 +1995,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 24400 18100 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 24400 18100 50  0001 C CNN "Digi-Key_PN"
 	1    24400 18100
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D126
@@ -2424,7 +2008,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 24750 17100 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 24750 17100 50  0001 C CNN "Digi-Key_PN"
 	1    24750 17100
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D140
@@ -2437,7 +2021,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 24750 17700 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 24750 17700 50  0001 C CNN "Digi-Key_PN"
 	1    24750 17700
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D142
@@ -2450,7 +2034,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 24050 17750 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 24050 17750 50  0001 C CNN "Digi-Key_PN"
 	1    24050 17750
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D124
@@ -2463,7 +2047,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 24000 17050 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 24000 17050 50  0001 C CNN "Digi-Key_PN"
 	1    24000 17050
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 Text GLabel 19400 15000 1    50   Input ~ 0
 bbus[0..34]
@@ -2546,8 +2130,6 @@ Wire Wire Line
 Wire Wire Line
 	19450 17450 19350 17450
 Wire Wire Line
-	19500 16350 19500 18000
-Wire Wire Line
 	19500 18000 19150 18000
 Wire Wire Line
 	19550 16400 19550 18200
@@ -2572,8 +2154,6 @@ Wire Wire Line
 Wire Wire Line
 	18150 18300 18150 16750
 Wire Wire Line
-	18150 16750 19100 16750
-Wire Wire Line
 	19100 16750 19100 17400
 Wire Wire Line
 	20450 16300 20450 16650
@@ -2587,8 +2167,6 @@ Wire Wire Line
 	20800 16150 20800 18050
 Wire Wire Line
 	20800 18050 20500 18050
-Wire Wire Line
-	20850 16100 20850 18100
 Wire Wire Line
 	20850 18100 19800 18100
 Wire Wire Line
@@ -2612,8 +2190,6 @@ Wire Wire Line
 Wire Wire Line
 	20450 16750 20450 17450
 Wire Wire Line
-	19700 18200 20950 18200
-Wire Wire Line
 	21000 16250 21800 16250
 Wire Wire Line
 	21800 16250 21800 16650
@@ -2623,8 +2199,6 @@ Wire Wire Line
 	22150 16150 22150 17500
 Wire Wire Line
 	22150 17500 22050 17500
-Wire Wire Line
-	22200 16100 22200 18050
 Wire Wire Line
 	22200 18050 21850 18050
 Wire Wire Line
@@ -2646,11 +2220,7 @@ Wire Wire Line
 Wire Wire Line
 	22350 15950 22350 18200
 Wire Wire Line
-	22350 18200 21050 18200
-Wire Wire Line
 	21050 18200 21050 16800
-Wire Wire Line
-	21050 16800 21800 16800
 Wire Wire Line
 	21800 16800 21800 17450
 Wire Wire Line
@@ -2738,8 +2308,6 @@ Wire Wire Line
 Wire Wire Line
 	22000 15750 23550 15750
 Wire Wire Line
-	23550 15750 23550 18100
-Wire Wire Line
 	23550 18100 23200 18100
 Wire Wire Line
 	22100 15100 22100 15700
@@ -2770,11 +2338,7 @@ Wire Wire Line
 Wire Wire Line
 	23700 15600 23700 18250
 Wire Wire Line
-	23700 18250 22400 18250
-Wire Wire Line
 	22400 18250 22400 16850
-Wire Wire Line
-	22400 16850 23150 16850
 Wire Wire Line
 	23150 16850 23150 17500
 Wire Wire Line
@@ -2803,8 +2367,6 @@ Wire Wire Line
 	22700 15100 22700 15400
 Wire Wire Line
 	22700 15400 24900 15400
-Wire Wire Line
-	24900 15400 24900 18100
 Wire Wire Line
 	24900 18100 24550 18100
 Wire Wire Line
@@ -2838,8 +2400,6 @@ Wire Wire Line
 Wire Wire Line
 	25050 15250 25050 18250
 Wire Wire Line
-	25050 18250 23750 18250
-Wire Wire Line
 	23750 18250 23750 16800
 Wire Wire Line
 	23750 16800 24500 16800
@@ -2867,33 +2427,10 @@ Wire Wire Line
 	21200 16150 22150 16150
 Wire Wire Line
 	21000 15100 21000 16250
-$Comp
-L power:GND #PWR0139
-U 1 1 6089AFBB
-P 18650 18000
-F 0 "#PWR0139" H 18650 17750 50  0001 C CNN
-F 1 "GND" H 18655 17827 50  0000 C CNN
-F 2 "" H 18650 18000 50  0001 C CNN
-F 3 "" H 18650 18000 50  0001 C CNN
-	1    18650 18000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	18650 17800 18650 18000
 Wire Wire Line
 	18850 18000 18650 18000
-Connection ~ 18650 18000
-$Comp
-L power:GND #PWR0125
-U 1 1 6089AFC8
-P 18600 17250
-F 0 "#PWR0125" H 18600 17000 50  0001 C CNN
-F 1 "GND" H 18605 17077 50  0000 C CNN
-F 2 "" H 18600 17250 50  0001 C CNN
-F 3 "" H 18600 17250 50  0001 C CNN
-	1    18600 17250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	18600 17100 18600 17200
 Wire Wire Line
@@ -2906,72 +2443,6 @@ Wire Wire Line
 Wire Wire Line
 	18800 16600 18800 17200
 Connection ~ 18800 17200
-$Comp
-L power:GND #PWR0133
-U 1 1 6089AFD9
-P 19350 17750
-F 0 "#PWR0133" H 19350 17500 50  0001 C CNN
-F 1 "GND" H 19355 17577 50  0000 C CNN
-F 2 "" H 19350 17750 50  0001 C CNN
-F 3 "" H 19350 17750 50  0001 C CNN
-	1    19350 17750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0122
-U 1 1 6089AFE3
-P 19350 17150
-F 0 "#PWR0122" H 19350 16900 50  0001 C CNN
-F 1 "GND" H 19355 16977 50  0000 C CNN
-F 2 "" H 19350 17150 50  0001 C CNN
-F 3 "" H 19350 17150 50  0001 C CNN
-	1    19350 17150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0128
-U 1 1 6089AFED
-P 19950 17300
-F 0 "#PWR0128" H 19950 17050 50  0001 C CNN
-F 1 "GND" H 19955 17127 50  0000 C CNN
-F 2 "" H 19950 17300 50  0001 C CNN
-F 3 "" H 19950 17300 50  0001 C CNN
-	1    19950 17300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0140
-U 1 1 6089AFF7
-P 20000 18000
-F 0 "#PWR0140" H 20000 17750 50  0001 C CNN
-F 1 "GND" H 20005 17827 50  0000 C CNN
-F 2 "" H 20000 18000 50  0001 C CNN
-F 3 "" H 20000 18000 50  0001 C CNN
-	1    20000 18000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0123
-U 1 1 6089B001
-P 20700 17200
-F 0 "#PWR0123" H 20700 16950 50  0001 C CNN
-F 1 "GND" H 20705 17027 50  0000 C CNN
-F 2 "" H 20700 17200 50  0001 C CNN
-F 3 "" H 20700 17200 50  0001 C CNN
-	1    20700 17200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0134
-U 1 1 6089B00B
-P 20700 17800
-F 0 "#PWR0134" H 20700 17550 50  0001 C CNN
-F 1 "GND" H 20705 17627 50  0000 C CNN
-F 2 "" H 20700 17800 50  0001 C CNN
-F 3 "" H 20700 17800 50  0001 C CNN
-	1    20700 17800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	20000 17850 20000 17950
 Wire Wire Line
@@ -2993,50 +2464,6 @@ Wire Wire Line
 Connection ~ 20150 17200
 Wire Wire Line
 	20150 16650 20150 17200
-$Comp
-L power:GND #PWR0129
-U 1 1 6089B021
-P 21300 17300
-F 0 "#PWR0129" H 21300 17050 50  0001 C CNN
-F 1 "GND" H 21305 17127 50  0000 C CNN
-F 2 "" H 21300 17300 50  0001 C CNN
-F 3 "" H 21300 17300 50  0001 C CNN
-	1    21300 17300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0141
-U 1 1 6089B02B
-P 21350 18000
-F 0 "#PWR0141" H 21350 17750 50  0001 C CNN
-F 1 "GND" H 21355 17827 50  0000 C CNN
-F 2 "" H 21350 18000 50  0001 C CNN
-F 3 "" H 21350 18000 50  0001 C CNN
-	1    21350 18000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0135
-U 1 1 6089B035
-P 22050 17800
-F 0 "#PWR0135" H 22050 17550 50  0001 C CNN
-F 1 "GND" H 22055 17627 50  0000 C CNN
-F 2 "" H 22050 17800 50  0001 C CNN
-F 3 "" H 22050 17800 50  0001 C CNN
-	1    22050 17800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0124
-U 1 1 6089B03F
-P 22050 17200
-F 0 "#PWR0124" H 22050 16950 50  0001 C CNN
-F 1 "GND" H 22055 17027 50  0000 C CNN
-F 2 "" H 22050 17200 50  0001 C CNN
-F 3 "" H 22050 17200 50  0001 C CNN
-	1    22050 17200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	21300 17150 21300 17250
 Wire Wire Line
@@ -3058,94 +2485,6 @@ Wire Wire Line
 Wire Wire Line
 	21500 16650 21500 17250
 Connection ~ 21500 17250
-$Comp
-L power:GND #PWR0131
-U 1 1 6089B055
-P 22650 17350
-F 0 "#PWR0131" H 22650 17100 50  0001 C CNN
-F 1 "GND" H 22655 17177 50  0000 C CNN
-F 2 "" H 22650 17350 50  0001 C CNN
-F 3 "" H 22650 17350 50  0001 C CNN
-	1    22650 17350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0142
-U 1 1 6089B05F
-P 22700 18050
-F 0 "#PWR0142" H 22700 17800 50  0001 C CNN
-F 1 "GND" H 22705 17877 50  0000 C CNN
-F 2 "" H 22700 18050 50  0001 C CNN
-F 3 "" H 22700 18050 50  0001 C CNN
-	1    22700 18050
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0126
-U 1 1 6089B069
-P 23400 17250
-F 0 "#PWR0126" H 23400 17000 50  0001 C CNN
-F 1 "GND" H 23405 17077 50  0000 C CNN
-F 2 "" H 23400 17250 50  0001 C CNN
-F 3 "" H 23400 17250 50  0001 C CNN
-	1    23400 17250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0136
-U 1 1 6089B073
-P 23400 17850
-F 0 "#PWR0136" H 23400 17600 50  0001 C CNN
-F 1 "GND" H 23405 17677 50  0000 C CNN
-F 2 "" H 23400 17850 50  0001 C CNN
-F 3 "" H 23400 17850 50  0001 C CNN
-	1    23400 17850
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0132
-U 1 1 6089B07D
-P 24000 17350
-F 0 "#PWR0132" H 24000 17100 50  0001 C CNN
-F 1 "GND" H 24005 17177 50  0000 C CNN
-F 2 "" H 24000 17350 50  0001 C CNN
-F 3 "" H 24000 17350 50  0001 C CNN
-	1    24000 17350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0143
-U 1 1 6089B087
-P 24050 18050
-F 0 "#PWR0143" H 24050 17800 50  0001 C CNN
-F 1 "GND" H 24055 17877 50  0000 C CNN
-F 2 "" H 24050 18050 50  0001 C CNN
-F 3 "" H 24050 18050 50  0001 C CNN
-	1    24050 18050
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0127
-U 1 1 6089B091
-P 24750 17250
-F 0 "#PWR0127" H 24750 17000 50  0001 C CNN
-F 1 "GND" H 24755 17077 50  0000 C CNN
-F 2 "" H 24750 17250 50  0001 C CNN
-F 3 "" H 24750 17250 50  0001 C CNN
-	1    24750 17250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0137
-U 1 1 6089B09B
-P 24750 17850
-F 0 "#PWR0137" H 24750 17600 50  0001 C CNN
-F 1 "GND" H 24755 17677 50  0000 C CNN
-F 2 "" H 24750 17850 50  0001 C CNN
-F 3 "" H 24750 17850 50  0001 C CNN
-	1    24750 17850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	24000 17200 24000 17250
 Wire Wire Line
@@ -3344,7 +2683,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 18950 21000 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 18950 21000 50  0001 C CNN "Digi-Key_PN"
 	1    18950 21000
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D170
@@ -3357,7 +2696,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 18950 21800 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 18950 21800 50  0001 C CNN "Digi-Key_PN"
 	1    18950 21800
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D186
@@ -3370,7 +2709,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 19000 22400 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 19000 22400 50  0001 C CNN "Digi-Key_PN"
 	1    19000 22400
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D160
@@ -3383,7 +2722,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 19350 21400 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 19350 21400 50  0001 C CNN "Digi-Key_PN"
 	1    19350 21400
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D175
@@ -3396,7 +2735,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 19350 22000 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 19350 22000 50  0001 C CNN "Digi-Key_PN"
 	1    19350 22000
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D177
@@ -3409,7 +2748,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 18650 22050 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 18650 22050 50  0001 C CNN "Digi-Key_PN"
 	1    18650 22050
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D159
@@ -3422,7 +2761,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 18600 21350 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 18600 21350 50  0001 C CNN "Digi-Key_PN"
 	1    18600 21350
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D155
@@ -3435,7 +2774,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 20300 21050 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 20300 21050 50  0001 C CNN "Digi-Key_PN"
 	1    20300 21050
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D171
@@ -3448,7 +2787,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 20300 21850 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 20300 21850 50  0001 C CNN "Digi-Key_PN"
 	1    20300 21850
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D187
@@ -3461,7 +2800,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 20350 22450 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 20350 22450 50  0001 C CNN "Digi-Key_PN"
 	1    20350 22450
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D164
@@ -3474,7 +2813,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 20700 21450 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 20700 21450 50  0001 C CNN "Digi-Key_PN"
 	1    20700 21450
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D178
@@ -3487,7 +2826,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 20700 22050 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 20700 22050 50  0001 C CNN "Digi-Key_PN"
 	1    20700 22050
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D180
@@ -3500,7 +2839,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 20000 22100 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 20000 22100 50  0001 C CNN "Digi-Key_PN"
 	1    20000 22100
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D161
@@ -3513,7 +2852,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 19950 21400 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 19950 21400 50  0001 C CNN "Digi-Key_PN"
 	1    19950 21400
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D156
@@ -3526,7 +2865,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 21650 21050 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 21650 21050 50  0001 C CNN "Digi-Key_PN"
 	1    21650 21050
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D172
@@ -3539,7 +2878,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 21650 21850 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 21650 21850 50  0001 C CNN "Digi-Key_PN"
 	1    21650 21850
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D188
@@ -3552,7 +2891,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 21700 22450 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 21700 22450 50  0001 C CNN "Digi-Key_PN"
 	1    21700 22450
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D165
@@ -3565,7 +2904,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 22050 21450 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 22050 21450 50  0001 C CNN "Digi-Key_PN"
 	1    22050 21450
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D179
@@ -3578,7 +2917,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 22050 22050 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 22050 22050 50  0001 C CNN "Digi-Key_PN"
 	1    22050 22050
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D181
@@ -3591,7 +2930,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 21350 22100 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 21350 22100 50  0001 C CNN "Digi-Key_PN"
 	1    21350 22100
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D162
@@ -3604,7 +2943,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 21300 21400 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 21300 21400 50  0001 C CNN "Digi-Key_PN"
 	1    21300 21400
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D157
@@ -3617,7 +2956,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 23000 21100 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 23000 21100 50  0001 C CNN "Digi-Key_PN"
 	1    23000 21100
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D173
@@ -3630,7 +2969,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 23000 21900 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 23000 21900 50  0001 C CNN "Digi-Key_PN"
 	1    23000 21900
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D189
@@ -3643,7 +2982,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 23050 22500 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 23050 22500 50  0001 C CNN "Digi-Key_PN"
 	1    23050 22500
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D168
@@ -3656,7 +2995,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 23400 21500 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 23400 21500 50  0001 C CNN "Digi-Key_PN"
 	1    23400 21500
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D182
@@ -3669,7 +3008,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 23400 22100 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 23400 22100 50  0001 C CNN "Digi-Key_PN"
 	1    23400 22100
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D184
@@ -3682,7 +3021,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 22700 22150 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 22700 22150 50  0001 C CNN "Digi-Key_PN"
 	1    22700 22150
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D166
@@ -3695,7 +3034,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 22650 21450 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 22650 21450 50  0001 C CNN "Digi-Key_PN"
 	1    22650 21450
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D158
@@ -3708,7 +3047,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 24350 21100 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 24350 21100 50  0001 C CNN "Digi-Key_PN"
 	1    24350 21100
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D174
@@ -3721,7 +3060,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 24350 21900 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 24350 21900 50  0001 C CNN "Digi-Key_PN"
 	1    24350 21900
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D190
@@ -3734,7 +3073,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 24400 22500 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 24400 22500 50  0001 C CNN "Digi-Key_PN"
 	1    24400 22500
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D169
@@ -3747,7 +3086,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 24750 21500 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 24750 21500 50  0001 C CNN "Digi-Key_PN"
 	1    24750 21500
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D183
@@ -3760,7 +3099,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 24750 22100 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 24750 22100 50  0001 C CNN "Digi-Key_PN"
 	1    24750 22100
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D185
@@ -3773,7 +3112,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 24050 22150 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 24050 22150 50  0001 C CNN "Digi-Key_PN"
 	1    24050 22150
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D167
@@ -3786,7 +3125,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 24000 21450 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 24000 21450 50  0001 C CNN "Digi-Key_PN"
 	1    24000 21450
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 Text GLabel 19400 19400 1    50   Input ~ 0
 cbus[0..34]
@@ -3869,8 +3208,6 @@ Wire Wire Line
 Wire Wire Line
 	19450 21850 19350 21850
 Wire Wire Line
-	19500 20750 19500 22400
-Wire Wire Line
 	19500 22400 19150 22400
 Wire Wire Line
 	19550 20800 19550 22600
@@ -3895,8 +3232,6 @@ Wire Wire Line
 Wire Wire Line
 	18150 22700 18150 21150
 Wire Wire Line
-	18150 21150 19100 21150
-Wire Wire Line
 	19100 21150 19100 21800
 Wire Wire Line
 	20450 20700 20450 21050
@@ -3910,8 +3245,6 @@ Wire Wire Line
 	20800 20550 20800 22450
 Wire Wire Line
 	20800 22450 20500 22450
-Wire Wire Line
-	20850 20500 20850 22500
 Wire Wire Line
 	20850 22500 19800 22500
 Wire Wire Line
@@ -3935,8 +3268,6 @@ Wire Wire Line
 Wire Wire Line
 	20450 21150 20450 21850
 Wire Wire Line
-	19700 22600 20950 22600
-Wire Wire Line
 	21000 20650 21800 20650
 Wire Wire Line
 	21800 20650 21800 21050
@@ -3946,8 +3277,6 @@ Wire Wire Line
 	22150 20550 22150 21900
 Wire Wire Line
 	22150 21900 22050 21900
-Wire Wire Line
-	22200 20500 22200 22450
 Wire Wire Line
 	22200 22450 21850 22450
 Wire Wire Line
@@ -3969,11 +3298,7 @@ Wire Wire Line
 Wire Wire Line
 	22350 20350 22350 22600
 Wire Wire Line
-	22350 22600 21050 22600
-Wire Wire Line
 	21050 22600 21050 21200
-Wire Wire Line
-	21050 21200 21800 21200
 Wire Wire Line
 	21800 21200 21800 21850
 Wire Wire Line
@@ -4061,8 +3386,6 @@ Wire Wire Line
 Wire Wire Line
 	22000 20150 23550 20150
 Wire Wire Line
-	23550 20150 23550 22500
-Wire Wire Line
 	23550 22500 23200 22500
 Wire Wire Line
 	22100 19500 22100 20100
@@ -4093,11 +3416,7 @@ Wire Wire Line
 Wire Wire Line
 	23700 20000 23700 22650
 Wire Wire Line
-	23700 22650 22400 22650
-Wire Wire Line
 	22400 22650 22400 21250
-Wire Wire Line
-	22400 21250 23150 21250
 Wire Wire Line
 	23150 21250 23150 21900
 Wire Wire Line
@@ -4126,8 +3445,6 @@ Wire Wire Line
 	22700 19500 22700 19800
 Wire Wire Line
 	22700 19800 24900 19800
-Wire Wire Line
-	24900 19800 24900 22500
 Wire Wire Line
 	24900 22500 24550 22500
 Wire Wire Line
@@ -4161,8 +3478,6 @@ Wire Wire Line
 Wire Wire Line
 	25050 19650 25050 22650
 Wire Wire Line
-	25050 22650 23750 22650
-Wire Wire Line
 	23750 22650 23750 21200
 Wire Wire Line
 	23750 21200 24500 21200
@@ -4190,33 +3505,10 @@ Wire Wire Line
 	21200 20550 22150 20550
 Wire Wire Line
 	21000 19500 21000 20650
-$Comp
-L power:GND #PWR0166
-U 1 1 60A11265
-P 18650 22400
-F 0 "#PWR0166" H 18650 22150 50  0001 C CNN
-F 1 "GND" H 18655 22227 50  0000 C CNN
-F 2 "" H 18650 22400 50  0001 C CNN
-F 3 "" H 18650 22400 50  0001 C CNN
-	1    18650 22400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	18650 22200 18650 22400
 Wire Wire Line
 	18850 22400 18650 22400
-Connection ~ 18650 22400
-$Comp
-L power:GND #PWR0153
-U 1 1 60A11272
-P 18600 21650
-F 0 "#PWR0153" H 18600 21400 50  0001 C CNN
-F 1 "GND" H 18605 21477 50  0000 C CNN
-F 2 "" H 18600 21650 50  0001 C CNN
-F 3 "" H 18600 21650 50  0001 C CNN
-	1    18600 21650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	18600 21500 18600 21600
 Wire Wire Line
@@ -4229,72 +3521,6 @@ Wire Wire Line
 Wire Wire Line
 	18800 21000 18800 21600
 Connection ~ 18800 21600
-$Comp
-L power:GND #PWR0160
-U 1 1 60A11283
-P 19350 22150
-F 0 "#PWR0160" H 19350 21900 50  0001 C CNN
-F 1 "GND" H 19355 21977 50  0000 C CNN
-F 2 "" H 19350 22150 50  0001 C CNN
-F 3 "" H 19350 22150 50  0001 C CNN
-	1    19350 22150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0149
-U 1 1 60A1128D
-P 19350 21550
-F 0 "#PWR0149" H 19350 21300 50  0001 C CNN
-F 1 "GND" H 19355 21377 50  0000 C CNN
-F 2 "" H 19350 21550 50  0001 C CNN
-F 3 "" H 19350 21550 50  0001 C CNN
-	1    19350 21550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0156
-U 1 1 60A11297
-P 19950 21700
-F 0 "#PWR0156" H 19950 21450 50  0001 C CNN
-F 1 "GND" H 19955 21527 50  0000 C CNN
-F 2 "" H 19950 21700 50  0001 C CNN
-F 3 "" H 19950 21700 50  0001 C CNN
-	1    19950 21700
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0167
-U 1 1 60A112A1
-P 20000 22400
-F 0 "#PWR0167" H 20000 22150 50  0001 C CNN
-F 1 "GND" H 20005 22227 50  0000 C CNN
-F 2 "" H 20000 22400 50  0001 C CNN
-F 3 "" H 20000 22400 50  0001 C CNN
-	1    20000 22400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0151
-U 1 1 60A112AB
-P 20700 21600
-F 0 "#PWR0151" H 20700 21350 50  0001 C CNN
-F 1 "GND" H 20705 21427 50  0000 C CNN
-F 2 "" H 20700 21600 50  0001 C CNN
-F 3 "" H 20700 21600 50  0001 C CNN
-	1    20700 21600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0162
-U 1 1 60A112B5
-P 20700 22200
-F 0 "#PWR0162" H 20700 21950 50  0001 C CNN
-F 1 "GND" H 20705 22027 50  0000 C CNN
-F 2 "" H 20700 22200 50  0001 C CNN
-F 3 "" H 20700 22200 50  0001 C CNN
-	1    20700 22200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	20000 22250 20000 22350
 Wire Wire Line
@@ -4316,50 +3542,6 @@ Wire Wire Line
 Connection ~ 20150 21600
 Wire Wire Line
 	20150 21050 20150 21600
-$Comp
-L power:GND #PWR0157
-U 1 1 60A112CB
-P 21300 21700
-F 0 "#PWR0157" H 21300 21450 50  0001 C CNN
-F 1 "GND" H 21305 21527 50  0000 C CNN
-F 2 "" H 21300 21700 50  0001 C CNN
-F 3 "" H 21300 21700 50  0001 C CNN
-	1    21300 21700
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0168
-U 1 1 60A112D5
-P 21350 22400
-F 0 "#PWR0168" H 21350 22150 50  0001 C CNN
-F 1 "GND" H 21355 22227 50  0000 C CNN
-F 2 "" H 21350 22400 50  0001 C CNN
-F 3 "" H 21350 22400 50  0001 C CNN
-	1    21350 22400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0163
-U 1 1 60A112DF
-P 22050 22200
-F 0 "#PWR0163" H 22050 21950 50  0001 C CNN
-F 1 "GND" H 22055 22027 50  0000 C CNN
-F 2 "" H 22050 22200 50  0001 C CNN
-F 3 "" H 22050 22200 50  0001 C CNN
-	1    22050 22200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0152
-U 1 1 60A112E9
-P 22050 21600
-F 0 "#PWR0152" H 22050 21350 50  0001 C CNN
-F 1 "GND" H 22055 21427 50  0000 C CNN
-F 2 "" H 22050 21600 50  0001 C CNN
-F 3 "" H 22050 21600 50  0001 C CNN
-	1    22050 21600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	21300 21550 21300 21650
 Wire Wire Line
@@ -4381,94 +3563,6 @@ Wire Wire Line
 Wire Wire Line
 	21500 21050 21500 21650
 Connection ~ 21500 21650
-$Comp
-L power:GND #PWR0158
-U 1 1 60A112FF
-P 22650 21750
-F 0 "#PWR0158" H 22650 21500 50  0001 C CNN
-F 1 "GND" H 22655 21577 50  0000 C CNN
-F 2 "" H 22650 21750 50  0001 C CNN
-F 3 "" H 22650 21750 50  0001 C CNN
-	1    22650 21750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0169
-U 1 1 60A11309
-P 22700 22450
-F 0 "#PWR0169" H 22700 22200 50  0001 C CNN
-F 1 "GND" H 22705 22277 50  0000 C CNN
-F 2 "" H 22700 22450 50  0001 C CNN
-F 3 "" H 22700 22450 50  0001 C CNN
-	1    22700 22450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0154
-U 1 1 60A11313
-P 23400 21650
-F 0 "#PWR0154" H 23400 21400 50  0001 C CNN
-F 1 "GND" H 23405 21477 50  0000 C CNN
-F 2 "" H 23400 21650 50  0001 C CNN
-F 3 "" H 23400 21650 50  0001 C CNN
-	1    23400 21650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0164
-U 1 1 60A1131D
-P 23400 22250
-F 0 "#PWR0164" H 23400 22000 50  0001 C CNN
-F 1 "GND" H 23405 22077 50  0000 C CNN
-F 2 "" H 23400 22250 50  0001 C CNN
-F 3 "" H 23400 22250 50  0001 C CNN
-	1    23400 22250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0159
-U 1 1 60A11327
-P 24000 21750
-F 0 "#PWR0159" H 24000 21500 50  0001 C CNN
-F 1 "GND" H 24005 21577 50  0000 C CNN
-F 2 "" H 24000 21750 50  0001 C CNN
-F 3 "" H 24000 21750 50  0001 C CNN
-	1    24000 21750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0170
-U 1 1 60A11331
-P 24050 22450
-F 0 "#PWR0170" H 24050 22200 50  0001 C CNN
-F 1 "GND" H 24055 22277 50  0000 C CNN
-F 2 "" H 24050 22450 50  0001 C CNN
-F 3 "" H 24050 22450 50  0001 C CNN
-	1    24050 22450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0155
-U 1 1 60A1133B
-P 24750 21650
-F 0 "#PWR0155" H 24750 21400 50  0001 C CNN
-F 1 "GND" H 24755 21477 50  0000 C CNN
-F 2 "" H 24750 21650 50  0001 C CNN
-F 3 "" H 24750 21650 50  0001 C CNN
-	1    24750 21650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0165
-U 1 1 60A11345
-P 24750 22250
-F 0 "#PWR0165" H 24750 22000 50  0001 C CNN
-F 1 "GND" H 24755 22077 50  0000 C CNN
-F 2 "" H 24750 22250 50  0001 C CNN
-F 3 "" H 24750 22250 50  0001 C CNN
-	1    24750 22250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	24000 21600 24000 21650
 Wire Wire Line
@@ -4787,7 +3881,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 22950 3700 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 22950 3700 50  0001 C CNN "Digi-Key_PN"
 	1    22950 3700
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D21
@@ -4800,7 +3894,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 22950 4500 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 22950 4500 50  0001 C CNN "Digi-Key_PN"
 	1    22950 4500
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D27
@@ -4813,7 +3907,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 23000 5100 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 23000 5100 50  0001 C CNN "Digi-Key_PN"
 	1    23000 5100
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D19
@@ -4826,7 +3920,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 23350 4100 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 23350 4100 50  0001 C CNN "Digi-Key_PN"
 	1    23350 4100
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D23
@@ -4839,7 +3933,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 23350 4700 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 23350 4700 50  0001 C CNN "Digi-Key_PN"
 	1    23350 4700
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D25
@@ -4852,7 +3946,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 22650 4750 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 22650 4750 50  0001 C CNN "Digi-Key_PN"
 	1    22650 4750
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D17
@@ -4865,7 +3959,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 22600 4050 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 22600 4050 50  0001 C CNN "Digi-Key_PN"
 	1    22600 4050
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D16
@@ -4878,7 +3972,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 24300 3700 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 24300 3700 50  0001 C CNN "Digi-Key_PN"
 	1    24300 3700
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D22
@@ -4891,7 +3985,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 24300 4500 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 24300 4500 50  0001 C CNN "Digi-Key_PN"
 	1    24300 4500
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D28
@@ -4904,7 +3998,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 24350 5100 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 24350 5100 50  0001 C CNN "Digi-Key_PN"
 	1    24350 5100
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D20
@@ -4917,7 +4011,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 24700 4100 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 24700 4100 50  0001 C CNN "Digi-Key_PN"
 	1    24700 4100
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D24
@@ -4930,7 +4024,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 24700 4700 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 24700 4700 50  0001 C CNN "Digi-Key_PN"
 	1    24700 4700
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D26
@@ -4943,7 +4037,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 24000 4750 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 24000 4750 50  0001 C CNN "Digi-Key_PN"
 	1    24000 4750
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D18
@@ -4956,7 +4050,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 23950 4050 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 23950 4050 50  0001 C CNN "Digi-Key_PN"
 	1    23950 4050
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 Wire Wire Line
 	23450 4550 23350 4550
@@ -4993,101 +4087,11 @@ Wire Wire Line
 Wire Wire Line
 	23750 3900 23950 3900
 Wire Wire Line
-	25000 5250 23700 5250
-Wire Wire Line
 	23700 5250 23700 3800
 Wire Wire Line
 	23700 3800 24450 3800
 Wire Wire Line
 	24450 3800 24450 4500
-$Comp
-L power:GND #PWR060
-U 1 1 61826084
-P 22600 4350
-F 0 "#PWR060" H 22600 4100 50  0001 C CNN
-F 1 "GND" H 22605 4177 50  0000 C CNN
-F 2 "" H 22600 4350 50  0001 C CNN
-F 3 "" H 22600 4350 50  0001 C CNN
-	1    22600 4350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR064
-U 1 1 6182608E
-P 22650 5050
-F 0 "#PWR064" H 22650 4800 50  0001 C CNN
-F 1 "GND" H 22655 4877 50  0000 C CNN
-F 2 "" H 22650 5050 50  0001 C CNN
-F 3 "" H 22650 5050 50  0001 C CNN
-	1    22650 5050
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR058
-U 1 1 61826098
-P 23350 4250
-F 0 "#PWR058" H 23350 4000 50  0001 C CNN
-F 1 "GND" H 23355 4077 50  0000 C CNN
-F 2 "" H 23350 4250 50  0001 C CNN
-F 3 "" H 23350 4250 50  0001 C CNN
-	1    23350 4250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR062
-U 1 1 618260A2
-P 23350 4850
-F 0 "#PWR062" H 23350 4600 50  0001 C CNN
-F 1 "GND" H 23355 4677 50  0000 C CNN
-F 2 "" H 23350 4850 50  0001 C CNN
-F 3 "" H 23350 4850 50  0001 C CNN
-	1    23350 4850
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR061
-U 1 1 618260AC
-P 23950 4350
-F 0 "#PWR061" H 23950 4100 50  0001 C CNN
-F 1 "GND" H 23955 4177 50  0000 C CNN
-F 2 "" H 23950 4350 50  0001 C CNN
-F 3 "" H 23950 4350 50  0001 C CNN
-	1    23950 4350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR065
-U 1 1 618260B6
-P 24000 5050
-F 0 "#PWR065" H 24000 4800 50  0001 C CNN
-F 1 "GND" H 24005 4877 50  0000 C CNN
-F 2 "" H 24000 5050 50  0001 C CNN
-F 3 "" H 24000 5050 50  0001 C CNN
-	1    24000 5050
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR059
-U 1 1 618260C0
-P 24700 4250
-F 0 "#PWR059" H 24700 4000 50  0001 C CNN
-F 1 "GND" H 24705 4077 50  0000 C CNN
-F 2 "" H 24700 4250 50  0001 C CNN
-F 3 "" H 24700 4250 50  0001 C CNN
-	1    24700 4250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR063
-U 1 1 618260CA
-P 24700 4850
-F 0 "#PWR063" H 24700 4600 50  0001 C CNN
-F 1 "GND" H 24705 4677 50  0000 C CNN
-F 2 "" H 24700 4850 50  0001 C CNN
-F 3 "" H 24700 4850 50  0001 C CNN
-	1    24700 4850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	23950 4200 23950 4250
 Wire Wire Line
@@ -5131,15 +4135,9 @@ Connection ~ 22650 5000
 Wire Wire Line
 	22650 5000 22650 5050
 Wire Wire Line
-	22350 3850 23100 3850
-Wire Wire Line
 	22350 5250 22350 3850
 Wire Wire Line
-	23650 5250 22350 5250
-Wire Wire Line
 	22350 2850 22350 3550
-Wire Wire Line
-	22350 3550 23100 3550
 Wire Wire Line
 	23100 3550 23100 3700
 Wire Wire Line
@@ -5158,8 +4156,6 @@ Wire Wire Line
 	22650 2850 22650 3400
 Wire Wire Line
 	22650 3400 23500 3400
-Wire Wire Line
-	23500 3400 23500 5100
 Wire Wire Line
 	22750 2850 22750 3350
 Wire Wire Line
@@ -5200,8 +4196,6 @@ Wire Wire Line
 	23350 2850 23350 3050
 Wire Wire Line
 	23350 3050 24850 3050
-Wire Wire Line
-	24850 3050 24850 5100
 Wire Wire Line
 	23450 2850 23450 3000
 Wire Wire Line
@@ -5261,7 +4255,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 19000 8000 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 19000 8000 50  0001 C CNN "Digi-Key_PN"
 	1    19000 8000
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D49
@@ -5274,7 +4268,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 19000 8800 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 19000 8800 50  0001 C CNN "Digi-Key_PN"
 	1    19000 8800
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D61
@@ -5287,7 +4281,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 19050 9400 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 19050 9400 50  0001 C CNN "Digi-Key_PN"
 	1    19050 9400
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D43
@@ -5300,7 +4294,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 19400 8400 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 19400 8400 50  0001 C CNN "Digi-Key_PN"
 	1    19400 8400
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D53
@@ -5313,7 +4307,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 19400 9000 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 19400 9000 50  0001 C CNN "Digi-Key_PN"
 	1    19400 9000
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D55
@@ -5326,7 +4320,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 18700 9050 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 18700 9050 50  0001 C CNN "Digi-Key_PN"
 	1    18700 9050
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D41
@@ -5339,7 +4333,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 18650 8350 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 18650 8350 50  0001 C CNN "Digi-Key_PN"
 	1    18650 8350
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D38
@@ -5352,7 +4346,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 20350 8000 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 20350 8000 50  0001 C CNN "Digi-Key_PN"
 	1    20350 8000
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D50
@@ -5365,7 +4359,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 20350 8800 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 20350 8800 50  0001 C CNN "Digi-Key_PN"
 	1    20350 8800
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D62
@@ -5378,7 +4372,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 20400 9400 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 20400 9400 50  0001 C CNN "Digi-Key_PN"
 	1    20400 9400
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D44
@@ -5391,7 +4385,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 20750 8400 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 20750 8400 50  0001 C CNN "Digi-Key_PN"
 	1    20750 8400
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D54
@@ -5404,7 +4398,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 20750 9000 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 20750 9000 50  0001 C CNN "Digi-Key_PN"
 	1    20750 9000
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D56
@@ -5430,7 +4424,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 20000 8350 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 20000 8350 50  0001 C CNN "Digi-Key_PN"
 	1    20000 8350
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 Wire Wire Line
 	19500 8850 19400 8850
@@ -5467,101 +4461,11 @@ Wire Wire Line
 Wire Wire Line
 	19800 8200 20000 8200
 Wire Wire Line
-	21050 9550 19750 9550
-Wire Wire Line
 	19750 9550 19750 8100
 Wire Wire Line
 	19750 8100 20500 8100
 Wire Wire Line
 	20500 8100 20500 8800
-$Comp
-L power:GND #PWR078
-U 1 1 6285C350
-P 18650 8650
-F 0 "#PWR078" H 18650 8400 50  0001 C CNN
-F 1 "GND" H 18655 8477 50  0000 C CNN
-F 2 "" H 18650 8650 50  0001 C CNN
-F 3 "" H 18650 8650 50  0001 C CNN
-	1    18650 8650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR086
-U 1 1 6285C35A
-P 18700 9350
-F 0 "#PWR086" H 18700 9100 50  0001 C CNN
-F 1 "GND" H 18705 9177 50  0000 C CNN
-F 2 "" H 18700 9350 50  0001 C CNN
-F 3 "" H 18700 9350 50  0001 C CNN
-	1    18700 9350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR074
-U 1 1 6285C364
-P 19400 8550
-F 0 "#PWR074" H 19400 8300 50  0001 C CNN
-F 1 "GND" H 19405 8377 50  0000 C CNN
-F 2 "" H 19400 8550 50  0001 C CNN
-F 3 "" H 19400 8550 50  0001 C CNN
-	1    19400 8550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR082
-U 1 1 6285C36E
-P 19400 9150
-F 0 "#PWR082" H 19400 8900 50  0001 C CNN
-F 1 "GND" H 19405 8977 50  0000 C CNN
-F 2 "" H 19400 9150 50  0001 C CNN
-F 3 "" H 19400 9150 50  0001 C CNN
-	1    19400 9150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR079
-U 1 1 6285C378
-P 20000 8650
-F 0 "#PWR079" H 20000 8400 50  0001 C CNN
-F 1 "GND" H 20005 8477 50  0000 C CNN
-F 2 "" H 20000 8650 50  0001 C CNN
-F 3 "" H 20000 8650 50  0001 C CNN
-	1    20000 8650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR087
-U 1 1 6285C382
-P 20050 9350
-F 0 "#PWR087" H 20050 9100 50  0001 C CNN
-F 1 "GND" H 20055 9177 50  0000 C CNN
-F 2 "" H 20050 9350 50  0001 C CNN
-F 3 "" H 20050 9350 50  0001 C CNN
-	1    20050 9350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR075
-U 1 1 6285C38C
-P 20750 8550
-F 0 "#PWR075" H 20750 8300 50  0001 C CNN
-F 1 "GND" H 20755 8377 50  0000 C CNN
-F 2 "" H 20750 8550 50  0001 C CNN
-F 3 "" H 20750 8550 50  0001 C CNN
-	1    20750 8550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR083
-U 1 1 6285C396
-P 20750 9150
-F 0 "#PWR083" H 20750 8900 50  0001 C CNN
-F 1 "GND" H 20755 8977 50  0000 C CNN
-F 2 "" H 20750 9150 50  0001 C CNN
-F 3 "" H 20750 9150 50  0001 C CNN
-	1    20750 9150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	20000 8500 20000 8550
 Wire Wire Line
@@ -5605,15 +4509,9 @@ Connection ~ 18700 9300
 Wire Wire Line
 	18700 9300 18700 9350
 Wire Wire Line
-	18400 8150 19150 8150
-Wire Wire Line
 	18400 9550 18400 8150
 Wire Wire Line
-	19700 9550 18400 9550
-Wire Wire Line
 	18400 7150 18400 7850
-Wire Wire Line
-	18400 7850 19150 7850
 Wire Wire Line
 	19150 7850 19150 8000
 Wire Wire Line
@@ -5632,8 +4530,6 @@ Wire Wire Line
 	18700 7150 18700 7700
 Wire Wire Line
 	18700 7700 19550 7700
-Wire Wire Line
-	19550 7700 19550 9400
 Wire Wire Line
 	18800 7150 18800 7650
 Wire Wire Line
@@ -5674,8 +4570,6 @@ Wire Wire Line
 	19400 7150 19400 7350
 Wire Wire Line
 	19400 7350 20900 7350
-Wire Wire Line
-	20900 7350 20900 9400
 Wire Wire Line
 	19500 7150 19500 7300
 Wire Wire Line
@@ -5735,7 +4629,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 23100 8050 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 23100 8050 50  0001 C CNN "Digi-Key_PN"
 	1    23100 8050
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D51
@@ -5748,7 +4642,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 23100 8850 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 23100 8850 50  0001 C CNN "Digi-Key_PN"
 	1    23100 8850
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D63
@@ -5761,7 +4655,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 23150 9450 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 23150 9450 50  0001 C CNN "Digi-Key_PN"
 	1    23150 9450
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D47
@@ -5774,7 +4668,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 23500 8450 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 23500 8450 50  0001 C CNN "Digi-Key_PN"
 	1    23500 8450
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D57
@@ -5787,7 +4681,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 23500 9050 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 23500 9050 50  0001 C CNN "Digi-Key_PN"
 	1    23500 9050
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D59
@@ -5800,7 +4694,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 22800 9100 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 22800 9100 50  0001 C CNN "Digi-Key_PN"
 	1    22800 9100
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D45
@@ -5813,7 +4707,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 22750 8400 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 22750 8400 50  0001 C CNN "Digi-Key_PN"
 	1    22750 8400
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D40
@@ -5826,7 +4720,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 24450 8050 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 24450 8050 50  0001 C CNN "Digi-Key_PN"
 	1    24450 8050
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D52
@@ -5839,7 +4733,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 24450 8850 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 24450 8850 50  0001 C CNN "Digi-Key_PN"
 	1    24450 8850
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D64
@@ -5852,7 +4746,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 24500 9450 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 24500 9450 50  0001 C CNN "Digi-Key_PN"
 	1    24500 9450
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D48
@@ -5865,7 +4759,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 24850 8450 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 24850 8450 50  0001 C CNN "Digi-Key_PN"
 	1    24850 8450
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D58
@@ -5878,7 +4772,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 24850 9050 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 24850 9050 50  0001 C CNN "Digi-Key_PN"
 	1    24850 9050
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D60
@@ -5891,7 +4785,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 24150 9100 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 24150 9100 50  0001 C CNN "Digi-Key_PN"
 	1    24150 9100
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D46
@@ -5904,7 +4798,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 24100 8400 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 24100 8400 50  0001 C CNN "Digi-Key_PN"
 	1    24100 8400
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 Wire Wire Line
 	23600 8900 23500 8900
@@ -5941,101 +4835,11 @@ Wire Wire Line
 Wire Wire Line
 	23900 8250 24100 8250
 Wire Wire Line
-	25150 9600 23850 9600
-Wire Wire Line
 	23850 9600 23850 8150
 Wire Wire Line
 	23850 8150 24600 8150
 Wire Wire Line
 	24600 8150 24600 8850
-$Comp
-L power:GND #PWR080
-U 1 1 62D5A774
-P 22750 8700
-F 0 "#PWR080" H 22750 8450 50  0001 C CNN
-F 1 "GND" H 22755 8527 50  0000 C CNN
-F 2 "" H 22750 8700 50  0001 C CNN
-F 3 "" H 22750 8700 50  0001 C CNN
-	1    22750 8700
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR088
-U 1 1 62D5A77E
-P 22800 9400
-F 0 "#PWR088" H 22800 9150 50  0001 C CNN
-F 1 "GND" H 22805 9227 50  0000 C CNN
-F 2 "" H 22800 9400 50  0001 C CNN
-F 3 "" H 22800 9400 50  0001 C CNN
-	1    22800 9400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR076
-U 1 1 62D5A788
-P 23500 8600
-F 0 "#PWR076" H 23500 8350 50  0001 C CNN
-F 1 "GND" H 23505 8427 50  0000 C CNN
-F 2 "" H 23500 8600 50  0001 C CNN
-F 3 "" H 23500 8600 50  0001 C CNN
-	1    23500 8600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR084
-U 1 1 62D5A792
-P 23500 9200
-F 0 "#PWR084" H 23500 8950 50  0001 C CNN
-F 1 "GND" H 23505 9027 50  0000 C CNN
-F 2 "" H 23500 9200 50  0001 C CNN
-F 3 "" H 23500 9200 50  0001 C CNN
-	1    23500 9200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR081
-U 1 1 62D5A79C
-P 24100 8700
-F 0 "#PWR081" H 24100 8450 50  0001 C CNN
-F 1 "GND" H 24105 8527 50  0000 C CNN
-F 2 "" H 24100 8700 50  0001 C CNN
-F 3 "" H 24100 8700 50  0001 C CNN
-	1    24100 8700
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR089
-U 1 1 62D5A7A6
-P 24150 9400
-F 0 "#PWR089" H 24150 9150 50  0001 C CNN
-F 1 "GND" H 24155 9227 50  0000 C CNN
-F 2 "" H 24150 9400 50  0001 C CNN
-F 3 "" H 24150 9400 50  0001 C CNN
-	1    24150 9400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR077
-U 1 1 62D5A7B0
-P 24850 8600
-F 0 "#PWR077" H 24850 8350 50  0001 C CNN
-F 1 "GND" H 24855 8427 50  0000 C CNN
-F 2 "" H 24850 8600 50  0001 C CNN
-F 3 "" H 24850 8600 50  0001 C CNN
-	1    24850 8600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR085
-U 1 1 62D5A7BA
-P 24850 9200
-F 0 "#PWR085" H 24850 8950 50  0001 C CNN
-F 1 "GND" H 24855 9027 50  0000 C CNN
-F 2 "" H 24850 9200 50  0001 C CNN
-F 3 "" H 24850 9200 50  0001 C CNN
-	1    24850 9200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	24100 8550 24100 8600
 Wire Wire Line
@@ -6079,15 +4883,9 @@ Connection ~ 22800 9350
 Wire Wire Line
 	22800 9350 22800 9400
 Wire Wire Line
-	22500 8200 23250 8200
-Wire Wire Line
 	22500 9600 22500 8200
 Wire Wire Line
-	23800 9600 22500 9600
-Wire Wire Line
 	22500 7200 22500 7900
-Wire Wire Line
-	22500 7900 23250 7900
 Wire Wire Line
 	23250 7900 23250 8050
 Wire Wire Line
@@ -6106,8 +4904,6 @@ Wire Wire Line
 	22800 7200 22800 7750
 Wire Wire Line
 	22800 7750 23650 7750
-Wire Wire Line
-	23650 7750 23650 9450
 Wire Wire Line
 	22900 7200 22900 7700
 Wire Wire Line
@@ -6148,8 +4944,6 @@ Wire Wire Line
 	23500 7200 23500 7400
 Wire Wire Line
 	23500 7400 25000 7400
-Wire Wire Line
-	25000 7400 25000 9450
 Wire Wire Line
 	23600 7200 23600 7350
 Wire Wire Line
@@ -6263,7 +5057,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 17100 16650 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 17100 16650 50  0001 C CNN "Digi-Key_PN"
 	1    17100 16650
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D127
@@ -6276,7 +5070,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 17100 17200 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 17100 17200 50  0001 C CNN "Digi-Key_PN"
 	1    17100 17200
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D143
@@ -6289,7 +5083,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 17100 17800 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 17100 17800 50  0001 C CNN "Digi-Key_PN"
 	1    17100 17800
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D163
@@ -6302,7 +5096,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 17000 21450 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 17000 21450 50  0001 C CNN "Digi-Key_PN"
 	1    17000 21450
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D176
@@ -6315,139 +5109,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 17000 22050 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 17000 22050 50  0001 C CNN "Digi-Key_PN"
 	1    17000 22050
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR050
-U 1 1 660DAC5D
-P 19600 1700
-F 0 "#PWR050" H 19600 1450 50  0001 C CNN
-F 1 "GND" H 19605 1527 50  0000 C CNN
-F 2 "" H 19600 1700 50  0001 C CNN
-F 3 "" H 19600 1700 50  0001 C CNN
-	1    19600 1700
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR046
-U 1 1 660E38AF
-P 18650 1150
-F 0 "#PWR046" H 18650 900 50  0001 C CNN
-F 1 "GND" H 18655 977 50  0000 C CNN
-F 2 "" H 18650 1150 50  0001 C CNN
-F 3 "" H 18650 1150 50  0001 C CNN
-	1    18650 1150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR047
-U 1 1 66229B42
-P 20600 1150
-F 0 "#PWR047" H 20600 900 50  0001 C CNN
-F 1 "GND" H 20605 977 50  0000 C CNN
-F 2 "" H 20600 1150 50  0001 C CNN
-F 3 "" H 20600 1150 50  0001 C CNN
-	1    20600 1150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR054
-U 1 1 6636FDEE
-P 20550 2150
-F 0 "#PWR054" H 20550 1900 50  0001 C CNN
-F 1 "GND" H 20555 1977 50  0000 C CNN
-F 2 "" H 20550 2150 50  0001 C CNN
-F 3 "" H 20550 2150 50  0001 C CNN
-	1    20550 2150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR057
-U 1 1 664B6167
-P 20500 3200
-F 0 "#PWR057" H 20500 2950 50  0001 C CNN
-F 1 "GND" H 20505 3027 50  0000 C CNN
-F 2 "" H 20500 3200 50  0001 C CNN
-F 3 "" H 20500 3200 50  0001 C CNN
-	1    20500 3200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR055
-U 1 1 665FC47E
-P 19550 2750
-F 0 "#PWR055" H 19550 2500 50  0001 C CNN
-F 1 "GND" H 19555 2577 50  0000 C CNN
-F 2 "" H 19550 2750 50  0001 C CNN
-F 3 "" H 19550 2750 50  0001 C CNN
-	1    19550 2750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR056
-U 1 1 6688A855
-P 18550 3200
-F 0 "#PWR056" H 18550 2950 50  0001 C CNN
-F 1 "GND" H 18555 3027 50  0000 C CNN
-F 2 "" H 18550 3200 50  0001 C CNN
-F 3 "" H 18550 3200 50  0001 C CNN
-	1    18550 3200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR053
-U 1 1 669D0DC1
-P 18600 2150
-F 0 "#PWR053" H 18600 1900 50  0001 C CNN
-F 1 "GND" H 18605 1977 50  0000 C CNN
-F 2 "" H 18600 2150 50  0001 C CNN
-F 3 "" H 18600 2150 50  0001 C CNN
-	1    18600 2150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR048
-U 1 1 66D9DCAB
-P 22950 1150
-F 0 "#PWR048" H 22950 900 50  0001 C CNN
-F 1 "GND" H 22955 977 50  0000 C CNN
-F 2 "" H 22950 1150 50  0001 C CNN
-F 3 "" H 22950 1150 50  0001 C CNN
-	1    22950 1150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR049
-U 1 1 66EE12DB
-P 24600 1150
-F 0 "#PWR049" H 24600 900 50  0001 C CNN
-F 1 "GND" H 24605 977 50  0000 C CNN
-F 2 "" H 24600 1150 50  0001 C CNN
-F 3 "" H 24600 1150 50  0001 C CNN
-	1    24600 1150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR051
-U 1 1 6702493E
-P 22950 1800
-F 0 "#PWR051" H 22950 1550 50  0001 C CNN
-F 1 "GND" H 22955 1627 50  0000 C CNN
-F 2 "" H 22950 1800 50  0001 C CNN
-F 3 "" H 22950 1800 50  0001 C CNN
-	1    22950 1800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR052
-U 1 1 672AD23A
-P 24600 1800
-F 0 "#PWR052" H 24600 1550 50  0001 C CNN
-F 1 "GND" H 24605 1627 50  0000 C CNN
-F 2 "" H 24600 1800 50  0001 C CNN
-F 3 "" H 24600 1800 50  0001 C CNN
-	1    24600 1800
-	1    0    0    -1  
+	0    1    1    0   
 $EndComp
 Entry Wire Line
 	23750 700  23850 800 
@@ -6486,7 +5148,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 18700 6450 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 18700 6450 50  0001 C CNN "Digi-Key_PN"
 	1    18700 6450
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D29
@@ -6499,7 +5161,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 18700 5800 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 18700 5800 50  0001 C CNN "Digi-Key_PN"
 	1    18700 5800
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D34
@@ -6512,7 +5174,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 20350 6450 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 20350 6450 50  0001 C CNN "Digi-Key_PN"
 	1    20350 6450
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D30
@@ -6525,51 +5187,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 20350 5800 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 20350 5800 50  0001 C CNN "Digi-Key_PN"
 	1    20350 5800
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR066
-U 1 1 6809810D
-P 18700 5950
-F 0 "#PWR066" H 18700 5700 50  0001 C CNN
-F 1 "GND" H 18705 5777 50  0000 C CNN
-F 2 "" H 18700 5950 50  0001 C CNN
-F 3 "" H 18700 5950 50  0001 C CNN
-	1    18700 5950
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR067
-U 1 1 68098117
-P 20350 5950
-F 0 "#PWR067" H 20350 5700 50  0001 C CNN
-F 1 "GND" H 20355 5777 50  0000 C CNN
-F 2 "" H 20350 5950 50  0001 C CNN
-F 3 "" H 20350 5950 50  0001 C CNN
-	1    20350 5950
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR070
-U 1 1 68098121
-P 18700 6600
-F 0 "#PWR070" H 18700 6350 50  0001 C CNN
-F 1 "GND" H 18705 6427 50  0000 C CNN
-F 2 "" H 18700 6600 50  0001 C CNN
-F 3 "" H 18700 6600 50  0001 C CNN
-	1    18700 6600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR071
-U 1 1 6809812B
-P 20350 6600
-F 0 "#PWR071" H 20350 6350 50  0001 C CNN
-F 1 "GND" H 20355 6427 50  0000 C CNN
-F 2 "" H 20350 6600 50  0001 C CNN
-F 3 "" H 20350 6600 50  0001 C CNN
-	1    20350 6600
-	1    0    0    -1  
+	0    1    1    0   
 $EndComp
 Entry Wire Line
 	19500 5500 19600 5600
@@ -6608,7 +5226,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 22850 6650 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 22850 6650 50  0001 C CNN "Digi-Key_PN"
 	1    22850 6650
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D31
@@ -6621,7 +5239,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 22850 6000 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 22850 6000 50  0001 C CNN "Digi-Key_PN"
 	1    22850 6000
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D36
@@ -6634,7 +5252,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 24500 6650 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 24500 6650 50  0001 C CNN "Digi-Key_PN"
 	1    24500 6650
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D32
@@ -6647,51 +5265,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 24500 6000 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 24500 6000 50  0001 C CNN "Digi-Key_PN"
 	1    24500 6000
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR068
-U 1 1 6848A440
-P 22850 6150
-F 0 "#PWR068" H 22850 5900 50  0001 C CNN
-F 1 "GND" H 22855 5977 50  0000 C CNN
-F 2 "" H 22850 6150 50  0001 C CNN
-F 3 "" H 22850 6150 50  0001 C CNN
-	1    22850 6150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR069
-U 1 1 6848A44A
-P 24500 6150
-F 0 "#PWR069" H 24500 5900 50  0001 C CNN
-F 1 "GND" H 24505 5977 50  0000 C CNN
-F 2 "" H 24500 6150 50  0001 C CNN
-F 3 "" H 24500 6150 50  0001 C CNN
-	1    24500 6150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR072
-U 1 1 6848A454
-P 22850 6800
-F 0 "#PWR072" H 22850 6550 50  0001 C CNN
-F 1 "GND" H 22855 6627 50  0000 C CNN
-F 2 "" H 22850 6800 50  0001 C CNN
-F 3 "" H 22850 6800 50  0001 C CNN
-	1    22850 6800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR073
-U 1 1 6848A45E
-P 24500 6800
-F 0 "#PWR073" H 24500 6550 50  0001 C CNN
-F 1 "GND" H 24505 6627 50  0000 C CNN
-F 2 "" H 24500 6800 50  0001 C CNN
-F 3 "" H 24500 6800 50  0001 C CNN
-	1    24500 6800
-	1    0    0    -1  
+	0    1    1    0   
 $EndComp
 Entry Wire Line
 	23650 5700 23750 5800
@@ -6732,7 +5306,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 20100 10050 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 20100 10050 50  0001 C CNN "Digi-Key_PN"
 	1    20100 10050
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D66
@@ -6745,7 +5319,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 21400 10050 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 21400 10050 50  0001 C CNN "Digi-Key_PN"
 	1    21400 10050
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D67
@@ -6758,7 +5332,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 22600 10050 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 22600 10050 50  0001 C CNN "Digi-Key_PN"
 	1    22600 10050
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D68
@@ -6771,51 +5345,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 23650 10050 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 23650 10050 50  0001 C CNN "Digi-Key_PN"
 	1    23650 10050
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR090
-U 1 1 69AF3D92
-P 20100 10200
-F 0 "#PWR090" H 20100 9950 50  0001 C CNN
-F 1 "GND" H 20105 10027 50  0000 C CNN
-F 2 "" H 20100 10200 50  0001 C CNN
-F 3 "" H 20100 10200 50  0001 C CNN
-	1    20100 10200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR091
-U 1 1 69DA1DA6
-P 21400 10200
-F 0 "#PWR091" H 21400 9950 50  0001 C CNN
-F 1 "GND" H 21405 10027 50  0000 C CNN
-F 2 "" H 21400 10200 50  0001 C CNN
-F 3 "" H 21400 10200 50  0001 C CNN
-	1    21400 10200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR092
-U 1 1 69EF3290
-P 22600 10200
-F 0 "#PWR092" H 22600 9950 50  0001 C CNN
-F 1 "GND" H 22605 10027 50  0000 C CNN
-F 2 "" H 22600 10200 50  0001 C CNN
-F 3 "" H 22600 10200 50  0001 C CNN
-	1    22600 10200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR093
-U 1 1 6A044997
-P 23650 10200
-F 0 "#PWR093" H 23650 9950 50  0001 C CNN
-F 1 "GND" H 23655 10027 50  0000 C CNN
-F 2 "" H 23650 10200 50  0001 C CNN
-F 3 "" H 23650 10200 50  0001 C CNN
-	1    23650 10200
-	1    0    0    -1  
+	0    1    1    0   
 $EndComp
 Entry Wire Line
 	21950 9750 22050 9850
@@ -6854,7 +5384,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 19800 14550 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 19800 14550 50  0001 C CNN "Digi-Key_PN"
 	1    19800 14550
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D108
@@ -6867,7 +5397,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 21100 14550 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 21100 14550 50  0001 C CNN "Digi-Key_PN"
 	1    21100 14550
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D109
@@ -6880,7 +5410,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 22300 14550 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 22300 14550 50  0001 C CNN "Digi-Key_PN"
 	1    22300 14550
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D110
@@ -6893,51 +5423,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 23350 14550 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 23350 14550 50  0001 C CNN "Digi-Key_PN"
 	1    23350 14550
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR0117
-U 1 1 6A9899E2
-P 19800 14700
-F 0 "#PWR0117" H 19800 14450 50  0001 C CNN
-F 1 "GND" H 19805 14527 50  0000 C CNN
-F 2 "" H 19800 14700 50  0001 C CNN
-F 3 "" H 19800 14700 50  0001 C CNN
-	1    19800 14700
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0118
-U 1 1 6A9899EC
-P 21100 14700
-F 0 "#PWR0118" H 21100 14450 50  0001 C CNN
-F 1 "GND" H 21105 14527 50  0000 C CNN
-F 2 "" H 21100 14700 50  0001 C CNN
-F 3 "" H 21100 14700 50  0001 C CNN
-	1    21100 14700
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0119
-U 1 1 6A9899F6
-P 22300 14700
-F 0 "#PWR0119" H 22300 14450 50  0001 C CNN
-F 1 "GND" H 22305 14527 50  0000 C CNN
-F 2 "" H 22300 14700 50  0001 C CNN
-F 3 "" H 22300 14700 50  0001 C CNN
-	1    22300 14700
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0120
-U 1 1 6A989A00
-P 23350 14700
-F 0 "#PWR0120" H 23350 14450 50  0001 C CNN
-F 1 "GND" H 23355 14527 50  0000 C CNN
-F 2 "" H 23350 14700 50  0001 C CNN
-F 3 "" H 23350 14700 50  0001 C CNN
-	1    23350 14700
-	1    0    0    -1  
+	0    1    1    0   
 $EndComp
 Entry Wire Line
 	21650 14250 21750 14350
@@ -6976,7 +5462,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 19750 19000 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 19750 19000 50  0001 C CNN "Digi-Key_PN"
 	1    19750 19000
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D150
@@ -6989,7 +5475,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 21050 19000 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 21050 19000 50  0001 C CNN "Digi-Key_PN"
 	1    21050 19000
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D151
@@ -7002,7 +5488,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 22250 19000 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 22250 19000 50  0001 C CNN "Digi-Key_PN"
 	1    22250 19000
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D152
@@ -7015,51 +5501,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 23300 19000 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 23300 19000 50  0001 C CNN "Digi-Key_PN"
 	1    23300 19000
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR0144
-U 1 1 6AAE9C80
-P 19750 19150
-F 0 "#PWR0144" H 19750 18900 50  0001 C CNN
-F 1 "GND" H 19755 18977 50  0000 C CNN
-F 2 "" H 19750 19150 50  0001 C CNN
-F 3 "" H 19750 19150 50  0001 C CNN
-	1    19750 19150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0145
-U 1 1 6AAE9C8A
-P 21050 19150
-F 0 "#PWR0145" H 21050 18900 50  0001 C CNN
-F 1 "GND" H 21055 18977 50  0000 C CNN
-F 2 "" H 21050 19150 50  0001 C CNN
-F 3 "" H 21050 19150 50  0001 C CNN
-	1    21050 19150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0146
-U 1 1 6AAE9C94
-P 22250 19150
-F 0 "#PWR0146" H 22250 18900 50  0001 C CNN
-F 1 "GND" H 22255 18977 50  0000 C CNN
-F 2 "" H 22250 19150 50  0001 C CNN
-F 3 "" H 22250 19150 50  0001 C CNN
-	1    22250 19150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0147
-U 1 1 6AAE9C9E
-P 23300 19150
-F 0 "#PWR0147" H 23300 18900 50  0001 C CNN
-F 1 "GND" H 23305 18977 50  0000 C CNN
-F 2 "" H 23300 19150 50  0001 C CNN
-F 3 "" H 23300 19150 50  0001 C CNN
-	1    23300 19150
-	1    0    0    -1  
+	0    1    1    0   
 $EndComp
 Entry Wire Line
 	21600 18700 21700 18800
@@ -7351,94 +5793,6 @@ Entry Wire Line
 	8700 11750 8600 11850
 Entry Wire Line
 	8700 11850 8600 11950
-$Comp
-L power:GND #PWR094
-U 1 1 73445000
-P 17150 12500
-F 0 "#PWR094" H 17150 12250 50  0001 C CNN
-F 1 "GND" H 17155 12327 50  0000 C CNN
-F 2 "" H 17150 12500 50  0001 C CNN
-F 3 "" H 17150 12500 50  0001 C CNN
-	1    17150 12500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0105
-U 1 1 735DE111
-P 17150 13050
-F 0 "#PWR0105" H 17150 12800 50  0001 C CNN
-F 1 "GND" H 17155 12877 50  0000 C CNN
-F 2 "" H 17150 13050 50  0001 C CNN
-F 3 "" H 17150 13050 50  0001 C CNN
-	1    17150 13050
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0116
-U 1 1 7377724A
-P 17150 13650
-F 0 "#PWR0116" H 17150 13400 50  0001 C CNN
-F 1 "GND" H 17155 13477 50  0000 C CNN
-F 2 "" H 17150 13650 50  0001 C CNN
-F 3 "" H 17150 13650 50  0001 C CNN
-	1    17150 13650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0121
-U 1 1 739104DC
-P 17100 16800
-F 0 "#PWR0121" H 17100 16550 50  0001 C CNN
-F 1 "GND" H 17105 16627 50  0000 C CNN
-F 2 "" H 17100 16800 50  0001 C CNN
-F 3 "" H 17100 16800 50  0001 C CNN
-	1    17100 16800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0130
-U 1 1 73AA97A8
-P 17100 17350
-F 0 "#PWR0130" H 17100 17100 50  0001 C CNN
-F 1 "GND" H 17105 17177 50  0000 C CNN
-F 2 "" H 17100 17350 50  0001 C CNN
-F 3 "" H 17100 17350 50  0001 C CNN
-	1    17100 17350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0138
-U 1 1 73C42A47
-P 17100 17950
-F 0 "#PWR0138" H 17100 17700 50  0001 C CNN
-F 1 "GND" H 17105 17777 50  0000 C CNN
-F 2 "" H 17100 17950 50  0001 C CNN
-F 3 "" H 17100 17950 50  0001 C CNN
-	1    17100 17950
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0150
-U 1 1 73F74F4A
-P 17000 21600
-F 0 "#PWR0150" H 17000 21350 50  0001 C CNN
-F 1 "GND" H 17005 21427 50  0000 C CNN
-F 2 "" H 17000 21600 50  0001 C CNN
-F 3 "" H 17000 21600 50  0001 C CNN
-	1    17000 21600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0161
-U 1 1 7410E1C0
-P 17000 22200
-F 0 "#PWR0161" H 17000 21950 50  0001 C CNN
-F 1 "GND" H 17005 22027 50  0000 C CNN
-F 2 "" H 17000 22200 50  0001 C CNN
-F 3 "" H 17000 22200 50  0001 C CNN
-	1    17000 22200
-	1    0    0    -1  
-$EndComp
 Text GLabel 17650 20550 2    50   Input ~ 0
 scbus[0.2]
 Entry Wire Line
@@ -7485,8 +5839,6 @@ Wire Wire Line
 	17150 12200 17450 12200
 Wire Wire Line
 	17450 12300 17300 12300
-Wire Wire Line
-	17300 12300 17300 12750
 Wire Wire Line
 	17300 12750 17150 12750
 Wire Wire Line
@@ -7648,10 +6000,6 @@ F 3 "" H 6700 8250 50  0001 C CNN
 	1    6700 8250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9950 2250 9950 3000
-Wire Wire Line
-	8850 2250 9950 2250
 Wire Wire Line
 	12200 2200 12200 2950
 Wire Wire Line
@@ -8810,45 +7158,6 @@ Wire Wire Line
 NoConn ~ 2000 1200
 NoConn ~ 2000 1400
 $Comp
-L Device:D_Schottky D192
-U 1 1 603E3602
-P 1750 2450
-F 0 "D192" V 1704 2530 50  0000 L CNN
-F 1 "B0540W" V 1795 2530 50  0000 L CNN
-F 2 "Diode_SMD:D_SOD-123F" H 1750 2450 50  0001 C CNN
-F 3 "~" H 1750 2450 50  0001 C CNN
-F 4 "DIODE SCHOTTKY 40V 500MA SOD123" H 1750 2450 50  0001 C CNN "Description"
-	1    1750 2450
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:D_Schottky D191
-U 1 1 615D0A98
-P 1100 2450
-F 0 "D191" V 1054 2530 50  0000 L CNN
-F 1 "B0540W" V 1145 2530 50  0000 L CNN
-F 2 "Diode_SMD:D_SOD-123F" H 1100 2450 50  0001 C CNN
-F 3 "~" H 1100 2450 50  0001 C CNN
-F 4 "DIODE SCHOTTKY 40V 500MA SOD123" H 1100 2450 50  0001 C CNN "Description"
-	1    1100 2450
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	1750 2750 1100 2750
-Wire Wire Line
-	1100 2750 1100 2600
-$Comp
-L power:GND #PWR0148
-U 1 1 73DDBC18
-P 17000 21050
-F 0 "#PWR0148" H 17000 20800 50  0001 C CNN
-F 1 "GND" H 17005 20877 50  0000 C CNN
-F 2 "" H 17000 21050 50  0001 C CNN
-F 3 "" H 17000 21050 50  0001 C CNN
-	1    17000 21050
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:LED D153
 U 1 1 659362F7
 P 17000 20900
@@ -8859,7 +7168,7 @@ F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S8
 F 4 "LED GREEN CLEAR 0805 SMD" H 17000 20900 50  0001 C CNN "Description"
 F 5 "	1830-1079-1-ND" H 17000 20900 50  0001 C CNN "Digi-Key_PN"
 	1    17000 20900
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR0188
@@ -9102,87 +7411,28 @@ F 10 "	WM9734CT-ND" H 2700 5950 50  0001 C CNN "Digi-Key_PN"
 	1    2700 5950
 	-1   0    0    1   
 $EndComp
-$Comp
-L Device:R R11
-U 1 1 614CD885
-P 6150 2700
-F 0 "R11" V 5943 2700 50  0000 C CNN
-F 1 "4.7K" V 6034 2700 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6080 2700 50  0001 C CNN
-F 3 "~" H 6150 2700 50  0001 C CNN
-F 4 "RES SMD 4.7K OHM 5% 1/10W 0603	" H 6150 2700 50  0001 C CNN "Description"
-F 5 "	541-4.7KGCT-ND" H 6150 2700 50  0001 C CNN "Digi-Key_PN"
-	1    6150 2700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	11450 3550 11450 3150
-$Comp
-L Device:R R3
-U 1 1 5FFFAD8F
-P 11450 2850
-F 0 "R3" V 11243 2850 50  0000 C CNN
-F 1 "4.7K" V 11334 2850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 11380 2850 50  0001 C CNN
-F 3 "~" H 11450 2850 50  0001 C CNN
-F 4 "RES SMD 4.7K OHM 5% 1/10W 0603	" H 11450 2850 50  0001 C CNN "Description"
-F 5 "	541-4.7KGCT-ND" H 11450 2850 50  0001 C CNN "Digi-Key_PN"
-	1    11450 2850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	11700 3150 11450 3150
 Connection ~ 11450 3150
 Wire Wire Line
-	11450 3150 11450 3000
-Wire Wire Line
 	14250 3200 14000 3200
 Connection ~ 14000 3200
 Wire Wire Line
-	14000 3200 14000 2950
-Wire Wire Line
 	9450 3200 9200 3200
-Wire Wire Line
-	9200 2950 9200 3200
 Connection ~ 9200 3200
 Wire Wire Line
 	9200 3200 9200 3500
 Wire Wire Line
 	6700 3150 6150 3150
 Wire Wire Line
-	6150 3150 6150 2850
-Wire Wire Line
 	6500 2500 6150 2500
-Wire Wire Line
-	6150 2500 6150 2550
 Wire Wire Line
 	9650 8500 9400 8500
 Connection ~ 9400 8500
 Wire Wire Line
-	9400 8500 9400 8250
-$Comp
-L Device:R R12
-U 1 1 62D59537
-P 6400 8100
-F 0 "R12" V 6193 8100 50  0000 C CNN
-F 1 "4.7K" V 6284 8100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6330 8100 50  0001 C CNN
-F 3 "~" H 6400 8100 50  0001 C CNN
-F 4 "RES SMD 4.7K OHM 5% 1/10W 0603	" H 6400 8100 50  0001 C CNN "Description"
-F 5 "	541-4.7KGCT-ND" H 6400 8100 50  0001 C CNN "Digi-Key_PN"
-	1    6400 8100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6700 7950 6400 7950
-Wire Wire Line
 	6850 8550 6400 8550
-Wire Wire Line
-	6400 8550 6400 8250
-Wire Wire Line
-	3550 4650 1900 4650
-Wire Wire Line
-	3550 4750 1900 4750
 Text Label 1900 4750 0    50   ~ 0
 3SCL
 Text Label 1900 4650 0    50   ~ 0
@@ -9200,9 +7450,9 @@ Wire Wire Line
 Wire Wire Line
 	2200 8750 1900 8750
 Text Label 1900 8750 0    50   ~ 0
-3SCL
-Text Label 1900 8850 0    50   ~ 0
 3SDA
+Text Label 1900 8850 0    50   ~ 0
+3SCL
 Entry Wire Line
 	1800 9150 1900 9250
 Text Label 1900 9250 0    50   ~ 0
@@ -9211,7 +7461,6 @@ Entry Wire Line
 	1800 4350 1900 4450
 Text Label 1900 4450 0    50   ~ 0
 BRESET
-NoConn ~ 3550 3850
 NoConn ~ 3550 3950
 Entry Wire Line
 	3950 8750 3850 8850
@@ -9450,7 +7699,7 @@ Wire Wire Line
 Wire Wire Line
 	3050 7150 3550 7150
 Connection ~ 2750 7650
-Text Notes 1250 4050 0    100  ~ 20
+Text Notes 1000 4100 0    100  ~ 20
 Main I2C Bus
 Text Notes 4850 7950 0    100  ~ 20
 I2C Bus 0
@@ -9459,11 +7708,7 @@ I2C Bus 1
 Wire Wire Line
 	1900 9250 2200 9250
 Wire Wire Line
-	3550 4050 3000 4050
-Wire Wire Line
-	3000 4050 3000 4450
-Wire Wire Line
-	1900 4450 3000 4450
+	1900 4450 2450 4450
 Wire Wire Line
 	3300 8250 3300 8300
 $Comp
@@ -9490,17 +7735,6 @@ F 3 "" H 3400 9800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR0172
-U 1 1 60548F74
-P 1100 2300
-F 0 "#PWR0172" H 1100 2150 50  0001 C CNN
-F 1 "VCC" H 1115 2473 50  0000 C CNN
-F 2 "" H 1100 2300 50  0001 C CNN
-F 3 "" H 1100 2300 50  0001 C CNN
-	1    1100 2300
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:VCC #PWR0180
 U 1 1 60B92E3B
 P 6500 2200
@@ -9509,17 +7743,6 @@ F 1 "VCC" H 6515 2373 50  0000 C CNN
 F 2 "" H 6500 2200 50  0001 C CNN
 F 3 "" H 6500 2200 50  0001 C CNN
 	1    6500 2200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR0181
-U 1 1 60DA5A28
-P 8850 1950
-F 0 "#PWR0181" H 8850 1800 50  0001 C CNN
-F 1 "VCC" H 8865 2123 50  0000 C CNN
-F 2 "" H 8850 1950 50  0001 C CNN
-F 3 "" H 8850 1950 50  0001 C CNN
-	1    8850 1950
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -9547,8 +7770,7 @@ $EndComp
 Wire Wire Line
 	6500 2200 6500 2500
 Wire Wire Line
-	8850 1950 8850 2250
-Connection ~ 8850 2250
+	8850 1950 8850 2200
 Wire Wire Line
 	11100 1900 11100 2200
 Connection ~ 11100 2200
@@ -9588,8 +7810,6 @@ F 3 "" H 14000 2600 50  0001 C CNN
 	1    14000 2600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	14000 2600 14000 2650
 $Comp
 L power:VCC #PWR0195
 U 1 1 6249408F
@@ -9637,8 +7857,6 @@ $EndComp
 Connection ~ 9600 7900
 Wire Wire Line
 	9600 7900 9400 7900
-Wire Wire Line
-	9400 7900 9400 7950
 $Comp
 L power:VCC #PWR0199
 U 1 1 6312567F
@@ -9661,8 +7879,6 @@ Wire Wire Line
 Wire Wire Line
 	2050 9600 2050 9850
 NoConn ~ 2200 8950
-NoConn ~ 3150 9550
-NoConn ~ 3150 9050
 Wire Bus Line
 	3950 8000 5700 8000
 Wire Wire Line
@@ -9697,24 +7913,1869 @@ F 3 "~" H 27650 22350 50  0001 C CNN
 	1    27650 22350
 	1    0    0    -1  
 $EndComp
-Wire Bus Line
-	4800 8200 4800 9450
-Wire Bus Line
-	8850 3100 8850 7400
-Wire Bus Line
-	13650 3100 13650 7400
-Wire Bus Line
-	11100 3100 11100 7400
-Wire Bus Line
-	5700 3050 5700 7400
-Wire Bus Line
-	8800 7600 8800 8850
-Wire Bus Line
-	6000 8200 6000 8900
+$Comp
+L project-symbols:TCA9543ADR U9
+U 1 1 60BB712F
+P 2650 9150
+F 0 "U9" H 2750 9900 50  0000 C CNN
+F 1 "TCA9543ADR" H 2300 9900 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2750 8400 50  0001 L BNN
+F 3 "" H 2850 8500 50  0001 L BNN
+	1    2650 9150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R14
+U 1 1 611BC4C2
+P 2800 4250
+F 0 "R14" V 2593 4250 50  0000 C CNN
+F 1 "1K" V 2684 4250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2730 4250 50  0001 C CNN
+F 3 "~" H 2800 4250 50  0001 C CNN
+F 4 "RES SMD 1K OHM 5% 1/10W 0603" H 2800 4250 50  0001 C CNN "Description"
+F 5 "	541-4.7KGCT-ND" H 2800 4250 50  0001 C CNN "Digi-Key_PN"
+	1    2800 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R13
+U 1 1 611C165B
+P 2450 4250
+F 0 "R13" V 2243 4250 50  0000 C CNN
+F 1 "0K" V 2334 4250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2380 4250 50  0001 C CNN
+F 3 "~" H 2450 4250 50  0001 C CNN
+F 4 "RES SMD 1K OHM 5% 1/10W 0603" H 2450 4250 50  0001 C CNN "Description"
+F 5 "	541-4.7KGCT-ND" H 2450 4250 50  0001 C CNN "Digi-Key_PN"
+	1    2450 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR01
+U 1 1 611D6AEB
+P 2800 3900
+F 0 "#PWR01" H 2800 3750 50  0001 C CNN
+F 1 "+3V3" H 2815 4073 50  0000 C CNN
+F 2 "" H 2800 3900 50  0001 C CNN
+F 3 "" H 2800 3900 50  0001 C CNN
+	1    2800 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 4400 2450 4450
+Connection ~ 2450 4450
+Wire Wire Line
+	2450 4450 3300 4450
+Connection ~ 4150 3350
+Wire Wire Line
+	4150 2750 4150 3350
+$Comp
+L power:VCC #PWR0172
+U 1 1 60548F74
+P 1100 2300
+F 0 "#PWR0172" H 1100 2150 50  0001 C CNN
+F 1 "VCC" H 1115 2473 50  0000 C CNN
+F 2 "" H 1100 2300 50  0001 C CNN
+F 3 "" H 1100 2300 50  0001 C CNN
+	1    1100 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 2750 1100 2600
+Wire Wire Line
+	1750 2750 1100 2750
+$Comp
+L Device:D_Schottky D191
+U 1 1 615D0A98
+P 1100 2450
+F 0 "D191" V 1054 2530 50  0000 L CNN
+F 1 "B0540W" V 1145 2530 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123F" H 1100 2450 50  0001 C CNN
+F 3 "~" H 1100 2450 50  0001 C CNN
+F 4 "DIODE SCHOTTKY 40V 500MA SOD123" H 1100 2450 50  0001 C CNN "Description"
+	1    1100 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Schottky D192
+U 1 1 603E3602
+P 1750 2450
+F 0 "D192" V 1704 2530 50  0000 L CNN
+F 1 "B0540W" V 1795 2530 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123F" H 1750 2450 50  0001 C CNN
+F 3 "~" H 1750 2450 50  0001 C CNN
+F 4 "DIODE SCHOTTKY 40V 500MA SOD123" H 1750 2450 50  0001 C CNN "Description"
+	1    1750 2450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2350 3150 2350 3350
+$Comp
+L power:GND #PWR015
+U 1 1 6001EAA5
+P 2350 3350
+F 0 "#PWR015" H 2350 3100 50  0001 C CNN
+F 1 "GND" H 2355 3177 50  0000 C CNN
+F 2 "" H 2350 3350 50  0001 C CNN
+F 3 "" H 2350 3350 50  0001 C CNN
+	1    2350 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR016
+U 1 1 60012925
+P 2950 3350
+F 0 "#PWR016" H 2950 3100 50  0001 C CNN
+F 1 "GND" H 2955 3177 50  0000 C CNN
+F 2 "" H 2950 3350 50  0001 C CNN
+F 3 "" H 2950 3350 50  0001 C CNN
+	1    2950 3350
+	1    0    0    -1  
+$EndComp
+Connection ~ 2950 2750
+$Comp
+L Device:R R4
+U 1 1 60004567
+P 2950 2900
+F 0 "R4" V 2743 2900 50  0000 C CNN
+F 1 "1.5K" V 2834 2900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2880 2900 50  0001 C CNN
+F 3 "~" H 2950 2900 50  0001 C CNN
+F 4 "RES SMD 1.5K OHM 1% 1/10W 0603	" H 2950 2900 50  0001 C CNN "Description"
+F 5 "541-1781-1-ND" H 2950 2900 50  0001 C CNN "Digi-Key_PN"
+	1    2950 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 600B7B63
+P 2950 3200
+F 0 "D1" H 2943 3417 50  0000 C CNN
+F 1 "PWR LED" H 2943 3326 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 2950 3200 50  0001 C CNN
+F 3 "http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S85AT%20Series_V1.1.pdf" H 2950 3200 50  0001 C CNN
+F 4 "LTST-C190GKT ED GREEN CLEAR CHIP SMD" H 2950 3200 50  0001 C CNN "Description"
+	1    2950 3200
+	0    -1   -1   0   
+$EndComp
+Connection ~ 1750 2750
+Wire Wire Line
+	1750 2850 1750 2750
+Wire Wire Line
+	2050 2850 1750 2850
+Wire Wire Line
+	2950 2750 2650 2750
+$Comp
+L power:+3V3 #PWR012
+U 1 1 5FF472F3
+P 2950 2750
+F 0 "#PWR012" H 2950 2600 50  0001 C CNN
+F 1 "+3V3" H 2965 2923 50  0000 C CNN
+F 2 "" H 2950 2750 50  0001 C CNN
+F 3 "" H 2950 2750 50  0001 C CNN
+	1    2950 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 2750 1750 2600
+Wire Wire Line
+	2050 2750 1750 2750
+$Comp
+L power:VBUS #PWR08
+U 1 1 5FF45D5E
+P 1750 2300
+F 0 "#PWR08" H 1750 2150 50  0001 C CNN
+F 1 "VBUS" H 1765 2473 50  0000 C CNN
+F 2 "" H 1750 2300 50  0001 C CNN
+F 3 "" H 1750 2300 50  0001 C CNN
+	1    1750 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C5
+U 1 1 5FF3D1F2
+P 3300 3050
+F 0 "C5" H 3392 3096 50  0000 L CNN
+F 1 "10 uF" H 3392 3005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3300 3050 50  0001 C CNN
+F 3 "~" H 3300 3050 50  0001 C CNN
+F 4 "CAP CER 10UF 25V X5R 0603" H 3300 3050 50  0001 C CNN "Description"
+F 5 "	311-3494-1-ND" H 3300 3050 50  0001 C CNN "Digi-Key_PN"
+	1    3300 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR014
+U 1 1 5FF397FB
+P 3300 3150
+F 0 "#PWR014" H 3300 2900 50  0001 C CNN
+F 1 "GND" H 3305 2977 50  0000 C CNN
+F 2 "" H 3300 3150 50  0001 C CNN
+F 3 "" H 3300 3150 50  0001 C CNN
+	1    3300 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:AP2204K-3.3 U1
+U 1 1 5FF14918
+P 2350 2850
+F 0 "U1" H 2350 3192 50  0000 C CNN
+F 1 "AP2204K-3.3" H 2350 3101 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 2350 3175 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/AP2204.pdf" H 2350 2950 50  0001 C CNN
+F 4 "IC REG LINEAR 3.3V 150MA SOT23-5	" H 2350 2850 50  0001 C CNN "Description"
+F 5 "	AP2204K-3.3TRG1DICT-ND" H 2350 2850 50  0001 C CNN "Digi-Key_PN"
+	1    2350 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 3850 3300 4450
+NoConn ~ 3550 4050
+Text Notes 2200 4150 0    50   ~ 0
+DNP
+Wire Wire Line
+	3300 3850 3550 3850
+$Comp
+L Device:R R21
+U 1 1 611B6491
+P 3150 4250
+F 0 "R21" V 2943 4250 50  0000 C CNN
+F 1 "1K" V 3034 4250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3080 4250 50  0001 C CNN
+F 3 "~" H 3150 4250 50  0001 C CNN
+F 4 "RES SMD 1K OHM 5% 1/10W 0603" H 3150 4250 50  0001 C CNN "Description"
+F 5 "	541-4.7KGCT-ND" H 3150 4250 50  0001 C CNN "Digi-Key_PN"
+	1    3150 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 4750 3150 4750
+Wire Wire Line
+	1900 4650 2800 4650
+Wire Wire Line
+	2800 4400 2800 4650
+Connection ~ 2800 4650
+Wire Wire Line
+	2800 4650 3550 4650
+Wire Wire Line
+	3150 4400 3150 4750
+Connection ~ 3150 4750
+Wire Wire Line
+	3150 4750 3550 4750
+Wire Wire Line
+	3150 4100 3150 3950
+Wire Wire Line
+	3150 3950 2800 3950
+Wire Wire Line
+	2450 3950 2450 4100
+Wire Wire Line
+	2800 4100 2800 3950
+Connection ~ 2800 3950
+Wire Wire Line
+	2800 3950 2450 3950
+Wire Wire Line
+	2800 3900 2800 3950
+Wire Wire Line
+	2950 2750 3300 2750
+Wire Wire Line
+	3300 2950 3300 2750
+Connection ~ 3300 2750
+Wire Wire Line
+	3300 2750 4150 2750
+$Comp
+L Device:R R22
+U 1 1 6125DFFA
+P 4250 10050
+F 0 "R22" V 4043 10050 50  0000 C CNN
+F 1 "1K" V 4134 10050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4180 10050 50  0001 C CNN
+F 3 "~" H 4250 10050 50  0001 C CNN
+F 4 "RES SMD 1K OHM 5% 1/10W 0603" H 4250 10050 50  0001 C CNN "Description"
+F 5 "	541-4.7KGCT-ND" H 4250 10050 50  0001 C CNN "Digi-Key_PN"
+	1    4250 10050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R23
+U 1 1 61260150
+P 4550 10050
+F 0 "R23" V 4343 10050 50  0000 C CNN
+F 1 "1K" V 4434 10050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4480 10050 50  0001 C CNN
+F 3 "~" H 4550 10050 50  0001 C CNN
+F 4 "RES SMD 1K OHM 5% 1/10W 0603" H 4550 10050 50  0001 C CNN "Description"
+F 5 "	541-4.7KGCT-ND" H 4550 10050 50  0001 C CNN "Digi-Key_PN"
+	1    4550 10050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 9900 4250 9900
+Connection ~ 4250 9900
+$Comp
+L power:VCC #PWR02
+U 1 1 6126015D
+P 4250 9750
+F 0 "#PWR02" H 4250 9600 50  0001 C CNN
+F 1 "VCC" H 4265 9923 50  0000 C CNN
+F 2 "" H 4250 9750 50  0001 C CNN
+F 3 "" H 4250 9750 50  0001 C CNN
+	1    4250 9750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 9750 4250 9900
+Wire Wire Line
+	4250 10200 3900 10200
+Wire Wire Line
+	3900 10200 3900 9050
+Wire Wire Line
+	3900 9050 3150 9050
+Wire Wire Line
+	4550 10200 4550 10300
+Wire Wire Line
+	4550 10300 3800 10300
+Wire Wire Line
+	3800 10300 3800 9550
+Wire Wire Line
+	3800 9550 3150 9550
+Wire Wire Line
+	22350 3850 23100 3850
+Wire Wire Line
+	22350 3550 23100 3550
+Wire Wire Line
+	22350 5250 23650 5250
+Wire Wire Line
+	23500 3400 23500 5100
+Wire Wire Line
+	24850 3050 24850 5100
+Wire Wire Line
+	23700 5250 25000 5250
+Wire Wire Line
+	22500 8200 23250 8200
+Wire Wire Line
+	22500 7900 23250 7900
+Wire Wire Line
+	23650 7750 23650 9450
+Wire Wire Line
+	22500 9600 23800 9600
+Wire Wire Line
+	23850 9600 25150 9600
+Wire Wire Line
+	25000 7400 25000 9450
+Wire Wire Line
+	17300 12300 17300 12750
+Wire Wire Line
+	18150 12200 19100 12200
+Wire Wire Line
+	19500 11800 19500 13450
+Wire Wire Line
+	19700 13650 20950 13650
+Wire Wire Line
+	20850 11550 20850 13550
+Wire Wire Line
+	21050 12250 21800 12250
+Wire Wire Line
+	22200 11550 22200 13500
+Wire Wire Line
+	21050 13650 22350 13650
+Wire Wire Line
+	22400 13700 23700 13700
+Wire Wire Line
+	22400 12300 23150 12300
+Wire Wire Line
+	23550 11200 23550 13550
+Wire Wire Line
+	23750 13700 25050 13700
+Wire Wire Line
+	24900 10850 24900 13550
+Wire Wire Line
+	22400 16850 23150 16850
+Wire Wire Line
+	21050 16800 21800 16800
+Wire Wire Line
+	18150 16750 19100 16750
+Wire Wire Line
+	24900 15400 24900 18100
+Wire Wire Line
+	19500 16350 19500 18000
+Wire Wire Line
+	19700 18200 20950 18200
+Wire Wire Line
+	20850 16100 20850 18100
+Wire Wire Line
+	22200 16100 22200 18050
+Wire Wire Line
+	23550 15750 23550 18100
+Wire Wire Line
+	23750 18250 25050 18250
+Wire Wire Line
+	22400 18250 23700 18250
+Wire Wire Line
+	21050 18200 22350 18200
+Wire Wire Line
+	18150 21150 19100 21150
+Wire Wire Line
+	21050 21200 21800 21200
+Wire Wire Line
+	22400 21250 23150 21250
+Wire Wire Line
+	24900 19800 24900 22500
+Wire Wire Line
+	23750 22650 25050 22650
+Wire Wire Line
+	23550 20150 23550 22500
+Wire Wire Line
+	22400 22650 23700 22650
+Wire Wire Line
+	22200 20500 22200 22450
+Wire Wire Line
+	20850 20500 20850 22500
+Wire Wire Line
+	19500 20750 19500 22400
+Wire Wire Line
+	19700 22600 20950 22600
+Wire Wire Line
+	21050 22600 22350 22600
+$Comp
+L power:VCC #PWR0101
+U 1 1 90B91343
+P 18650 1150
+F 0 "#PWR0101" H 18650 1000 50  0001 C CNN
+F 1 "VCC" H 18665 1323 50  0000 C CNN
+F 2 "" H 18650 1150 50  0001 C CNN
+F 3 "" H 18650 1150 50  0001 C CNN
+	1    18650 1150
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0102
+U 1 1 912095A7
+P 22650 5050
+F 0 "#PWR0102" H 22650 4900 50  0001 C CNN
+F 1 "VCC" H 22665 5223 50  0000 C CNN
+F 2 "" H 22650 5050 50  0001 C CNN
+F 3 "" H 22650 5050 50  0001 C CNN
+	1    22650 5050
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0103
+U 1 1 91439CD9
+P 18550 3200
+F 0 "#PWR0103" H 18550 3050 50  0001 C CNN
+F 1 "VCC" H 18565 3373 50  0000 C CNN
+F 2 "" H 18550 3200 50  0001 C CNN
+F 3 "" H 18550 3200 50  0001 C CNN
+	1    18550 3200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0104
+U 1 1 916630CE
+P 18600 2150
+F 0 "#PWR0104" H 18600 2000 50  0001 C CNN
+F 1 "VCC" H 18615 2323 50  0000 C CNN
+F 2 "" H 18600 2150 50  0001 C CNN
+F 3 "" H 18600 2150 50  0001 C CNN
+	1    18600 2150
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0105
+U 1 1 9188BE0B
+P 19600 1700
+F 0 "#PWR0105" H 19600 1550 50  0001 C CNN
+F 1 "VCC" H 19615 1873 50  0000 C CNN
+F 2 "" H 19600 1700 50  0001 C CNN
+F 3 "" H 19600 1700 50  0001 C CNN
+	1    19600 1700
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0106
+U 1 1 91AB4A8B
+P 20500 3200
+F 0 "#PWR0106" H 20500 3050 50  0001 C CNN
+F 1 "VCC" H 20515 3373 50  0000 C CNN
+F 2 "" H 20500 3200 50  0001 C CNN
+F 3 "" H 20500 3200 50  0001 C CNN
+	1    20500 3200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0107
+U 1 1 91CDD812
+P 20550 2150
+F 0 "#PWR0107" H 20550 2000 50  0001 C CNN
+F 1 "VCC" H 20565 2323 50  0000 C CNN
+F 2 "" H 20550 2150 50  0001 C CNN
+F 3 "" H 20550 2150 50  0001 C CNN
+	1    20550 2150
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0108
+U 1 1 91F06987
+P 20600 1150
+F 0 "#PWR0108" H 20600 1000 50  0001 C CNN
+F 1 "VCC" H 20615 1323 50  0000 C CNN
+F 2 "" H 20600 1150 50  0001 C CNN
+F 3 "" H 20600 1150 50  0001 C CNN
+	1    20600 1150
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0109
+U 1 1 9212FBBA
+P 19550 2750
+F 0 "#PWR0109" H 19550 2600 50  0001 C CNN
+F 1 "VCC" H 19565 2923 50  0000 C CNN
+F 2 "" H 19550 2750 50  0001 C CNN
+F 3 "" H 19550 2750 50  0001 C CNN
+	1    19550 2750
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0110
+U 1 1 9257EC16
+P 22950 1150
+F 0 "#PWR0110" H 22950 1000 50  0001 C CNN
+F 1 "VCC" H 22965 1323 50  0000 C CNN
+F 2 "" H 22950 1150 50  0001 C CNN
+F 3 "" H 22950 1150 50  0001 C CNN
+	1    22950 1150
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0111
+U 1 1 927A7DEA
+P 24600 1150
+F 0 "#PWR0111" H 24600 1000 50  0001 C CNN
+F 1 "VCC" H 24615 1323 50  0000 C CNN
+F 2 "" H 24600 1150 50  0001 C CNN
+F 3 "" H 24600 1150 50  0001 C CNN
+	1    24600 1150
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0112
+U 1 1 929D0C43
+P 22950 1800
+F 0 "#PWR0112" H 22950 1650 50  0001 C CNN
+F 1 "VCC" H 22965 1973 50  0000 C CNN
+F 2 "" H 22950 1800 50  0001 C CNN
+F 3 "" H 22950 1800 50  0001 C CNN
+	1    22950 1800
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0113
+U 1 1 92BF967B
+P 24600 1800
+F 0 "#PWR0113" H 24600 1650 50  0001 C CNN
+F 1 "VCC" H 24615 1973 50  0000 C CNN
+F 2 "" H 24600 1800 50  0001 C CNN
+F 3 "" H 24600 1800 50  0001 C CNN
+	1    24600 1800
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0114
+U 1 1 9304FFE3
+P 18700 5950
+F 0 "#PWR0114" H 18700 5800 50  0001 C CNN
+F 1 "VCC" H 18715 6123 50  0000 C CNN
+F 2 "" H 18700 5950 50  0001 C CNN
+F 3 "" H 18700 5950 50  0001 C CNN
+	1    18700 5950
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0115
+U 1 1 9327B2A1
+P 23350 4850
+F 0 "#PWR0115" H 23350 4700 50  0001 C CNN
+F 1 "VCC" H 23365 5023 50  0000 C CNN
+F 2 "" H 23350 4850 50  0001 C CNN
+F 3 "" H 23350 4850 50  0001 C CNN
+	1    23350 4850
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0116
+U 1 1 934A7EF7
+P 23350 4250
+F 0 "#PWR0116" H 23350 4100 50  0001 C CNN
+F 1 "VCC" H 23365 4423 50  0000 C CNN
+F 2 "" H 23350 4250 50  0001 C CNN
+F 3 "" H 23350 4250 50  0001 C CNN
+	1    23350 4250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0117
+U 1 1 936D0955
+P 20350 6600
+F 0 "#PWR0117" H 20350 6450 50  0001 C CNN
+F 1 "VCC" H 20365 6773 50  0000 C CNN
+F 2 "" H 20350 6600 50  0001 C CNN
+F 3 "" H 20350 6600 50  0001 C CNN
+	1    20350 6600
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0118
+U 1 1 936D2AF9
+P 20350 5950
+F 0 "#PWR0118" H 20350 5800 50  0001 C CNN
+F 1 "VCC" H 20365 6123 50  0000 C CNN
+F 2 "" H 20350 5950 50  0001 C CNN
+F 3 "" H 20350 5950 50  0001 C CNN
+	1    20350 5950
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0119
+U 1 1 936D2B03
+P 22750 8700
+F 0 "#PWR0119" H 22750 8550 50  0001 C CNN
+F 1 "VCC" H 22765 8873 50  0000 C CNN
+F 2 "" H 22750 8700 50  0001 C CNN
+F 3 "" H 22750 8700 50  0001 C CNN
+	1    22750 8700
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0120
+U 1 1 936D2B0D
+P 18700 6600
+F 0 "#PWR0120" H 18700 6450 50  0001 C CNN
+F 1 "VCC" H 18715 6773 50  0000 C CNN
+F 2 "" H 18700 6600 50  0001 C CNN
+F 3 "" H 18700 6600 50  0001 C CNN
+	1    18700 6600
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0121
+U 1 1 93F72691
+P 24500 6800
+F 0 "#PWR0121" H 24500 6650 50  0001 C CNN
+F 1 "VCC" H 24515 6973 50  0000 C CNN
+F 2 "" H 24500 6800 50  0001 C CNN
+F 3 "" H 24500 6800 50  0001 C CNN
+	1    24500 6800
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0122
+U 1 1 93F74875
+P 22850 6800
+F 0 "#PWR0122" H 22850 6650 50  0001 C CNN
+F 1 "VCC" H 22865 6973 50  0000 C CNN
+F 2 "" H 22850 6800 50  0001 C CNN
+F 3 "" H 22850 6800 50  0001 C CNN
+	1    22850 6800
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0123
+U 1 1 93F7487F
+P 24500 6150
+F 0 "#PWR0123" H 24500 6000 50  0001 C CNN
+F 1 "VCC" H 24515 6323 50  0000 C CNN
+F 2 "" H 24500 6150 50  0001 C CNN
+F 3 "" H 24500 6150 50  0001 C CNN
+	1    24500 6150
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0124
+U 1 1 93F74889
+P 22850 6150
+F 0 "#PWR0124" H 22850 6000 50  0001 C CNN
+F 1 "VCC" H 22865 6323 50  0000 C CNN
+F 2 "" H 22850 6150 50  0001 C CNN
+F 3 "" H 22850 6150 50  0001 C CNN
+	1    22850 6150
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0125
+U 1 1 934AA07B
+P 22600 4350
+F 0 "#PWR0125" H 22600 4200 50  0001 C CNN
+F 1 "VCC" H 22615 4523 50  0000 C CNN
+F 2 "" H 22600 4350 50  0001 C CNN
+F 3 "" H 22600 4350 50  0001 C CNN
+	1    22600 4350
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0126
+U 1 1 94E8C9AC
+P 24000 5050
+F 0 "#PWR0126" H 24000 4900 50  0001 C CNN
+F 1 "VCC" H 24015 5223 50  0000 C CNN
+F 2 "" H 24000 5050 50  0001 C CNN
+F 3 "" H 24000 5050 50  0001 C CNN
+	1    24000 5050
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0127
+U 1 1 94E8EB70
+P 24700 4850
+F 0 "#PWR0127" H 24700 4700 50  0001 C CNN
+F 1 "VCC" H 24715 5023 50  0000 C CNN
+F 2 "" H 24700 4850 50  0001 C CNN
+F 3 "" H 24700 4850 50  0001 C CNN
+	1    24700 4850
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0128
+U 1 1 94E8EB7A
+P 24700 4250
+F 0 "#PWR0128" H 24700 4100 50  0001 C CNN
+F 1 "VCC" H 24715 4423 50  0000 C CNN
+F 2 "" H 24700 4250 50  0001 C CNN
+F 3 "" H 24700 4250 50  0001 C CNN
+	1    24700 4250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0129
+U 1 1 94E8EB84
+P 23950 4350
+F 0 "#PWR0129" H 23950 4200 50  0001 C CNN
+F 1 "VCC" H 23965 4523 50  0000 C CNN
+F 2 "" H 23950 4350 50  0001 C CNN
+F 3 "" H 23950 4350 50  0001 C CNN
+	1    23950 4350
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0130
+U 1 1 950B7866
+P 24850 9200
+F 0 "#PWR0130" H 24850 9050 50  0001 C CNN
+F 1 "VCC" H 24865 9373 50  0000 C CNN
+F 2 "" H 24850 9200 50  0001 C CNN
+F 3 "" H 24850 9200 50  0001 C CNN
+	1    24850 9200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0131
+U 1 1 950B9A6A
+P 24150 9400
+F 0 "#PWR0131" H 24150 9250 50  0001 C CNN
+F 1 "VCC" H 24165 9573 50  0000 C CNN
+F 2 "" H 24150 9400 50  0001 C CNN
+F 3 "" H 24150 9400 50  0001 C CNN
+	1    24150 9400
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0132
+U 1 1 950B9A74
+P 24850 8600
+F 0 "#PWR0132" H 24850 8450 50  0001 C CNN
+F 1 "VCC" H 24865 8773 50  0000 C CNN
+F 2 "" H 24850 8600 50  0001 C CNN
+F 3 "" H 24850 8600 50  0001 C CNN
+	1    24850 8600
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0133
+U 1 1 950B9A7E
+P 22800 9400
+F 0 "#PWR0133" H 22800 9250 50  0001 C CNN
+F 1 "VCC" H 22815 9573 50  0000 C CNN
+F 2 "" H 22800 9400 50  0001 C CNN
+F 3 "" H 22800 9400 50  0001 C CNN
+	1    22800 9400
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0134
+U 1 1 968683A8
+P 20050 9350
+F 0 "#PWR0134" H 20050 9200 50  0001 C CNN
+F 1 "VCC" H 20065 9523 50  0000 C CNN
+F 2 "" H 20050 9350 50  0001 C CNN
+F 3 "" H 20050 9350 50  0001 C CNN
+	1    20050 9350
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0135
+U 1 1 9686A58C
+P 20750 9150
+F 0 "#PWR0135" H 20750 9000 50  0001 C CNN
+F 1 "VCC" H 20765 9323 50  0000 C CNN
+F 2 "" H 20750 9150 50  0001 C CNN
+F 3 "" H 20750 9150 50  0001 C CNN
+	1    20750 9150
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0136
+U 1 1 9686A596
+P 24050 13500
+F 0 "#PWR0136" H 24050 13350 50  0001 C CNN
+F 1 "VCC" H 24065 13673 50  0000 C CNN
+F 2 "" H 24050 13500 50  0001 C CNN
+F 3 "" H 24050 13500 50  0001 C CNN
+	1    24050 13500
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0137
+U 1 1 9686A5A0
+P 20000 8650
+F 0 "#PWR0137" H 20000 8500 50  0001 C CNN
+F 1 "VCC" H 20015 8823 50  0000 C CNN
+F 2 "" H 20000 8650 50  0001 C CNN
+F 3 "" H 20000 8650 50  0001 C CNN
+	1    20000 8650
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0138
+U 1 1 96A92778
+P 24100 8700
+F 0 "#PWR0138" H 24100 8550 50  0001 C CNN
+F 1 "VCC" H 24115 8873 50  0000 C CNN
+F 2 "" H 24100 8700 50  0001 C CNN
+F 3 "" H 24100 8700 50  0001 C CNN
+	1    24100 8700
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0139
+U 1 1 96A9499C
+P 23500 9200
+F 0 "#PWR0139" H 23500 9050 50  0001 C CNN
+F 1 "VCC" H 23515 9373 50  0000 C CNN
+F 2 "" H 23500 9200 50  0001 C CNN
+F 3 "" H 23500 9200 50  0001 C CNN
+	1    23500 9200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0140
+U 1 1 96A949A6
+P 20750 8550
+F 0 "#PWR0140" H 20750 8400 50  0001 C CNN
+F 1 "VCC" H 20765 8723 50  0000 C CNN
+F 2 "" H 20750 8550 50  0001 C CNN
+F 3 "" H 20750 8550 50  0001 C CNN
+	1    20750 8550
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0141
+U 1 1 96A949B0
+P 23500 8600
+F 0 "#PWR0141" H 23500 8450 50  0001 C CNN
+F 1 "VCC" H 23515 8773 50  0000 C CNN
+F 2 "" H 23500 8600 50  0001 C CNN
+F 3 "" H 23500 8600 50  0001 C CNN
+	1    23500 8600
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0142
+U 1 1 96A949BA
+P 24750 13300
+F 0 "#PWR0142" H 24750 13150 50  0001 C CNN
+F 1 "VCC" H 24765 13473 50  0000 C CNN
+F 2 "" H 24750 13300 50  0001 C CNN
+F 3 "" H 24750 13300 50  0001 C CNN
+	1    24750 13300
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0143
+U 1 1 96A949C4
+P 24750 12700
+F 0 "#PWR0143" H 24750 12550 50  0001 C CNN
+F 1 "VCC" H 24765 12873 50  0000 C CNN
+F 2 "" H 24750 12700 50  0001 C CNN
+F 3 "" H 24750 12700 50  0001 C CNN
+	1    24750 12700
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0144
+U 1 1 96A949CE
+P 23400 12700
+F 0 "#PWR0144" H 23400 12550 50  0001 C CNN
+F 1 "VCC" H 23415 12873 50  0000 C CNN
+F 2 "" H 23400 12700 50  0001 C CNN
+F 3 "" H 23400 12700 50  0001 C CNN
+	1    23400 12700
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0145
+U 1 1 96A949D8
+P 24000 12800
+F 0 "#PWR0145" H 24000 12650 50  0001 C CNN
+F 1 "VCC" H 24015 12973 50  0000 C CNN
+F 2 "" H 24000 12800 50  0001 C CNN
+F 3 "" H 24000 12800 50  0001 C CNN
+	1    24000 12800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	18400 8150 19150 8150
+Wire Wire Line
+	18400 7850 19150 7850
+Wire Wire Line
+	19550 7700 19550 9400
+Wire Wire Line
+	18400 9550 19700 9550
+Wire Wire Line
+	19750 9550 21050 9550
+Wire Wire Line
+	20900 7350 20900 9400
+$Comp
+L power:VCC #PWR0146
+U 1 1 9C9357A5
+P 18700 9350
+F 0 "#PWR0146" H 18700 9200 50  0001 C CNN
+F 1 "VCC" H 18715 9523 50  0000 C CNN
+F 2 "" H 18700 9350 50  0001 C CNN
+F 3 "" H 18700 9350 50  0001 C CNN
+	1    18700 9350
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0147
+U 1 1 9C9379B9
+P 19400 9150
+F 0 "#PWR0147" H 19400 9000 50  0001 C CNN
+F 1 "VCC" H 19415 9323 50  0000 C CNN
+F 2 "" H 19400 9150 50  0001 C CNN
+F 3 "" H 19400 9150 50  0001 C CNN
+	1    19400 9150
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0148
+U 1 1 9C9379C3
+P 19400 8550
+F 0 "#PWR0148" H 19400 8400 50  0001 C CNN
+F 1 "VCC" H 19415 8723 50  0000 C CNN
+F 2 "" H 19400 8550 50  0001 C CNN
+F 3 "" H 19400 8550 50  0001 C CNN
+	1    19400 8550
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0149
+U 1 1 9C9379CD
+P 18650 8650
+F 0 "#PWR0149" H 18650 8500 50  0001 C CNN
+F 1 "VCC" H 18665 8823 50  0000 C CNN
+F 2 "" H 18650 8650 50  0001 C CNN
+F 3 "" H 18650 8650 50  0001 C CNN
+	1    18650 8650
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0150
+U 1 1 9D3F8F5D
+P 23650 10200
+F 0 "#PWR0150" H 23650 10050 50  0001 C CNN
+F 1 "VCC" H 23665 10373 50  0000 C CNN
+F 2 "" H 23650 10200 50  0001 C CNN
+F 3 "" H 23650 10200 50  0001 C CNN
+	1    23650 10200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0151
+U 1 1 9D3FB1B1
+P 22600 10200
+F 0 "#PWR0151" H 22600 10050 50  0001 C CNN
+F 1 "VCC" H 22615 10373 50  0000 C CNN
+F 2 "" H 22600 10200 50  0001 C CNN
+F 3 "" H 22600 10200 50  0001 C CNN
+	1    22600 10200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0152
+U 1 1 9D3FB1BB
+P 21400 10200
+F 0 "#PWR0152" H 21400 10050 50  0001 C CNN
+F 1 "VCC" H 21415 10373 50  0000 C CNN
+F 2 "" H 21400 10200 50  0001 C CNN
+F 3 "" H 21400 10200 50  0001 C CNN
+	1    21400 10200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0153
+U 1 1 9D3FB1C5
+P 20100 10200
+F 0 "#PWR0153" H 20100 10050 50  0001 C CNN
+F 1 "VCC" H 20115 10373 50  0000 C CNN
+F 2 "" H 20100 10200 50  0001 C CNN
+F 3 "" H 20100 10200 50  0001 C CNN
+	1    20100 10200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0154
+U 1 1 9D623FF3
+P 22050 13250
+F 0 "#PWR0154" H 22050 13100 50  0001 C CNN
+F 1 "VCC" H 22065 13423 50  0000 C CNN
+F 2 "" H 22050 13250 50  0001 C CNN
+F 3 "" H 22050 13250 50  0001 C CNN
+	1    22050 13250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0155
+U 1 1 9D626287
+P 22700 13500
+F 0 "#PWR0155" H 22700 13350 50  0001 C CNN
+F 1 "VCC" H 22715 13673 50  0000 C CNN
+F 2 "" H 22700 13500 50  0001 C CNN
+F 3 "" H 22700 13500 50  0001 C CNN
+	1    22700 13500
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0156
+U 1 1 9D626291
+P 21300 12750
+F 0 "#PWR0156" H 21300 12600 50  0001 C CNN
+F 1 "VCC" H 21315 12923 50  0000 C CNN
+F 2 "" H 21300 12750 50  0001 C CNN
+F 3 "" H 21300 12750 50  0001 C CNN
+	1    21300 12750
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0157
+U 1 1 9D62629B
+P 22650 12800
+F 0 "#PWR0157" H 22650 12650 50  0001 C CNN
+F 1 "VCC" H 22665 12973 50  0000 C CNN
+F 2 "" H 22650 12800 50  0001 C CNN
+F 3 "" H 22650 12800 50  0001 C CNN
+	1    22650 12800
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0158
+U 1 1 9EFF9E79
+P 19350 17750
+F 0 "#PWR0158" H 19350 17600 50  0001 C CNN
+F 1 "VCC" H 19365 17923 50  0000 C CNN
+F 2 "" H 19350 17750 50  0001 C CNN
+F 3 "" H 19350 17750 50  0001 C CNN
+	1    19350 17750
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0159
+U 1 1 9EFFC039
+P 21350 13450
+F 0 "#PWR0159" H 21350 13300 50  0001 C CNN
+F 1 "VCC" H 21365 13623 50  0000 C CNN
+F 2 "" H 21350 13450 50  0001 C CNN
+F 3 "" H 21350 13450 50  0001 C CNN
+	1    21350 13450
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0160
+U 1 1 9EFFC043
+P 19350 17150
+F 0 "#PWR0160" H 19350 17000 50  0001 C CNN
+F 1 "VCC" H 19365 17323 50  0000 C CNN
+F 2 "" H 19350 17150 50  0001 C CNN
+F 3 "" H 19350 17150 50  0001 C CNN
+	1    19350 17150
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0161
+U 1 1 9EFFC04D
+P 22050 12650
+F 0 "#PWR0161" H 22050 12500 50  0001 C CNN
+F 1 "VCC" H 22065 12823 50  0000 C CNN
+F 2 "" H 22050 12650 50  0001 C CNN
+F 3 "" H 22050 12650 50  0001 C CNN
+	1    22050 12650
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0162
+U 1 1 9F223AD9
+P 22250 19150
+F 0 "#PWR0162" H 22250 19000 50  0001 C CNN
+F 1 "VCC" H 22265 19323 50  0000 C CNN
+F 2 "" H 22250 19150 50  0001 C CNN
+F 3 "" H 22250 19150 50  0001 C CNN
+	1    22250 19150
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0163
+U 1 1 9F225CD9
+P 23300 19150
+F 0 "#PWR0163" H 23300 19000 50  0001 C CNN
+F 1 "VCC" H 23315 19323 50  0000 C CNN
+F 2 "" H 23300 19150 50  0001 C CNN
+F 3 "" H 23300 19150 50  0001 C CNN
+	1    23300 19150
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0164
+U 1 1 9F225CED
+P 19950 21700
+F 0 "#PWR0164" H 19950 21550 50  0001 C CNN
+F 1 "VCC" H 19965 21873 50  0000 C CNN
+F 2 "" H 19950 21700 50  0001 C CNN
+F 3 "" H 19950 21700 50  0001 C CNN
+	1    19950 21700
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0165
+U 1 1 9F44CFB6
+P 23400 13300
+F 0 "#PWR0165" H 23400 13150 50  0001 C CNN
+F 1 "VCC" H 23415 13473 50  0000 C CNN
+F 2 "" H 23400 13300 50  0001 C CNN
+F 3 "" H 23400 13300 50  0001 C CNN
+	1    23400 13300
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0166
+U 1 1 A035C5F9
+P 19350 13200
+F 0 "#PWR0166" H 19350 13050 50  0001 C CNN
+F 1 "VCC" H 19365 13373 50  0000 C CNN
+F 2 "" H 19350 13200 50  0001 C CNN
+F 3 "" H 19350 13200 50  0001 C CNN
+	1    19350 13200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0167
+U 1 1 A035E849
+P 18600 12700
+F 0 "#PWR0167" H 18600 12550 50  0001 C CNN
+F 1 "VCC" H 18615 12873 50  0000 C CNN
+F 2 "" H 18600 12700 50  0001 C CNN
+F 3 "" H 18600 12700 50  0001 C CNN
+	1    18600 12700
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0168
+U 1 1 A035E853
+P 20700 17800
+F 0 "#PWR0168" H 20700 17650 50  0001 C CNN
+F 1 "VCC" H 20715 17973 50  0000 C CNN
+F 2 "" H 20700 17800 50  0001 C CNN
+F 3 "" H 20700 17800 50  0001 C CNN
+	1    20700 17800
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0169
+U 1 1 A035E85D
+P 18650 13450
+F 0 "#PWR0169" H 18650 13300 50  0001 C CNN
+F 1 "VCC" H 18665 13623 50  0000 C CNN
+F 2 "" H 18650 13450 50  0001 C CNN
+F 3 "" H 18650 13450 50  0001 C CNN
+	1    18650 13450
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0170
+U 1 1 A035E867
+P 20700 17200
+F 0 "#PWR0170" H 20700 17050 50  0001 C CNN
+F 1 "VCC" H 20715 17373 50  0000 C CNN
+F 2 "" H 20700 17200 50  0001 C CNN
+F 3 "" H 20700 17200 50  0001 C CNN
+	1    20700 17200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0200
+U 1 1 A035E871
+P 19350 12600
+F 0 "#PWR0200" H 19350 12450 50  0001 C CNN
+F 1 "VCC" H 19365 12773 50  0000 C CNN
+F 2 "" H 19350 12600 50  0001 C CNN
+F 3 "" H 19350 12600 50  0001 C CNN
+	1    19350 12600
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0201
+U 1 1 A05879C3
+P 20000 13450
+F 0 "#PWR0201" H 20000 13300 50  0001 C CNN
+F 1 "VCC" H 20015 13623 50  0000 C CNN
+F 2 "" H 20000 13450 50  0001 C CNN
+F 3 "" H 20000 13450 50  0001 C CNN
+	1    20000 13450
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0202
+U 1 1 A0589C73
+P 20700 12650
+F 0 "#PWR0202" H 20700 12500 50  0001 C CNN
+F 1 "VCC" H 20715 12823 50  0000 C CNN
+F 2 "" H 20700 12650 50  0001 C CNN
+F 3 "" H 20700 12650 50  0001 C CNN
+	1    20700 12650
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0203
+U 1 1 A0589C7D
+P 19950 12750
+F 0 "#PWR0203" H 19950 12600 50  0001 C CNN
+F 1 "VCC" H 19965 12923 50  0000 C CNN
+F 2 "" H 19950 12750 50  0001 C CNN
+F 3 "" H 19950 12750 50  0001 C CNN
+	1    19950 12750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	19950 12650 19950 12750
+$Comp
+L power:VCC #PWR0204
+U 1 1 A0589C87
+P 20700 13250
+F 0 "#PWR0204" H 20700 13100 50  0001 C CNN
+F 1 "VCC" H 20715 13423 50  0000 C CNN
+F 2 "" H 20700 13250 50  0001 C CNN
+F 3 "" H 20700 13250 50  0001 C CNN
+	1    20700 13250
+	-1   0    0    1   
+$EndComp
+Connection ~ 18650 13450
+$Comp
+L power:VCC #PWR0205
+U 1 1 A1B1018A
+P 23400 17850
+F 0 "#PWR0205" H 23400 17700 50  0001 C CNN
+F 1 "VCC" H 23415 18023 50  0000 C CNN
+F 2 "" H 23400 17850 50  0001 C CNN
+F 3 "" H 23400 17850 50  0001 C CNN
+	1    23400 17850
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0206
+U 1 1 A1B1247A
+P 17150 13050
+F 0 "#PWR0206" H 17150 12900 50  0001 C CNN
+F 1 "VCC" H 17165 13223 50  0000 C CNN
+F 2 "" H 17150 13050 50  0001 C CNN
+F 3 "" H 17150 13050 50  0001 C CNN
+	1    17150 13050
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0207
+U 1 1 A1B12484
+P 20000 18000
+F 0 "#PWR0207" H 20000 17850 50  0001 C CNN
+F 1 "VCC" H 20015 18173 50  0000 C CNN
+F 2 "" H 20000 18000 50  0001 C CNN
+F 3 "" H 20000 18000 50  0001 C CNN
+	1    20000 18000
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0208
+U 1 1 A1B1248E
+P 22050 17200
+F 0 "#PWR0208" H 22050 17050 50  0001 C CNN
+F 1 "VCC" H 22065 17373 50  0000 C CNN
+F 2 "" H 22050 17200 50  0001 C CNN
+F 3 "" H 22050 17200 50  0001 C CNN
+	1    22050 17200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0209
+U 1 1 A1B12498
+P 19950 17300
+F 0 "#PWR0209" H 19950 17150 50  0001 C CNN
+F 1 "VCC" H 19965 17473 50  0000 C CNN
+F 2 "" H 19950 17300 50  0001 C CNN
+F 3 "" H 19950 17300 50  0001 C CNN
+	1    19950 17300
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0210
+U 1 1 A1B124A2
+P 21300 17300
+F 0 "#PWR0210" H 21300 17150 50  0001 C CNN
+F 1 "VCC" H 21315 17473 50  0000 C CNN
+F 2 "" H 21300 17300 50  0001 C CNN
+F 3 "" H 21300 17300 50  0001 C CNN
+	1    21300 17300
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0211
+U 1 1 A1B124AC
+P 24000 17350
+F 0 "#PWR0211" H 24000 17200 50  0001 C CNN
+F 1 "VCC" H 24015 17523 50  0000 C CNN
+F 2 "" H 24000 17350 50  0001 C CNN
+F 3 "" H 24000 17350 50  0001 C CNN
+	1    24000 17350
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0212
+U 1 1 A1B124B6
+P 17150 12500
+F 0 "#PWR0212" H 17150 12350 50  0001 C CNN
+F 1 "VCC" H 17165 12673 50  0000 C CNN
+F 2 "" H 17150 12500 50  0001 C CNN
+F 3 "" H 17150 12500 50  0001 C CNN
+	1    17150 12500
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0213
+U 1 1 A23B06A4
+P 17150 13650
+F 0 "#PWR0213" H 17150 13500 50  0001 C CNN
+F 1 "VCC" H 17165 13823 50  0000 C CNN
+F 2 "" H 17150 13650 50  0001 C CNN
+F 3 "" H 17150 13650 50  0001 C CNN
+	1    17150 13650
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0214
+U 1 1 A25DEF55
+P 24750 17850
+F 0 "#PWR0214" H 24750 17700 50  0001 C CNN
+F 1 "VCC" H 24765 18023 50  0000 C CNN
+F 2 "" H 24750 17850 50  0001 C CNN
+F 3 "" H 24750 17850 50  0001 C CNN
+	1    24750 17850
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0215
+U 1 1 A25E1191
+P 22700 18050
+F 0 "#PWR0215" H 22700 17900 50  0001 C CNN
+F 1 "VCC" H 22715 18223 50  0000 C CNN
+F 2 "" H 22700 18050 50  0001 C CNN
+F 3 "" H 22700 18050 50  0001 C CNN
+	1    22700 18050
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0216
+U 1 1 A25E119B
+P 21350 18000
+F 0 "#PWR0216" H 21350 17850 50  0001 C CNN
+F 1 "VCC" H 21365 18173 50  0000 C CNN
+F 2 "" H 21350 18000 50  0001 C CNN
+F 3 "" H 21350 18000 50  0001 C CNN
+	1    21350 18000
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0217
+U 1 1 A25E11A5
+P 22650 17350
+F 0 "#PWR0217" H 22650 17200 50  0001 C CNN
+F 1 "VCC" H 22665 17523 50  0000 C CNN
+F 2 "" H 22650 17350 50  0001 C CNN
+F 3 "" H 22650 17350 50  0001 C CNN
+	1    22650 17350
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0218
+U 1 1 A25E11AF
+P 22050 17800
+F 0 "#PWR0218" H 22050 17650 50  0001 C CNN
+F 1 "VCC" H 22065 17973 50  0000 C CNN
+F 2 "" H 22050 17800 50  0001 C CNN
+F 3 "" H 22050 17800 50  0001 C CNN
+	1    22050 17800
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0219
+U 1 1 A25E11B9
+P 23400 17250
+F 0 "#PWR0219" H 23400 17100 50  0001 C CNN
+F 1 "VCC" H 23415 17423 50  0000 C CNN
+F 2 "" H 23400 17250 50  0001 C CNN
+F 3 "" H 23400 17250 50  0001 C CNN
+	1    23400 17250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0220
+U 1 1 A25E11C3
+P 24050 18050
+F 0 "#PWR0220" H 24050 17900 50  0001 C CNN
+F 1 "VCC" H 24065 18223 50  0000 C CNN
+F 2 "" H 24050 18050 50  0001 C CNN
+F 3 "" H 24050 18050 50  0001 C CNN
+	1    24050 18050
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0221
+U 1 1 A25E11CD
+P 24750 17250
+F 0 "#PWR0221" H 24750 17100 50  0001 C CNN
+F 1 "VCC" H 24765 17423 50  0000 C CNN
+F 2 "" H 24750 17250 50  0001 C CNN
+F 3 "" H 24750 17250 50  0001 C CNN
+	1    24750 17250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0222
+U 1 1 A4EBCAD9
+P 17100 17950
+F 0 "#PWR0222" H 17100 17800 50  0001 C CNN
+F 1 "VCC" H 17115 18123 50  0000 C CNN
+F 2 "" H 17100 17950 50  0001 C CNN
+F 3 "" H 17100 17950 50  0001 C CNN
+	1    17100 17950
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0223
+U 1 1 A4EBED95
+P 17100 17350
+F 0 "#PWR0223" H 17100 17200 50  0001 C CNN
+F 1 "VCC" H 17115 17523 50  0000 C CNN
+F 2 "" H 17100 17350 50  0001 C CNN
+F 3 "" H 17100 17350 50  0001 C CNN
+	1    17100 17350
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0224
+U 1 1 A4EBED9F
+P 21050 19150
+F 0 "#PWR0224" H 21050 19000 50  0001 C CNN
+F 1 "VCC" H 21065 19323 50  0000 C CNN
+F 2 "" H 21050 19150 50  0001 C CNN
+F 3 "" H 21050 19150 50  0001 C CNN
+	1    21050 19150
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0225
+U 1 1 A4EBEDA9
+P 17100 16800
+F 0 "#PWR0225" H 17100 16650 50  0001 C CNN
+F 1 "VCC" H 17115 16973 50  0000 C CNN
+F 2 "" H 17100 16800 50  0001 C CNN
+F 3 "" H 17100 16800 50  0001 C CNN
+	1    17100 16800
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0226
+U 1 1 A50EC739
+P 20700 21600
+F 0 "#PWR0226" H 20700 21450 50  0001 C CNN
+F 1 "VCC" H 20715 21773 50  0000 C CNN
+F 2 "" H 20700 21600 50  0001 C CNN
+F 3 "" H 20700 21600 50  0001 C CNN
+	1    20700 21600
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0227
+U 1 1 A50EC743
+P 22050 22200
+F 0 "#PWR0227" H 22050 22050 50  0001 C CNN
+F 1 "VCC" H 22065 22373 50  0000 C CNN
+F 2 "" H 22050 22200 50  0001 C CNN
+F 3 "" H 22050 22200 50  0001 C CNN
+	1    22050 22200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0228
+U 1 1 A50EC74D
+P 20700 22200
+F 0 "#PWR0228" H 20700 22050 50  0001 C CNN
+F 1 "VCC" H 20715 22373 50  0000 C CNN
+F 2 "" H 20700 22200 50  0001 C CNN
+F 3 "" H 20700 22200 50  0001 C CNN
+	1    20700 22200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0229
+U 1 1 A50EC757
+P 19750 19150
+F 0 "#PWR0229" H 19750 19000 50  0001 C CNN
+F 1 "VCC" H 19765 19323 50  0000 C CNN
+F 2 "" H 19750 19150 50  0001 C CNN
+F 3 "" H 19750 19150 50  0001 C CNN
+	1    19750 19150
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0230
+U 1 1 A50EC761
+P 18650 18000
+F 0 "#PWR0230" H 18650 17850 50  0001 C CNN
+F 1 "VCC" H 18665 18173 50  0000 C CNN
+F 2 "" H 18650 18000 50  0001 C CNN
+F 3 "" H 18650 18000 50  0001 C CNN
+	1    18650 18000
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0231
+U 1 1 A50EC76B
+P 19350 22150
+F 0 "#PWR0231" H 19350 22000 50  0001 C CNN
+F 1 "VCC" H 19365 22323 50  0000 C CNN
+F 2 "" H 19350 22150 50  0001 C CNN
+F 3 "" H 19350 22150 50  0001 C CNN
+	1    19350 22150
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0232
+U 1 1 A50EC775
+P 18600 17250
+F 0 "#PWR0232" H 18600 17100 50  0001 C CNN
+F 1 "VCC" H 18615 17423 50  0000 C CNN
+F 2 "" H 18600 17250 50  0001 C CNN
+F 3 "" H 18600 17250 50  0001 C CNN
+	1    18600 17250
+	-1   0    0    1   
+$EndComp
+Connection ~ 18650 18000
+$Comp
+L power:VCC #PWR0233
+U 1 1 A66773DD
+P 22650 21750
+F 0 "#PWR0233" H 22650 21600 50  0001 C CNN
+F 1 "VCC" H 22665 21923 50  0000 C CNN
+F 2 "" H 22650 21750 50  0001 C CNN
+F 3 "" H 22650 21750 50  0001 C CNN
+	1    22650 21750
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0234
+U 1 1 A6679729
+P 24050 22450
+F 0 "#PWR0234" H 24050 22300 50  0001 C CNN
+F 1 "VCC" H 24065 22623 50  0000 C CNN
+F 2 "" H 24050 22450 50  0001 C CNN
+F 3 "" H 24050 22450 50  0001 C CNN
+	1    24050 22450
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0235
+U 1 1 A6679733
+P 23400 22250
+F 0 "#PWR0235" H 23400 22100 50  0001 C CNN
+F 1 "VCC" H 23415 22423 50  0000 C CNN
+F 2 "" H 23400 22250 50  0001 C CNN
+F 3 "" H 23400 22250 50  0001 C CNN
+	1    23400 22250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0236
+U 1 1 A667973D
+P 24750 22250
+F 0 "#PWR0236" H 24750 22100 50  0001 C CNN
+F 1 "VCC" H 24765 22423 50  0000 C CNN
+F 2 "" H 24750 22250 50  0001 C CNN
+F 3 "" H 24750 22250 50  0001 C CNN
+	1    24750 22250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0237
+U 1 1 A6679747
+P 23400 21650
+F 0 "#PWR0237" H 23400 21500 50  0001 C CNN
+F 1 "VCC" H 23415 21823 50  0000 C CNN
+F 2 "" H 23400 21650 50  0001 C CNN
+F 3 "" H 23400 21650 50  0001 C CNN
+	1    23400 21650
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0238
+U 1 1 A6679751
+P 24000 21750
+F 0 "#PWR0238" H 24000 21600 50  0001 C CNN
+F 1 "VCC" H 24015 21923 50  0000 C CNN
+F 2 "" H 24000 21750 50  0001 C CNN
+F 3 "" H 24000 21750 50  0001 C CNN
+	1    24000 21750
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0239
+U 1 1 A667975B
+P 24750 21650
+F 0 "#PWR0239" H 24750 21500 50  0001 C CNN
+F 1 "VCC" H 24765 21823 50  0000 C CNN
+F 2 "" H 24750 21650 50  0001 C CNN
+F 3 "" H 24750 21650 50  0001 C CNN
+	1    24750 21650
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0240
+U 1 1 A7E331FA
+P 18600 21650
+F 0 "#PWR0240" H 18600 21500 50  0001 C CNN
+F 1 "VCC" H 18615 21823 50  0000 C CNN
+F 2 "" H 18600 21650 50  0001 C CNN
+F 3 "" H 18600 21650 50  0001 C CNN
+	1    18600 21650
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0241
+U 1 1 A7E354A2
+P 17000 22200
+F 0 "#PWR0241" H 17000 22050 50  0001 C CNN
+F 1 "VCC" H 17015 22373 50  0000 C CNN
+F 2 "" H 17000 22200 50  0001 C CNN
+F 3 "" H 17000 22200 50  0001 C CNN
+	1    17000 22200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0242
+U 1 1 A7E354AC
+P 20000 22400
+F 0 "#PWR0242" H 20000 22250 50  0001 C CNN
+F 1 "VCC" H 20015 22573 50  0000 C CNN
+F 2 "" H 20000 22400 50  0001 C CNN
+F 3 "" H 20000 22400 50  0001 C CNN
+	1    20000 22400
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0243
+U 1 1 A7E354B6
+P 18650 22400
+F 0 "#PWR0243" H 18650 22250 50  0001 C CNN
+F 1 "VCC" H 18665 22573 50  0000 C CNN
+F 2 "" H 18650 22400 50  0001 C CNN
+F 3 "" H 18650 22400 50  0001 C CNN
+	1    18650 22400
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0244
+U 1 1 A7E354C0
+P 19350 21550
+F 0 "#PWR0244" H 19350 21400 50  0001 C CNN
+F 1 "VCC" H 19365 21723 50  0000 C CNN
+F 2 "" H 19350 21550 50  0001 C CNN
+F 3 "" H 19350 21550 50  0001 C CNN
+	1    19350 21550
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0245
+U 1 1 A7E354CA
+P 17000 21600
+F 0 "#PWR0245" H 17000 21450 50  0001 C CNN
+F 1 "VCC" H 17015 21773 50  0000 C CNN
+F 2 "" H 17000 21600 50  0001 C CNN
+F 3 "" H 17000 21600 50  0001 C CNN
+	1    17000 21600
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0246
+U 1 1 A7E354D4
+P 17000 21050
+F 0 "#PWR0246" H 17000 20900 50  0001 C CNN
+F 1 "VCC" H 17015 21223 50  0000 C CNN
+F 2 "" H 17000 21050 50  0001 C CNN
+F 3 "" H 17000 21050 50  0001 C CNN
+	1    17000 21050
+	-1   0    0    1   
+$EndComp
+Connection ~ 18650 22400
+$Comp
+L power:VCC #PWR0247
+U 1 1 A9A2B8F7
+P 22050 21600
+F 0 "#PWR0247" H 22050 21450 50  0001 C CNN
+F 1 "VCC" H 22065 21773 50  0000 C CNN
+F 2 "" H 22050 21600 50  0001 C CNN
+F 3 "" H 22050 21600 50  0001 C CNN
+	1    22050 21600
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0248
+U 1 1 A9A2DC0F
+P 21350 22400
+F 0 "#PWR0248" H 21350 22250 50  0001 C CNN
+F 1 "VCC" H 21365 22573 50  0000 C CNN
+F 2 "" H 21350 22400 50  0001 C CNN
+F 3 "" H 21350 22400 50  0001 C CNN
+	1    21350 22400
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0249
+U 1 1 A9A2DC19
+P 21300 21700
+F 0 "#PWR0249" H 21300 21550 50  0001 C CNN
+F 1 "VCC" H 21315 21873 50  0000 C CNN
+F 2 "" H 21300 21700 50  0001 C CNN
+F 3 "" H 21300 21700 50  0001 C CNN
+	1    21300 21700
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0250
+U 1 1 AA71AD08
+P 22700 22450
+F 0 "#PWR0250" H 22700 22300 50  0001 C CNN
+F 1 "VCC" H 22715 22623 50  0000 C CNN
+F 2 "" H 22700 22450 50  0001 C CNN
+F 3 "" H 22700 22450 50  0001 C CNN
+	1    22700 22450
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0251
+U 1 1 AAD8F6E8
+P 19800 14700
+F 0 "#PWR0251" H 19800 14550 50  0001 C CNN
+F 1 "VCC" H 19815 14873 50  0000 C CNN
+F 2 "" H 19800 14700 50  0001 C CNN
+F 3 "" H 19800 14700 50  0001 C CNN
+	1    19800 14700
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0252
+U 1 1 AAD924D8
+P 21100 14700
+F 0 "#PWR0252" H 21100 14550 50  0001 C CNN
+F 1 "VCC" H 21115 14873 50  0000 C CNN
+F 2 "" H 21100 14700 50  0001 C CNN
+F 3 "" H 21100 14700 50  0001 C CNN
+	1    21100 14700
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0253
+U 1 1 AAD95237
+P 22300 14700
+F 0 "#PWR0253" H 22300 14550 50  0001 C CNN
+F 1 "VCC" H 22315 14873 50  0000 C CNN
+F 2 "" H 22300 14700 50  0001 C CNN
+F 3 "" H 22300 14700 50  0001 C CNN
+	1    22300 14700
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0254
+U 1 1 AAD9837F
+P 23350 14700
+F 0 "#PWR0254" H 23350 14550 50  0001 C CNN
+F 1 "VCC" H 23365 14873 50  0000 C CNN
+F 2 "" H 23350 14700 50  0001 C CNN
+F 3 "" H 23350 14700 50  0001 C CNN
+	1    23350 14700
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0181
+U 1 1 AB1EB348
+P 8850 1950
+F 0 "#PWR0181" H 8850 1800 50  0001 C CNN
+F 1 "VCC" H 8865 2123 50  0000 C CNN
+F 2 "" H 8850 1950 50  0001 C CNN
+F 3 "" H 8850 1950 50  0001 C CNN
+	1    8850 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 2200 9950 2200
+Wire Wire Line
+	9950 2200 9950 3000
+Connection ~ 8850 2200
+Wire Wire Line
+	8850 2200 8850 2250
+Wire Wire Line
+	14000 2600 14000 3200
+Wire Wire Line
+	11450 2700 11450 3150
+Wire Wire Line
+	9200 2650 9200 3200
+Wire Wire Line
+	6150 2500 6150 3150
+Wire Wire Line
+	6700 7950 6400 7950
+Wire Wire Line
+	9400 7900 9400 8500
+Wire Wire Line
+	6400 7950 6400 8550
 Wire Bus Line
 	3950 8000 3950 8950
 Wire Bus Line
-	1800 4200 1800 9450
+	6000 8200 6000 8900
+Wire Bus Line
+	8800 7600 8800 8850
+Wire Bus Line
+	5700 3050 5700 7400
+Wire Bus Line
+	11100 3100 11100 7400
+Wire Bus Line
+	13650 3100 13650 7400
+Wire Bus Line
+	8850 3100 8850 7400
+Wire Bus Line
+	4800 8200 4800 9450
 Wire Bus Line
 	17550 12000 17550 12400
 Wire Bus Line
@@ -9740,54 +9801,45 @@ Wire Bus Line
 Wire Bus Line
 	8200 9750 8200 10250
 Wire Bus Line
+	23300 700  23900 700 
+Wire Bus Line
+	19050 5500 19650 5500
+Wire Bus Line
+	23200 5700 23800 5700
+Wire Bus Line
+	21500 9750 22100 9750
+Wire Bus Line
+	21200 14250 21800 14250
+Wire Bus Line
+	21150 18700 21750 18700
+Wire Bus Line
+	1800 4200 1800 9450
+Wire Bus Line
 	21150 500  21150 1400
 Wire Bus Line
 	15850 5800 15850 6700
 Wire Bus Line
-	21150 18700 21750 18700
-Wire Bus Line
-	21200 14250 21800 14250
-Wire Bus Line
-	21500 9750 22100 9750
-Wire Bus Line
-	23200 5700 23800 5700
-Wire Bus Line
-	19050 5500 19650 5500
-Wire Bus Line
-	23300 700  23900 700 
-Wire Bus Line
-	22300 7100 23800 7100
-Wire Bus Line
-	18200 7050 19700 7050
-Wire Bus Line
-	22150 2750 23650 2750
-Wire Bus Line
-	8100 8350 8100 9850
+	15500 3000 15500 4500
 Wire Bus Line
 	15650 4400 15650 5900
 Wire Bus Line
-	15500 3000 15500 4500
+	8100 8350 8100 9850
+Wire Bus Line
+	22150 2750 23650 2750
+Wire Bus Line
+	18200 7050 19700 7050
+Wire Bus Line
+	22300 7100 23800 7100
 Wire Bus Line
 	12850 2950 12850 7000
 Wire Bus Line
-	19400 19400 23450 19400
-Wire Bus Line
 	10600 3000 10600 7050
 Wire Bus Line
-	19400 15000 23450 15000
+	7850 2950 7850 7000
 Wire Bus Line
 	19400 10450 23450 10450
 Wire Bus Line
-	7850 2950 7850 7000
-$Comp
-L project-symbols:TCA9543ADR U9
-U 1 1 60BB712F
-P 2650 9150
-F 0 "U9" H 2750 9900 50  0000 C CNN
-F 1 "TCA9543ADR" H 2300 9900 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2750 8400 50  0001 L BNN
-F 3 "" H 2850 8500 50  0001 L BNN
-	1    2650 9150
-	1    0    0    -1  
-$EndComp
+	19400 15000 23450 15000
+Wire Bus Line
+	19400 19400 23450 19400
 $EndSCHEMATC
