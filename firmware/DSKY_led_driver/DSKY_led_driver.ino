@@ -25,8 +25,11 @@ SOFTWARE.
 #include <Wire.h>
 #include "wiring_private.h">
 
+#include <SoftWire.h>
+#include <AsyncDelay.h>
+
 /*
- * DSKY LED Display Driver for V3 board (V2 is now obsolete)
+ * DSKY LED Display Driver for V4 board
  * 
  * This board design includes six Texas Instruments LP5036 LED driver ICs, each capable of directly driving 36 LEDs.
  * LP5036 ICs are controlled via an I2C interface but only support four distinct I2C addresses. Since we're
@@ -57,10 +60,10 @@ SOFTWARE.
  */
 #define EMPTY  LED_GROUP(63)
 
-// Pin definitions
+// Pin definitions (Arduino board definition largely derived from Trinket M0)
 
-#define PIN_RED_LED 13
-#define PIN_TCA9543A_RESET 3 // 0 = RESET; 1 = NORMAL; SAMD21 PA02
+#define PIN_RED_LED        13
+#define PIN_TCA9543A_RESET 23  // SAMD21 PA00
 
 /**
  * I2C address for TCA9543A I2C Multiplexor IC
@@ -217,17 +220,46 @@ int op_mode = 2;  // 1 = boot in "attract mode" light show mode.  Upon receiving
                   // 3 = boot in simulator mode.  Upon receiving a byte via USB serial interface, cancel simulator mode and accept data via USB only.
                   // 0 = boot in serial mode -- just display characters received via USB serial
 
+//TwoWire myWire(&sercom1, PIN_WIRE_SCL, PIN_WIRE_SDA);
+
+//SCL and SDA are reversed on REV3 board!
+SoftWire myWire(SDA, SCL);
+char swTxBuffer[16];
+char swRxBuffer[16];
+
 void setup() 
 {
 
-  pinMode(PIN_RED_LED, OUTPUT);
-  digitalWrite(PIN_RED_LED, LOW);
+  pinMode(23, OUTPUT);
+  digitalWrite(23, HIGH);
 
-  /*
-   * Force a hardware reset on the I2C multiplexor
-   */
+  pinMode(PIN_RED_LED, OUTPUT);
+  digitalWrite(PIN_RED_LED, HIGH);
+
   pinMode(PIN_TCA9543A_RESET, OUTPUT);
   digitalWrite(PIN_TCA9543A_RESET, HIGH);
+
+  while (!Serial);
+  delay(500);
+
+  digitalWrite(PIN_RED_LED, LOW);
+
+  // Start I2C
+  //myWire.begin();
+
+  myWire.setTxBuffer(swTxBuffer, sizeof(swTxBuffer));
+  myWire.setRxBuffer(swRxBuffer, sizeof(swRxBuffer));
+  //myWire.setDelay_us(5);
+  myWire.setTimeout(1000);
+  myWire.begin();
+
+  // Start USB Serial
+  Serial.begin(115200);
+  Serial.println("\nLED Driver Ready");
+
+  /*
+   * Force a hardware reset on the I2C multiplexor?
+   */
 
   if ( RESET_I2C_MUX_ON_BOOT == 1 ) {
     delay(1);
@@ -236,33 +268,8 @@ void setup()
     digitalWrite(PIN_TCA9543A_RESET, HIGH);
     delay(1); // datasheet says "0ns"
   }
-  
-  while (!Serial);
-  delay(1000);
 
-  // Start I2C
-  Wire.begin();
-
-  // Start USB Serial
-  Serial.begin(115200);
-  Serial.println("\nTCAScanner ready!");
-
-  //scan();
-
-  for (uint8_t t=0; t<2; t++) {
-    tcaselect(t);
-    Serial.print("TCA Channel #"); Serial.println(t);
-
-    for (uint8_t addr = 0; addr<=127; addr++) {
-      if (addr == TCAADDR) continue;
-
-      Wire.beginTransmission(addr);
-      if (!Wire.endTransmission()) {
-        Serial.print("Found I2C 0x");  Serial.println(addr,HEX);
-      }
-    }
-  }
-  Serial.println("\ndone");
+  verifyTCAMux();
 
   // Enable LP5036 ICs
   configureChip(0,0);
@@ -283,14 +290,82 @@ void setup()
   
 }
 
+void verifyTCAMux()
+{
+  int verified = 0;
+  tcaselect (0);
+
+  myWire.requestFrom(TCAADDR, 1);
+
+  while (myWire.available()) {
+    char c = myWire.read();
+    if (c & 3 == 1) {
+      verified |= 1;
+    }
+  }
+
+  tcaselect (1);
+
+  myWire.requestFrom(TCAADDR, 1);
+
+  while (myWire.available()) {
+    char c = myWire.read();
+    if (c & 3 == 2) {
+      verified |= 2;
+    }
+  }
+
+  Serial.print("USB Mux IC test ");
+  Serial.print((verified == 3) ? "passed" : "failed");
+  Serial.println();
+}
+
 void configureChip(int bank, int ic)
 {
   int ic_addr = 0x30 | ic;
   tcaselect (bank);
-  Wire.beginTransmission(ic_addr);
-  Wire.write((unsigned char) DEVICE_CONFIG0 );
-  Wire.write((unsigned char) CHIP_EN );
-  Wire.endTransmission();
+  myWire.beginTransmission(ic_addr);
+  myWire.write((unsigned char) DEVICE_CONFIG0 );
+  myWire.write((unsigned char) CHIP_EN );
+  myWire.endTransmission();
+
+  // 0x02 (0xFF), 0x03(0x0F), 0x04 (0xF0), 0x05 (0xF0), 0x06 (0xF0).
+
+  myWire.beginTransmission(ic_addr);
+  myWire.write((unsigned char) LED_CONFIG0);
+  myWire.write(0x00);                 
+  myWire.endTransmission();
+
+  myWire.beginTransmission(ic_addr);
+  myWire.write((unsigned char) LED_CONFIG1);
+  myWire.write(0x00);                 
+  myWire.endTransmission();
+
+  // brightness
+  myWire.beginTransmission(ic_addr);
+  myWire.write((unsigned char) BANK_BRIGHTNESS);
+  myWire.write(0x10);          // was F0       
+  myWire.endTransmission();
+
+  /*
+  myWire.beginTransmission(ic_addr);
+  myWire.write((unsigned char) 0x05);
+  myWire.write(0xf0);                 
+  myWire.endTransmission();
+
+  myWire.beginTransmission(ic_addr);
+  myWire.write((unsigned char) 0x06);
+  myWire.write(0xf0);                 
+  myWire.endTransmission();
+  */
+
+  int i;
+  for(i=0; i<35; ++i) {
+    myWire.beginTransmission(ic_addr);
+    myWire.write((unsigned char) OUT_COLOR_BASE);
+    myWire.write(global_brightness);                 
+    myWire.endTransmission();
+  }
 }
 
 void verifyChip(int bank, int ic)
@@ -298,16 +373,16 @@ void verifyChip(int bank, int ic)
   int ic_addr = 0x30 | ic;
   tcaselect ( bank );
   
-  Wire.beginTransmission(ic_addr);
-  Wire.write((unsigned char) DEVICE_CONFIG0 );
-  Wire.endTransmission();
+  myWire.beginTransmission(ic_addr);
+  myWire.write((unsigned char) DEVICE_CONFIG0 );
+  myWire.endTransmission();
 
-  Wire.requestFrom(ic_addr, 1);
+  myWire.requestFrom(ic_addr, 1);
 
-  while (Wire.available()) {
-    char c = Wire.read();
+  while (myWire.available()) {
+    char c = myWire.read();
     Serial.print("LP5036 ");
-    Serial.print(ic_names[ic]);
+    Serial.print(ic_names[ic + bank*4]);
     Serial.print(" ");
     Serial.print(c & CHIP_EN ? "enabled" : "not enabled");
     Serial.println();
@@ -337,10 +412,10 @@ void setLEDState( uint16_t lamp, boolean state) {
   else {
     tcaselect( bank );
     int ic_addr = 0x30 | ic;
-    Wire.beginTransmission(ic_addr);
-    Wire.write((unsigned char) OUT_COLOR_BASE+line);
-    Wire.write(state ? global_brightness : 0);                 
-    Wire.endTransmission();
+    myWire.beginTransmission(ic_addr);
+    myWire.write((unsigned char) OUT_COLOR_BASE+line);
+    myWire.write(state ? global_brightness : 0);                 
+    myWire.endTransmission();
   }
 }
 
@@ -551,10 +626,6 @@ void DSKY_format_5dig(char * s, int intval)
 
 
 void loop() {
-
-  while(1) {
-    
-  }
   
   static int char_pos = 0;
   static int i, j;
@@ -585,12 +656,14 @@ void loop() {
             m0 = i % 7;
             m1 = i / 7;
             setLEDState( seg_lookup[m1][m0], true);
+
+            delay(300);
   
             m0 = j % 7;
             m1 = j / 7;
             setLEDState( seg_lookup[m1][m0], false);
            
-            Serial.println(i);
+            //Serial.println(i);
             //while(!Serial.available());
             //Serial.read();
       }
@@ -654,9 +727,6 @@ void loop() {
       
     }
   
-  
-  
-  
   else // op_mode == 0 or some unknown setting
     {
       while(Serial.available())
@@ -689,7 +759,7 @@ static uint8_t curChannel = 2;
 
 void tcaselect(uint8_t i) {
 
-  Serial.print("tcaselect "); Serial.println(i);
+  int result;
   
   if (i > 1) return;
 
@@ -697,59 +767,65 @@ void tcaselect(uint8_t i) {
   
   if (i != curChannel) {
  
-    Wire.beginTransmission(TCAADDR);
-  
+    myWire.beginTransmission(TCAADDR);
+
     // 0x01 == enable i2c channel 0
     // 0x02 == enable i2c channel 1
     
-    Wire.write (1 << i);
-    
-    Wire.endTransmission();
+    myWire.write ((uint8_t) (1 << i));
 
-    curChannel = i;
+    result = myWire.endTransmission();
+
+    if (result != 0) {
+      Serial.print("tcaselect endTransmission; result = "); Serial.println(result);
+    }
+    else {
+      curChannel = i;
+    }
   }
 }
 
-#ifdef notdef
 void scan()
 {
     byte error, address;
     int nDevices;
+
+    //tcaselect( 0 );
  
     Serial.println("Scanning...");
  
     nDevices = 0;
     for(address = 1; address < 127; address++ )
     {
-        Wire.beginTransmission(address);
-        error = Wire.endTransmission();
+        myWire.beginTransmission(address);
+        error = myWire.endTransmission();
  
-        Wire.beginTransmission(address+1);
+        myWire.beginTransmission(address+1);
  
-    if (error == 0 && Wire.endTransmission() != 0 ) // Special flag for SAMD Series
-    {
-        Serial.print("I2C device found at address 0x");
-        if (address<16)
-            Serial.print("0");
-        Serial.print(address,HEX);
-        Serial.println("!");
- 
-        nDevices++;
-    }
-    else if (error==4) 
-    {
-        Serial.print("Unknown error at address 0x");
-        if (address<16) 
-            Serial.print("0");
-        Serial.println(address,HEX);
-    }
-    }
-    if (nDevices == 0)
-        Serial.println("No I2C devices found\n");
-    else
-        Serial.println("done\n");
+        if (error == 0 && myWire.endTransmission() != 0 ) // Special flag for SAMD Series
+        {
+            Serial.print("I2C device found at address 0x");
+            if (address<16)
+                Serial.print("0");
+            Serial.print(address,HEX);
+            Serial.println("!");
+     
+            nDevices++;
+        }
+        else if (error==4) 
+        {
+            Serial.print("Unknown error at address 0x");
+            if (address<16) 
+                Serial.print("0");
+            Serial.println(address,HEX);
+        }
+        }
+        if (nDevices == 0)
+            Serial.println("No I2C devices found\n");
+        else
+            Serial.println("done\n");
 }
-#endif
+
 
 
 
