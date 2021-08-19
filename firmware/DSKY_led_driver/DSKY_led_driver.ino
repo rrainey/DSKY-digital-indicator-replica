@@ -75,15 +75,14 @@ SOFTWARE.
 /**
  * I2C Addressing for the six LP5036 ICs
  * 
- * Bank / I2C Address
- *  0        0x30
- *  0        0x31
- *  0        0x32
- *  0        0x33
- *  0        0x34
+ * Mux Bank / I2C Address  / IC Name
+ *      0        0x30          U2
+ *      0        0x31          U4
+ *      0        0x32          U3
+ *      0        0x33          U5
  * 
- *  1        0x30
- *  1        0x31
+ *      1        0x30          U8
+ *      1        0x31          U7
  */
 
 const char packet_start_char = '[';  //Uses this character to indicate start of packet when receiving data via USB serial link
@@ -98,6 +97,9 @@ const char packet_start_char = '[';  //Uses this character to indicate start of 
 #define LED_GROUP_SIZE 8
 #define MAX_GROUPS     10
 
+/*
+ * List of Groups
+ */
 #define GROUP_COMP_ACTY 0
 #define GROUP_PROG_LAMP 1
 #define GROUP_VERB_LAMP 2
@@ -108,6 +110,10 @@ const char packet_start_char = '[';  //Uses this character to indicate start of 
 #define GROUP_R1_PLUS   7
 #define GROUP_R2_PLUS   8
 #define GROUP_R3_PLUS   9
+
+/*
+ * Group to discrete LED mapping
+ */
 
 const uint16_t group[MAX_GROUPS][LED_GROUP_SIZE] =
   { 
@@ -224,14 +230,14 @@ int op_mode = 2;  // 1 = boot in "attract mode" light show mode.  Upon receiving
 
 //SCL and SDA are reversed on REV3 board!
 SoftWire myWire(SDA, SCL);
-char swTxBuffer[16];
+char swTxBuffer[64];
 char swRxBuffer[16];
 
 void setup() 
 {
 
-  pinMode(23, OUTPUT);
-  digitalWrite(23, HIGH);
+  //pinMode(23, OUTPUT);
+  //digitalWrite(23, HIGH);
 
   pinMode(PIN_RED_LED, OUTPUT);
   digitalWrite(PIN_RED_LED, HIGH);
@@ -249,7 +255,7 @@ void setup()
 
   myWire.setTxBuffer(swTxBuffer, sizeof(swTxBuffer));
   myWire.setRxBuffer(swRxBuffer, sizeof(swRxBuffer));
-  //myWire.setDelay_us(5);
+  myWire.setDelay_us(5);
   myWire.setTimeout(1000);
   myWire.begin();
 
@@ -293,13 +299,14 @@ void setup()
 void verifyTCAMux()
 {
   int verified = 0;
+  
   tcaselect (0);
 
   myWire.requestFrom(TCAADDR, 1);
 
   while (myWire.available()) {
     char c = myWire.read();
-    if (c & 3 == 1) {
+    if ((c & 3) == 1) {
       verified |= 1;
     }
   }
@@ -310,13 +317,14 @@ void verifyTCAMux()
 
   while (myWire.available()) {
     char c = myWire.read();
-    if (c & 3 == 2) {
+    if ((c & 3) == 2) {
       verified |= 2;
     }
   }
 
   Serial.print("USB Mux IC test ");
-  Serial.print((verified == 3) ? "passed" : "failed");
+  Serial.print((verified == 3) ? "passed " : "failed ");
+  Serial.print(verified);
   Serial.println();
 }
 
@@ -329,41 +337,39 @@ void configureChip(int bank, int ic)
   myWire.write((unsigned char) CHIP_EN );
   myWire.endTransmission();
 
-  // 0x02 (0xFF), 0x03(0x0F), 0x04 (0xF0), 0x05 (0xF0), 0x06 (0xF0).
-
+  // Set Banks 0-7 to independent control mode
   myWire.beginTransmission(ic_addr);
   myWire.write((unsigned char) LED_CONFIG0);
   myWire.write(0x00);                 
   myWire.endTransmission();
 
+  // Set banks 8-11 to independent control mode
   myWire.beginTransmission(ic_addr);
   myWire.write((unsigned char) LED_CONFIG1);
   myWire.write(0x00);                 
   myWire.endTransmission();
 
-  // brightness
+  // Global Bank Brightness (0-255)
   myWire.beginTransmission(ic_addr);
   myWire.write((unsigned char) BANK_BRIGHTNESS);
-  myWire.write(0x10);          // was F0       
+  myWire.write(global_brightness);          // was F0       
   myWire.endTransmission();
 
-  /*
-  myWire.beginTransmission(ic_addr);
-  myWire.write((unsigned char) 0x05);
-  myWire.write(0xf0);                 
-  myWire.endTransmission();
-
-  myWire.beginTransmission(ic_addr);
-  myWire.write((unsigned char) 0x06);
-  myWire.write(0xf0);                 
-  myWire.endTransmission();
-  */
-
+  // All LEDs "on"
   int i;
-  for(i=0; i<35; ++i) {
+  for(i=0; i<36; ++i) {
     myWire.beginTransmission(ic_addr);
-    myWire.write((unsigned char) OUT_COLOR_BASE);
+    myWire.write((unsigned char) OUT_COLOR_BASE+i);
     myWire.write(global_brightness);                 
+    myWire.endTransmission();
+  }
+  delay(1000);
+
+  // All LEDs "off"
+  for(i=0; i<36; ++i) {
+    myWire.beginTransmission(ic_addr);
+    myWire.write((unsigned char) OUT_COLOR_BASE+i);
+    myWire.write(0);                 
     myWire.endTransmission();
   }
 }
@@ -402,7 +408,7 @@ void setLEDState( uint16_t lamp, boolean state) {
     // Not "EMPTY" group? activate all LEDs in the group
     if (line != 0x3f) {
       for (int i=0; i<LED_GROUP_SIZE; ++i) {
-        uint16_t led = group[i][line];
+        uint16_t led = group[line][i];
         if (led != EMPTY) {
           setLEDState( led, state );
         }
@@ -642,7 +648,7 @@ void loop() {
   
   if (op_mode == 1) {
     
-   }
+  }
   else if (op_mode == 2) {
     
       for (i = 0; i<NUM_PIXELS; i++) {
@@ -652,16 +658,16 @@ void loop() {
             if (i == 0) {
               j = NUM_PIXELS - 1;
             }
-  
+    
             m0 = i % 7;
             m1 = i / 7;
             setLEDState( seg_lookup[m1][m0], true);
-
-            delay(300);
   
             m0 = j % 7;
             m1 = j / 7;
             setLEDState( seg_lookup[m1][m0], false);
+
+            delay(300);
            
             //Serial.println(i);
             //while(!Serial.available());
@@ -763,7 +769,7 @@ void tcaselect(uint8_t i) {
   
   if (i > 1) return;
 
-  // channel not what we already have selected? Change it
+  // Channel not what we already have previously selected? Change it
   
   if (i != curChannel) {
  
