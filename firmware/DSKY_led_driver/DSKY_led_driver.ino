@@ -53,7 +53,8 @@ SOFTWARE.
 /*
  * An LED group is a set of discrete LEDs; it is identified with bank set to 0xf
  */
-#define LED_GROUP(group) (unsigned short)(group | (0xf<<8))
+#define IS_GROUP  0xf
+#define LED_GROUP(group) (unsigned short)(group | (IS_GROUP<<8))
 
 /*
  * This value is used to mean no LED is assigned to this slot.
@@ -63,7 +64,7 @@ SOFTWARE.
 // Pin definitions (Arduino board definition largely derived from Trinket M0)
 
 #define PIN_RED_LED        13
-#define PIN_TCA9543A_RESET 23  // SAMD21 PA00
+#define PIN_TCA9543A_RESET 7  // SAMD21 PA00
 
 /**
  * I2C address for TCA9543A I2C Multiplexor IC
@@ -201,9 +202,11 @@ const uint16_t seg_lookup[TOTAL_DISP_CHAR][7] =
 
 /*
  * Brightness value sent to the LP5036 chips to illuminate an LED (range 0x00..0xff)
- * On the V2 board, 0xff corresponds to a 20mA current
+ * On the V2 through V4 board, 0xff corresponds to a 20mA current
  */
 unsigned char global_brightness = 0x20;
+
+unsigned char led_brightness = 0x20;
 
 /*
  * 0 = normal operation (display driven by USB serial commands)
@@ -211,7 +214,7 @@ unsigned char global_brightness = 0x20;
  * 2 = test each LED group in a predefined sequence
  * 
  */
-int operation_mode = 1;
+//int operation_mode = 1;
 
 int test_on_ms = 300;
 int test_off_ms = 50;
@@ -221,14 +224,13 @@ int test_off_ms = 50;
  */
 char * ic_names[] = { "U2", "U4", "U3", "U5", "U8", "U7" };
 
-int op_mode = 2;  // 1 = boot in "attract mode" light show mode.  Upon receiving a byte via USB serial interface, cancel attract mode and accept data via USB only.
-                  // 2 = boot in segment test mode:  illuminate one segment at a time sequentially, and indicate the number via serial interface. Receiving any byte via serial advances to next segment.
+int op_mode = 1;  // 1 = boot in digit test mode: illuminate one digit at a time
+                  // 2 = boot in segment test mode: illuminate one segment at a time sequentially, and indicate the number via serial interface. Receiving any byte via serial advances to next segment.
                   // 3 = boot in simulator mode.  Upon receiving a byte via USB serial interface, cancel simulator mode and accept data via USB only.
                   // 0 = boot in serial mode -- just display characters received via USB serial
 
 //TwoWire myWire(&sercom1, PIN_WIRE_SCL, PIN_WIRE_SDA);
 
-//SCL and SDA are reversed on REV3 board!
 SoftWire myWire(SDA, SCL);
 char swTxBuffer[64];
 char swRxBuffer[16];
@@ -236,18 +238,17 @@ char swRxBuffer[16];
 void setup() 
 {
 
-  //pinMode(23, OUTPUT);
-  //digitalWrite(23, HIGH);
-
-  pinMode(PIN_RED_LED, OUTPUT);
-  digitalWrite(PIN_RED_LED, HIGH);
-
   pinMode(PIN_TCA9543A_RESET, OUTPUT);
   digitalWrite(PIN_TCA9543A_RESET, HIGH);
+
+  // Red LED on to indicate initialization has started
+  pinMode(PIN_RED_LED, OUTPUT);
+  digitalWrite(PIN_RED_LED, HIGH);
 
   while (!Serial);
   delay(500);
 
+  // Red LED off to indicate we have a USB serial connection
   digitalWrite(PIN_RED_LED, LOW);
 
   // Start I2C
@@ -255,8 +256,8 @@ void setup()
 
   myWire.setTxBuffer(swTxBuffer, sizeof(swTxBuffer));
   myWire.setRxBuffer(swRxBuffer, sizeof(swRxBuffer));
-  myWire.setDelay_us(5);
-  myWire.setTimeout(1000);
+  myWire.setClock( 100000 ); // normal mode (100K)
+  myWire.setTimeout( 500 );
   myWire.begin();
 
   // Start USB Serial
@@ -278,21 +279,21 @@ void setup()
   verifyTCAMux();
 
   // Enable LP5036 ICs
-  configureChip(0,0);
-  configureChip(0,1);
-  configureChip(0,2);
-  configureChip(0,3);
-  configureChip(1,0);
-  configureChip(1,1);
+  configureDriverIC(0,0);
+  configureDriverIC(0,1);
+  configureDriverIC(0,2);
+  configureDriverIC(0,3);
+  configureDriverIC(1,0);
+  configureDriverIC(1,1);
 
   delay(50);
 
-  verifyChip(0,0);
-  verifyChip(0,1);
-  verifyChip(0,2);
-  verifyChip(0,3);
-  verifyChip(1,0);
-  verifyChip(1,1);
+  verifyDriverIC(0,0);
+  verifyDriverIC(0,1);
+  verifyDriverIC(0,2);
+  verifyDriverIC(0,3);
+  verifyDriverIC(1,0);
+  verifyDriverIC(1,1);
   
 }
 
@@ -300,7 +301,7 @@ void verifyTCAMux()
 {
   int verified = 0;
   
-  tcaselect (0);
+  selectI2CChannel (0);
 
   myWire.requestFrom(TCAADDR, 1);
 
@@ -311,7 +312,7 @@ void verifyTCAMux()
     }
   }
 
-  tcaselect (1);
+  selectI2CChannel (1);
 
   myWire.requestFrom(TCAADDR, 1);
 
@@ -328,10 +329,10 @@ void verifyTCAMux()
   Serial.println();
 }
 
-void configureChip(int bank, int ic)
+void configureDriverIC(int bank, int ic)
 {
   int ic_addr = 0x30 | ic;
-  tcaselect (bank);
+  selectI2CChannel (bank);
   myWire.beginTransmission(ic_addr);
   myWire.write((unsigned char) DEVICE_CONFIG0 );
   myWire.write((unsigned char) CHIP_EN );
@@ -374,10 +375,10 @@ void configureChip(int bank, int ic)
   }
 }
 
-void verifyChip(int bank, int ic)
+void verifyDriverIC(int bank, int ic)
 {
   int ic_addr = 0x30 | ic;
-  tcaselect ( bank );
+  selectI2CChannel ( bank );
   
   myWire.beginTransmission(ic_addr);
   myWire.write((unsigned char) DEVICE_CONFIG0 );
@@ -403,7 +404,7 @@ void setLEDState( uint16_t lamp, boolean state) {
   int line = lamp & 0x3f;
 
   // LED Group?
-  if (bank == 0xf) {
+  if (bank == IS_GROUP) {
     
     // Not "EMPTY" group? activate all LEDs in the group
     if (line != 0x3f) {
@@ -416,15 +417,14 @@ void setLEDState( uint16_t lamp, boolean state) {
     }
   }
   else {
-    tcaselect( bank );
+    selectI2CChannel( bank );
     int ic_addr = 0x30 | ic;
     myWire.beginTransmission(ic_addr);
     myWire.write((unsigned char) OUT_COLOR_BASE+line);
-    myWire.write(state ? global_brightness : 0);                 
+    myWire.write(state ? led_brightness : 0);                 
     myWire.endTransmission();
   }
 }
-
 
 void DSKY_set_char(int char_position, char input_char, int br)
 {
@@ -608,7 +608,7 @@ void DSKY_format_2dig(char * s, int intval)
 
 
 void DSKY_format_5dig(char * s, int intval)
-  {
+{
     if( intval > 99999)
       {
         intval = 99999;
@@ -628,14 +628,13 @@ void DSKY_format_5dig(char * s, int intval)
           }
        
     snprintf(s+1,6,"%05d",abs(intval));
-  }
+ }
 
 
 void loop() {
   
   static int char_pos = 0;
   static int i, j;
-  
   
   //only used for op_mode 3
   static unsigned long ProgTimer, NounTimer, VerbTimer, angTimer;
@@ -644,10 +643,26 @@ void loop() {
   static int SpecVal = 8;
   static char tmpStr[] = "123456789123456789123456789";
   
-  
-  
   if (op_mode == 1) {
-    
+
+    for (i=0; i<TOTAL_DISP_CHAR; ++i) {
+      const uint16_t *p;
+      p = &seg_lookup[i][0];
+      for (j=0; j<7; j++) {
+        setLEDState(*(p+j), false);
+      }
+
+      int k = i-1;
+      if (k < 0) {
+        k = TOTAL_DISP_CHAR - 1;
+      }
+      p = &seg_lookup[k][0];
+      for (j=0; j<7; j++) {
+        setLEDState(*(p+j), true);
+      }
+
+      delay(1000);
+    }
   }
   else if (op_mode == 2) {
     
@@ -674,9 +689,8 @@ void loop() {
             //Serial.read();
       }
   }
-  
-  else if (op_mode == 3)
-    {
+  else if (op_mode == 3) {
+    
         if (millis() - ProgTimer > 1000)
             {
               ProgVal = (ProgVal > 99) ? 0 : ProgVal + 5;
@@ -752,7 +766,7 @@ void loop() {
       
       delay(5);
     }
-  }
+}
 
 /**
  * TCA I2C Channel Select
@@ -760,10 +774,9 @@ void loop() {
  * i - Select Channel 0 or 1
  * See reference [1], page 15
  */
+static uint8_t curChannel = 255;
 
-static uint8_t curChannel = 2;
-
-void tcaselect(uint8_t i) {
+void selectI2CChannel(uint8_t i) {
 
   int result;
   
@@ -783,7 +796,7 @@ void tcaselect(uint8_t i) {
     result = myWire.endTransmission();
 
     if (result != 0) {
-      Serial.print("tcaselect endTransmission; result = "); Serial.println(result);
+      Serial.print("selectI2CChannel endTransmission; result = "); Serial.println(result);
     }
     else {
       curChannel = i;
@@ -796,7 +809,7 @@ void scan()
     byte error, address;
     int nDevices;
 
-    //tcaselect( 0 );
+    //selectI2CChannel( 0 );
  
     Serial.println("Scanning...");
  
@@ -825,11 +838,11 @@ void scan()
                 Serial.print("0");
             Serial.println(address,HEX);
         }
-        }
-        if (nDevices == 0)
-            Serial.println("No I2C devices found\n");
-        else
-            Serial.println("done\n");
+    }
+    if (nDevices == 0)
+        Serial.println("No I2C devices found\n");
+    else
+        Serial.println("done\n");
 }
 
 
