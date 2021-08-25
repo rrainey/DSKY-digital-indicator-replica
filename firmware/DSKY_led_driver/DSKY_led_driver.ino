@@ -204,6 +204,8 @@ const uint16_t seg_lookup[TOTAL_DISP_CHAR][NUM_SEGMENTS] =
 
 #define BANK_COUNT      12  // count of LED banks on one IC
 
+#define LED_LINE_COUNT 36   // count of distinct lines on one IC
+
 /*
  * Brightness value sent to the LP5036 chips to illuminate an LED (range 0x00..0xff)
  * On the V2 through V4 board, 0xff corresponds to a 20mA current
@@ -364,7 +366,7 @@ void configureDriverIC(int bank, int ic)
 
   // All LEDs "on"
   int i;
-  for(i=0; i<36; ++i) {
+  for(i=0; i<LED_LINE_COUNT; ++i) {
     myWire.beginTransmission(ic_addr);
     myWire.write((unsigned char) OUT_COLOR_BASE+i);
     myWire.write(global_brightness);                 
@@ -373,7 +375,7 @@ void configureDriverIC(int bank, int ic)
   delay(1000);
 
   // All LEDs "off"
-  for(i=0; i<36; ++i) {
+  for(i=0; i<LED_LINE_COUNT; ++i) {
     myWire.beginTransmission(ic_addr);
     myWire.write((unsigned char) OUT_COLOR_BASE+i);
     myWire.write(0);                 
@@ -850,9 +852,3 @@ void scan()
     else
         Serial.println("done\n");
 }
-
-
-
-
-
-  
