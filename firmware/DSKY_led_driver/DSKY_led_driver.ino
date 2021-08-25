@@ -1,6 +1,9 @@
 /*
 Copyright (c) 2021, Riley Rainey
 
+Portions based on code supplied by Ben Krasnow
+see https://github.com/benkrasnow/DSKY_EL_replica
+
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
@@ -71,7 +74,7 @@ SOFTWARE.
  */
 #define TCAADDR 0x70
 
-#define RESET_I2C_MUX_ON_BOOT 0
+#define RESET_I2C_MUX_ON_BOOT 1
 
 /**
  * I2C Addressing for the six LP5036 ICs
@@ -137,21 +140,22 @@ const uint16_t group[MAX_GROUPS][LED_GROUP_SIZE] =
  */
 
 #define TOTAL_DISP_CHAR 25
-#define NUM_PIXELS (TOTAL_DISP_CHAR*7)
+#define NUM_SEGMENTS 7
+#define NUM_PIXELS (TOTAL_DISP_CHAR*NUM_SEGMENTS)
 
-const uint16_t seg_lookup[TOTAL_DISP_CHAR][7] =
+const uint16_t seg_lookup[TOTAL_DISP_CHAR][NUM_SEGMENTS] =
     {     // a, b, c, d, e, f, g
-        { LED(0,3,0), LED(0,3,1), LED(0,3,1), LED(0,3,3), LED(0,3,4), LED(0,3,5), LED(0,3,6) },
+        { LED(0,3,0), LED(0,3,1), LED(0,3,2), LED(0,3,3), LED(0,3,4), LED(0,3,5), LED(0,3,6) },
         { LED(0,3,7), LED(0,3,8), LED(0,3,9), LED(0,3,10), LED(0,3,11), LED(0,3,12), LED(0,3,13) }, 
         { LED(0,3,14), LED(0,3,15), LED(0,3,16), LED(0,3,17), LED(0,3,18), LED(0,3,19), LED(0,3,20) }, 
         { LED(0,3,21), LED(0,3,22), LED(0,3,23), LED(0,3,24), LED(0,3,25), LED(0,3,26), LED(0,3,27) }, 
-        { LED(1,0,0), LED(1,0,1), LED(1,0,1), LED(1,0,3), LED(1,0,4), LED(1,0,5), LED(1,0,6) },
+        { LED(1,0,0), LED(1,0,1), LED(1,0,2), LED(1,0,3), LED(1,0,4), LED(1,0,5), LED(1,0,6) },
         { LED(1,0,7), LED(1,0,8), LED(1,0,9), LED(1,0,10), LED(1,0,11), LED(1,0,12), LED(1,0,13) }, 
         // R1 (upper) Sign Digits
         { EMPTY, LED_GROUP(GROUP_R1_PLUS), EMPTY, EMPTY, EMPTY, EMPTY, LED(1,0,27) },
         //{158,98,158,158,158,158,104},        //6 upper plus/minus  (it's not efficient to use a whole byte for just plus/minus, but creates character consistency and more readable code. The seven-seg decoder function accepts '+' and '-'  
         // R1 (upper) 5 digits
-        { LED(0,0,0), LED(0,0,1), LED(0,0,1), LED(0,0,3), LED(0,0,4), LED(0,0,5), LED(0,0,6) },
+        { LED(0,0,0), LED(0,0,1), LED(0,0,2), LED(0,0,3), LED(0,0,4), LED(0,0,5), LED(0,0,6) },
         { LED(0,0,7), LED(0,0,8), LED(0,0,9), LED(0,0,10), LED(0,0,11), LED(0,0,12), LED(0,0,13) },
         { LED(0,0,14), LED(0,0,15), LED(0,0,16), LED(0,0,17), LED(0,0,18), LED(0,0,19), LED(0,0,20) }, 
         { LED(0,0,21), LED(0,0,22), LED(0,0,23), LED(0,0,24), LED(0,0,25), LED(0,0,26), LED(0,0,27) }, 
@@ -159,7 +163,7 @@ const uint16_t seg_lookup[TOTAL_DISP_CHAR][7] =
         //{158,88,158,158,158,158,89},  //12   middle  plus/minus
         { EMPTY, LED_GROUP(GROUP_R2_PLUS), EMPTY, EMPTY, EMPTY, EMPTY, LED(1,0,30) },
         // R2 (middle) digits
-        { LED(0,1,0), LED(0,1,1), LED(0,1,1), LED(0,1,3), LED(0,1,4), LED(0,1,5), LED(0,1,6) },
+        { LED(0,1,0), LED(0,1,1), LED(0,1,2), LED(0,1,3), LED(0,1,4), LED(0,1,5), LED(0,1,6) },
         { LED(0,1,7), LED(0,1,8), LED(0,1,9), LED(0,1,10), LED(0,1,11), LED(0,1,12), LED(0,1,13) },
         { LED(0,1,14), LED(0,1,15), LED(0,1,16), LED(0,1,17), LED(0,1,18), LED(0,1,19), LED(0,1,20) }, 
         { LED(0,1,21), LED(0,1,22), LED(0,1,23), LED(0,1,24), LED(0,1,25), LED(0,1,26), LED(0,1,27) }, 
@@ -167,7 +171,7 @@ const uint16_t seg_lookup[TOTAL_DISP_CHAR][7] =
         { EMPTY, LED_GROUP(GROUP_R3_PLUS), EMPTY, EMPTY, EMPTY, EMPTY, LED(1,0,33) }, 
         //{158,29,158,158,158,158,28},         //18  lower  plus /minus
         // R3 (lower) digits
-        { LED(0,2,0), LED(0,2,1), LED(0,2,1), LED(0,2,3), LED(0,2,4), LED(0,2,5), LED(0,2,6) },
+        { LED(0,2,0), LED(0,2,1), LED(0,2,2), LED(0,2,3), LED(0,2,4), LED(0,2,5), LED(0,2,6) },
         { LED(0,2,7), LED(0,2,8), LED(0,2,9), LED(0,2,10), LED(0,2,11), LED(0,2,12), LED(0,2,13) },
         { LED(0,2,14), LED(0,2,15), LED(0,2,16), LED(0,2,17), LED(0,2,18), LED(0,2,19), LED(0,2,20) }, 
         { LED(0,2,21), LED(0,2,22), LED(0,2,23), LED(0,2,24), LED(0,2,25), LED(0,2,26), LED(0,2,27) }, 
@@ -294,6 +298,9 @@ void setup()
   verifyDriverIC(0,3);
   verifyDriverIC(1,0);
   verifyDriverIC(1,1);
+
+  verifyDriverIC(1,2);
+  verifyDriverIC(1,3);
   
 }
 
@@ -325,7 +332,6 @@ void verifyTCAMux()
 
   Serial.print("USB Mux IC test ");
   Serial.print((verified == 3) ? "passed " : "failed ");
-  Serial.print(verified);
   Serial.println();
 }
 
@@ -648,8 +654,8 @@ void loop() {
     for (i=0; i<TOTAL_DISP_CHAR; ++i) {
       const uint16_t *p;
       p = &seg_lookup[i][0];
-      for (j=0; j<7; j++) {
-        setLEDState(*(p+j), false);
+      for (j=0; j<NUM_SEGMENTS; j++) {
+        setLEDState(*(p+j), true);
       }
 
       int k = i-1;
@@ -657,8 +663,8 @@ void loop() {
         k = TOTAL_DISP_CHAR - 1;
       }
       p = &seg_lookup[k][0];
-      for (j=0; j<7; j++) {
-        setLEDState(*(p+j), true);
+      for (j=0; j<NUM_SEGMENTS; j++) {
+        setLEDState(*(p+j), false);
       }
 
       delay(1000);
