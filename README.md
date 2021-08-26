@@ -21,17 +21,17 @@ This project is composed of these component subfolders:
 
 * USB 2.0 Micro-B port
 * J-LINK-compatible SWD debugging interface (10-pin header)
-* Power: +3.3VDC via a 4-pin header (2.1A maximum (estimated; software limited))
+* Power: +3.3VDC via a 4-pin header (2.1A maximum (estimated; software limited to 0.5A))
 
 ## Printed Circuit Board Status and Assembly
 
 Summary below. You will find more detailed notes in the [./pcb folder](./pcb/PCB-NOTES.md).
 
-As of late February, 2021, I am preparing to test version V3 of the PCB. I hope this will be the version suitable for general use. 
+As of late August 2021, V4 of the board passes functional testing except for a few PCB assembly issues. I expect all that remains to be done is some basic rework. I ordered my PCBs from [pcbgogo.com](https://www.pcbgogo.com/). I also ordered 0.1mm solder stencils at the same time.
 I ordered parts from Digi-Key; you will find Digi-Key part numbers as part of the KiCad
-component list in the schematic.
+component list in the schematic. As of August the LP5036 LED drivers are in short supply.
 
-I use a solder reflow oven in my shop. I plan to use a [two step process](https://www.instructables.com/Making-double-side-boards-in-reflow-oven/) to first reflow the back (LED) side using Sn63/Pb37 paste, then reflow the front side using a lower temperature solder paste (Bi57Sn42Ag1).  
+I use a solder reflow oven in my shop. With the V4 board I use a [two step process](https://www.instructables.com/Making-double-side-boards-in-reflow-oven/) to first reflow the back (LED) side using Sn63/Pb37 paste, then reflow the front side using a lower temperature solder paste (Bi57Sn42Ag1).  
 
 ## Painting
 
