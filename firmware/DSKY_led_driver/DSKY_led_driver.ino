@@ -89,7 +89,7 @@ SOFTWARE.
  *      1        0x31          U7
  */
 
-const char packet_start_char = '[';  //Uses this character to indicate start of packet when receiving data via USB serial link
+const char PACKET_START = '[';  //Uses this character to indicate start of packet when receiving data via USB serial link
 
 /*
  * LED Group table
@@ -136,7 +136,7 @@ const uint16_t group[MAX_GROUPS][LED_GROUP_SIZE] =
 /*
  * Ben Krasnow's original driver used this table to map logical DSKY display digits to the actual EL Driver lines to
  * be driven to illuminate each segment.  We do something similar here, although this table refernces the address
- * of both single LEDs and in some cases groups of LEDs that are illiminated as a single unit.
+ * of both single LEDs and in some cases groups of LEDs that are illuminated as a single unit.
  */
 
 #define TOTAL_DISP_CHAR 25
@@ -202,9 +202,9 @@ const uint16_t seg_lookup[TOTAL_DISP_CHAR][NUM_SEGMENTS] =
 
 #define CHIP_EN             0b01000000  // bit on DEVICE_CONFIG0
 
-#define BANK_COUNT      12  // count of LED banks on one IC
+#define BANK_COUNT          12  // count of LED banks on one IC
 
-#define LED_LINE_COUNT 36   // count of distinct lines on one IC
+#define LED_LINE_COUNT      36  // count of distinct lines on one IC
 
 /*
  * Brightness value sent to the LP5036 chips to illuminate an LED (range 0x00..0xff)
@@ -214,21 +214,13 @@ unsigned char global_brightness = 0x20;
 
 unsigned char led_brightness = 0x20;
 
-/*
- * 0 = normal operation (display driven by USB serial commands)
- * 1 = test each LED in a predefined sequence
- * 2 = test each LED group in a predefined sequence
- * 
- */
-//int operation_mode = 1;
-
 int test_on_ms = 300;
 int test_off_ms = 50;
 
 /*
  * Silkscreen label for each LP5036 IC on the physical board
  */
-char * ic_names[] = { "U2", "U4", "U3", "U5", "U8", "U7" };
+char * ic_names[] = { "U2", "U4", "U3", "U5", "U8", "U7", "UNK1", "UNK2" };
 
 int op_mode = 1;  // 1 = boot in digit test mode: illuminate one digit at a time
                   // 2 = boot in segment test mode: illuminate one segment at a time sequentially, and indicate the number via serial interface. Receiving any byte via serial advances to next segment.
@@ -268,7 +260,7 @@ void setup()
 
   // Start USB Serial
   Serial.begin(115200);
-  Serial.println("\nLED Driver Ready");
+  Serial.println("\nLED Driver Ready\n");
 
   /*
    * Force a hardware reset on the I2C multiplexor?
@@ -292,6 +284,14 @@ void setup()
   configureDriverIC(1,0);
   configureDriverIC(1,1);
 
+  /*
+   * These next two are present on a V4 board
+   * however trying to initialize them will help debug
+   * PCB issues.
+   */
+  configureDriverIC(1,2);
+  configureDriverIC(1,3);
+
   delay(50);
 
   verifyDriverIC(0,0);
@@ -301,6 +301,11 @@ void setup()
   verifyDriverIC(1,0);
   verifyDriverIC(1,1);
 
+  /*
+   * These next are not be present on a V4 board
+   * however trying to initialize them will help debug
+   * PCB issues.
+   */
   verifyDriverIC(1,2);
   verifyDriverIC(1,3);
   
@@ -650,8 +655,9 @@ void loop() {
   static int NounVal, VerbVal, ProgVal,TopVal, MidVal, BotVal;
   static int SpecVal = 8;
   static char tmpStr[] = "123456789123456789123456789";
-  
-  if (op_mode == 1) {
+
+  switch (op_mode) {
+  case 1:
 
     for (i=0; i<TOTAL_DISP_CHAR; ++i) {
       const uint16_t *p;
@@ -671,109 +677,111 @@ void loop() {
 
       delay(1000);
     }
-  }
-  else if (op_mode == 2) {
-    
-      for (i = 0; i<NUM_PIXELS; i++) {
-  
-            int m0, m1;
-            int j = i-1;
-            if (i == 0) {
-              j = NUM_PIXELS - 1;
-            }
-    
-            m0 = i % 7;
-            m1 = i / 7;
-            setLEDState( seg_lookup[m1][m0], true);
-  
-            m0 = j % 7;
-            m1 = j / 7;
-            setLEDState( seg_lookup[m1][m0], false);
+    break;
 
-            delay(300);
-           
-            //Serial.println(i);
-            //while(!Serial.available());
-            //Serial.read();
-      }
-  }
-  else if (op_mode == 3) {
+  case 2:
     
-        if (millis() - ProgTimer > 1000)
-            {
-              ProgVal = (ProgVal > 99) ? 0 : ProgVal + 5;
-              ProgTimer = millis();
-            }
-            
-        if (millis() - NounTimer > 500)
-            {
-              NounVal = (NounVal > 99) ? 0 : NounVal + 2;
-              NounTimer = millis();
-            }
-          
-        if (millis() - VerbTimer > 100)
-            {
-              VerbVal = (VerbVal > 99) ? 0 : VerbVal + 1;
-               VerbTimer = millis();
-            }
-          
-          
-        if( millis() - angTimer > 70)
-            {
-              tmpangle = (tmpangle > 6.283) ? 0 : tmpangle + 0.001;
-              angTimer = millis();
-            }
-            
-          
-         TopVal = (sin(tmpangle) * 100000.0);
-         MidVal = (cos(tmpangle) * 100000.0);
-  
-        //TopVal = 55555;
-        //MidVal = -12345;
-        //BotVal = 0;
-  
-         DSKY_format_2dig(tmpStr, ProgVal);
-         DSKY_format_2dig(tmpStr+2, VerbVal);
-         DSKY_format_2dig(tmpStr+4, NounVal);
-         DSKY_format_5dig(tmpStr+6, TopVal);
-         DSKY_format_5dig(tmpStr+12, MidVal);
-         DSKY_format_5dig(tmpStr+18, BotVal); 
-         tmpStr[24] = '8';
-          
-  
-  
-          for(i = 0; i<TOTAL_DISP_CHAR;i++)
-            {
-              DSKY_set_char(i,tmpStr[i],global_brightness);
-            }
-        
-      if (Serial.available())
-        {
-          op_mode = 0;
-        }
-      delay(10);
-      
+    for (i = 0; i<NUM_PIXELS; i++) {
+
+      int m0, m1;
+      int j = i-1;
+      if (i == 0) {
+        j = NUM_PIXELS - 1;
+      }
+
+      m0 = i % 7;
+      m1 = i / 7;
+      setLEDState( seg_lookup[m1][m0], true);
+
+      m0 = j % 7;
+      m1 = j / 7;
+      setLEDState( seg_lookup[m1][m0], false);
+
+      delay(300);
+     
+      //Serial.println(i);
+      //while(!Serial.available());
+      //Serial.read();
     }
-  
-  else // op_mode == 0 or some unknown setting
-    {
-      while(Serial.available())
+    break;
+
+  case 3:
+    if (millis() - ProgTimer > 1000)
+        {
+          ProgVal = (ProgVal > 99) ? 0 : ProgVal + 5;
+          ProgTimer = millis();
+        }
+        
+    if (millis() - NounTimer > 500)
+        {
+          NounVal = (NounVal > 99) ? 0 : NounVal + 2;
+          NounTimer = millis();
+        }
+      
+    if (millis() - VerbTimer > 100)
+        {
+          VerbVal = (VerbVal > 99) ? 0 : VerbVal + 1;
+           VerbTimer = millis();
+        }
+          
+          
+    if( millis() - angTimer > 70)
+        {
+          tmpangle = (tmpangle > 6.283) ? 0 : tmpangle + 0.001;
+          angTimer = millis();
+        }
+        
+      
+     TopVal = (sin(tmpangle) * 100000.0);
+     MidVal = (cos(tmpangle) * 100000.0);
+
+    //TopVal = 55555;
+    //MidVal = -12345;
+    //BotVal = 0;
+
+     DSKY_format_2dig(tmpStr, ProgVal);
+     DSKY_format_2dig(tmpStr+2, VerbVal);
+     DSKY_format_2dig(tmpStr+4, NounVal);
+     DSKY_format_5dig(tmpStr+6, TopVal);
+     DSKY_format_5dig(tmpStr+12, MidVal);
+     DSKY_format_5dig(tmpStr+18, BotVal); 
+     tmpStr[24] = '8';
+          
+      for(i = 0; i<TOTAL_DISP_CHAR;i++)
+        {
+          DSKY_set_char(i,tmpStr[i],global_brightness);
+        }
+    
+    if (Serial.available())
       {
-        char tmpchar = Serial.read();
-        if (tmpchar == packet_start_char)
-          {
-            char_pos = 0;
-          }
-        else
-          {  
-            DSKY_set_char(char_pos,tmpchar,global_brightness);
-            char_pos = (++char_pos == TOTAL_DISP_CHAR) ? 0 : char_pos;
-            op_mode = 0;
-          }
+        op_mode = 0;
+      }
+    delay(10);
+    break;
+
+  case 0:
+
+    /*
+     * op_mode 0 is the normal mode for processing directives from 
+     * the USB serial interface
+     */
+    while(Serial.available()) {
+      
+      char c = Serial.read();
+      if (c == PACKET_START) {
+        char_pos = 0;
+      }
+      else {  
+        DSKY_set_char( char_pos,c, led_brightness );
+        char_pos = (++char_pos == TOTAL_DISP_CHAR) ? 0 : char_pos;
+        op_mode = 0;
       }
       
-      delay(5);
     }
+
+    delay(2);
+    break;
+  }
 }
 
 /**
@@ -810,45 +818,4 @@ void selectI2CChannel(uint8_t i) {
       curChannel = i;
     }
   }
-}
-
-void scan()
-{
-    byte error, address;
-    int nDevices;
-
-    //selectI2CChannel( 0 );
- 
-    Serial.println("Scanning...");
- 
-    nDevices = 0;
-    for(address = 1; address < 127; address++ )
-    {
-        myWire.beginTransmission(address);
-        error = myWire.endTransmission();
- 
-        myWire.beginTransmission(address+1);
- 
-        if (error == 0 && myWire.endTransmission() != 0 ) // Special flag for SAMD Series
-        {
-            Serial.print("I2C device found at address 0x");
-            if (address<16)
-                Serial.print("0");
-            Serial.print(address,HEX);
-            Serial.println("!");
-     
-            nDevices++;
-        }
-        else if (error==4) 
-        {
-            Serial.print("Unknown error at address 0x");
-            if (address<16) 
-                Serial.print("0");
-            Serial.println(address,HEX);
-        }
-    }
-    if (nDevices == 0)
-        Serial.println("No I2C devices found\n");
-    else
-        Serial.println("done\n");
 }
