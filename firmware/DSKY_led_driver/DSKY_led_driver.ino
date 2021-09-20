@@ -222,7 +222,7 @@ int test_off_ms = 50;
  */
 char * ic_names[] = { "U2", "U4", "U3", "U5", "U8", "U7", "UNK1", "UNK2" };
 
-int op_mode = 1;  // 1 = boot in digit test mode: illuminate one digit at a time
+int op_mode = 0;  // 1 = boot in digit test mode: illuminate one digit at a time
                   // 2 = boot in segment test mode: illuminate one segment at a time sequentially, and indicate the number via serial interface. Receiving any byte via serial advances to next segment.
                   // 3 = boot in simulator mode.  Upon receiving a byte via USB serial interface, cancel simulator mode and accept data via USB only.
                   // 0 = boot in serial mode -- just display characters received via USB serial
