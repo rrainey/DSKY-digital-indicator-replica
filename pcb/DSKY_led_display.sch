@@ -5,8 +5,8 @@ $Descr A1 33110 23386
 encoding utf-8
 Sheet 1 1
 Title "DSKY LED Display Indicator"
-Date "2021-07-31"
-Rev "V4"
+Date "2021-09-01"
+Rev "V5"
 Comp "Riley Rainey"
 Comment1 "https://github.com/rrainey/DSKY-display-indicator"
 Comment2 ""
