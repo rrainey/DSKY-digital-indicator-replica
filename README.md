@@ -1,4 +1,4 @@
-# DSKY Alarm Indicator Panel Replica
+# DSKY Digital Panel Replica
 
 ## *This project is a work in progress -- reuse at your own risk*
 
