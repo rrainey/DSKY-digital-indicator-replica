@@ -1,7 +1,5 @@
 # DSKY Digital Panel Replica
 
-## *This project is a work in progress -- reuse at your own risk*
-
 This is a scale functional replica of the Digital Indicator panel for the Apollo Guidance Computer. It is
 designed to be part of a larger replica of the Display and Keyboard (DSKY) module of the AGC.
 
@@ -11,7 +9,8 @@ This project is composed of these component subfolders:
 
 * **artwork** - artwork to be printed or silk-screened onto the glass/acrylic cover.
 
-* **pcb** - KiCad project for the controller PCB design
+* **pcb** - KiCad 7 project for the controller PCB design. This ia a four layer PCB easily produced by almost any PCB house. V7 of the PCB is current. It corrects a problem
+  in the V6 PCB in that D56 was reversed.  Aside from that change, the boards are identical.
 
 * **firmware** - Arduino-based controller firmware.  This module is designed to be controlled via the USB serial interface.
 
