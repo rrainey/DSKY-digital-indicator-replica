@@ -26,7 +26,7 @@ SOFTWARE.
 #include <SPI.h>
 #include <Arduino.h>
 #include <Wire.h>
-#include "wiring_private.h">
+#include "wiring_private.h"
 
 #include <SoftWire.h>
 #include <AsyncDelay.h>
@@ -42,6 +42,28 @@ SOFTWARE.
  * References: [1] TI TCA9543A I2C multiplexor data sheet https://www.ti.com/lit/ds/symlink/tca9543a.pdf?ts=1626710180580
  *             [2] https://www.ti.com/lit/ds/symlink/lp5036.pdf?ts=1613336395802&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FLP5036
  */
+
+ /*********************************************************************************************
+  *  O P E R A T I O N   M O D E S
+  * 
+  *  Set the op_mode variable to one of the following values to select the desired operation mode.
+  * 
+  *  For testing, I prefer mode 1, which test each bank of digits and then illuminates each digit 
+  *  in a predefined sequence.
+  * 
+  *  Mode 0 is normally what I set once testing is complete.
+  * 
+  **********************************************************************************************/
+
+ int op_mode = 1; // 1 = boot in digit test mode: bank test; then illuminate one seven-segment 
+                  //     digit at a time
+                  // 2 = boot in segment test mode: illuminate one segment at a time sequentially,
+                  //     and indicate the number via serial interface. Receiving any byte via serial
+                  //     advances to next segment.
+                  // 3 = boot in simulator mode.  Upon receiving a byte via USB serial interface,
+                  //     cancel simulator mode and accept data via USB only.
+                  // 0 = boot in normal operating mode -- the display will be driven by data received
+                  //     via the USB serial interface.
 
 /*
  * LED - Macro used to compress the addressing information for each discrete LED.
@@ -220,12 +242,7 @@ int test_off_ms = 50;
 /*
  * Silkscreen label for each LP5036 IC on the physical board
  */
-char * ic_names[] = { "U2", "U4", "U3", "U5", "U8", "U7", "UNK1", "UNK2" };
-
-int op_mode = 0;  // 1 = boot in digit test mode: illuminate one digit at a time
-                  // 2 = boot in segment test mode: illuminate one segment at a time sequentially, and indicate the number via serial interface. Receiving any byte via serial advances to next segment.
-                  // 3 = boot in simulator mode.  Upon receiving a byte via USB serial interface, cancel simulator mode and accept data via USB only.
-                  // 0 = boot in serial mode -- just display characters received via USB serial
+const char * ic_names[] = { "U2", "U4", "U3", "U5", "U8", "U7", "UNK1", "UNK2" };
 
 //TwoWire myWire(&sercom1, PIN_WIRE_SCL, PIN_WIRE_SDA);
 
@@ -243,7 +260,10 @@ void setup()
   pinMode(PIN_RED_LED, OUTPUT);
   digitalWrite(PIN_RED_LED, HIGH);
 
-  while (!Serial);
+  // wait max 10 seconds for Serial to connect in any test mode
+  uint32_t start_ms = millis();
+  uint32_t wait_ms = op_mode == 0 ? 120000 : 10000;
+  while (!Serial && (millis()-start_ms < wait_ms)) delay(10);
   delay(500);
 
   // Red LED off to indicate we have a USB serial connection
