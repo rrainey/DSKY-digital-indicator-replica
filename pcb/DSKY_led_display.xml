@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="E">
   <design>
-    <source>C:\Users\riley\Documents\GitHub\DSKY-digital-indicator-replica\pcb\DSKY_led_display.sch</source>
-    <date>12/23/2022 10:17:53 PM</date>
-    <tool>Eeschema (6.0.1)</tool>
+    <source>C:\Users\rrain\OneDrive\Documents\GitHub\DSKY-digital-indicator-replica\pcb\DSKY_led_display.sch</source>
+    <date>12/20/2024 9:26:01 AM</date>
+    <tool>Eeschema 7.0.5</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>DSKY LED Display Indicator</title>
@@ -35,7 +35,9 @@
       <property name="Description" value="CAP CER 1UF 25V X7R 0603"/>
       <property name="Digi-Key_PN" value="&#x9;399-C0603C105K3RAC7411CT-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
+      <property name="ki_keywords" value="capacitor cap"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000079fac416</tstamps>
     </comp>
@@ -50,7 +52,9 @@
       <property name="Description" value="CAP CER 1UF 25V X7R 0603"/>
       <property name="Digi-Key_PN" value="&#x9;399-C0603C105K3RAC7411CT-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
+      <property name="ki_keywords" value="capacitor cap"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00007a8b9a6b</tstamps>
     </comp>
@@ -65,7 +69,9 @@
       <property name="Description" value="CAP CER 1UF 25V X7R 0603"/>
       <property name="Digi-Key_PN" value="&#x9;399-C0603C105K3RAC7411CT-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
+      <property name="ki_keywords" value="capacitor cap"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000079de3564</tstamps>
     </comp>
@@ -80,7 +86,9 @@
       <property name="Description" value="CAP CER 1UF 25V X7R 0603"/>
       <property name="Digi-Key_PN" value="&#x9;399-C0603C105K3RAC7411CT-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
+      <property name="ki_keywords" value="capacitor cap"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005ff2256c</tstamps>
     </comp>
@@ -95,7 +103,9 @@
       <property name="Description" value="CAP CER 10UF 25V X5R 0603"/>
       <property name="Digi-Key_PN" value="&#x9;311-3494-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
+      <property name="ki_keywords" value="capacitor cap"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005ff3d1f2</tstamps>
     </comp>
@@ -110,7 +120,9 @@
       <property name="Description" value="CAP CER 1UF 25V X7R 0603"/>
       <property name="Digi-Key_PN" value="&#x9;399-C0603C105K3RAC7411CT-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
+      <property name="ki_keywords" value="capacitor cap"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00007a3493fd</tstamps>
     </comp>
@@ -125,7 +137,9 @@
       <property name="Description" value="CAP CER 1UF 25V X7R 0603"/>
       <property name="Digi-Key_PN" value="&#x9;399-C0603C105K3RAC7411CT-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
+      <property name="ki_keywords" value="capacitor cap"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00007a17d596</tstamps>
     </comp>
@@ -140,7 +154,9 @@
       <property name="Description" value="CAP CER 1UF 25V X7R 0603"/>
       <property name="Digi-Key_PN" value="&#x9;399-C0603C105K3RAC7411CT-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
+      <property name="ki_keywords" value="capacitor cap"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-0000627e0a04</tstamps>
     </comp>
@@ -155,7 +171,9 @@
       <property name="Description" value="CAP CER 1UF 25V X7R 0603"/>
       <property name="Digi-Key_PN" value="&#x9;399-C0603C105K3RAC7411CT-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
+      <property name="ki_keywords" value="capacitor cap"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000060ec10bf</tstamps>
     </comp>
@@ -170,7 +188,9 @@
       <property name="Description" value="CAP CER 1UF 25V X7R 0603"/>
       <property name="Digi-Key_PN" value="&#x9;399-C0603C105K3RAC7411CT-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
+      <property name="ki_keywords" value="capacitor cap"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000062094f2f</tstamps>
     </comp>
@@ -185,7 +205,9 @@
       <property name="Description" value="CAP CER 1UF 25V X7R 0603"/>
       <property name="Digi-Key_PN" value="&#x9;399-C0603C105K3RAC7411CT-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
+      <property name="ki_keywords" value="capacitor cap"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-0000622927d7</tstamps>
     </comp>
@@ -200,7 +222,9 @@
       <property name="Description" value="CAP CER 1UF 25V X7R 0603"/>
       <property name="Digi-Key_PN" value="&#x9;399-C0603C105K3RAC7411CT-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
+      <property name="ki_keywords" value="capacitor cap"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000061e95a61</tstamps>
     </comp>
@@ -215,7 +239,9 @@
       <property name="Description" value="CAP CER 1UF 25V X7R 0603"/>
       <property name="Digi-Key_PN" value="&#x9;399-C0603C105K3RAC7411CT-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
+      <property name="ki_keywords" value="capacitor cap"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006268b14f</tstamps>
     </comp>
@@ -230,7 +256,9 @@
       <property name="Description" value="CAP CER 1UF 25V X7R 0603"/>
       <property name="Digi-Key_PN" value="&#x9;399-C0603C105K3RAC7411CT-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
+      <property name="ki_keywords" value="capacitor cap"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-0000602c84a1</tstamps>
     </comp>
@@ -245,7 +273,9 @@
       <property name="Description" value="CAP CER 10UF 25V X5R 0603"/>
       <property name="Digi-Key_PN" value="&#x9;311-3494-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
+      <property name="ki_keywords" value="capacitor cap"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006ed05896</tstamps>
     </comp>
@@ -259,7 +289,9 @@
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <property name="Description" value="LTST-C190GKT ED GREEN CLEAR CHIP SMD"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-0000600b7b63</tstamps>
     </comp>
@@ -273,7 +305,9 @@
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <property name="Description" value="LTST-S270KRKT LED RED CLEAR CHIP SMD R/A"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-0000600b9133</tstamps>
     </comp>
@@ -289,7 +323,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006001e27b</tstamps>
     </comp>
@@ -305,7 +341,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006001f743</tstamps>
     </comp>
@@ -321,7 +359,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000060007512</tstamps>
     </comp>
@@ -337,7 +377,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000060007526</tstamps>
     </comp>
@@ -353,7 +395,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005ffff78e</tstamps>
     </comp>
@@ -369,7 +413,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006000622a</tstamps>
     </comp>
@@ -385,7 +431,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006000751c</tstamps>
     </comp>
@@ -401,7 +449,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005fffa2ae</tstamps>
     </comp>
@@ -417,7 +467,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005fffcf31</tstamps>
     </comp>
@@ -433,7 +485,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005fffe536</tstamps>
     </comp>
@@ -449,7 +503,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005fff4597</tstamps>
     </comp>
@@ -465,7 +521,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005fffbd09</tstamps>
     </comp>
@@ -481,7 +539,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000061824406</tstamps>
     </comp>
@@ -497,7 +557,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000061826016</tstamps>
     </comp>
@@ -513,7 +575,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006182600c</tstamps>
     </comp>
@@ -529,7 +593,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000061826052</tstamps>
     </comp>
@@ -545,7 +611,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000061825fee</tstamps>
     </comp>
@@ -561,7 +629,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000061826034</tstamps>
     </comp>
@@ -577,7 +647,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000061825fda</tstamps>
     </comp>
@@ -593,7 +665,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000061826020</tstamps>
     </comp>
@@ -609,7 +683,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000061825ff8</tstamps>
     </comp>
@@ -625,7 +701,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006182603e</tstamps>
     </comp>
@@ -641,7 +719,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000061826002</tstamps>
     </comp>
@@ -657,7 +737,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000061826048</tstamps>
     </comp>
@@ -673,7 +755,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000061825fe4</tstamps>
     </comp>
@@ -689,7 +773,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006182602a</tstamps>
     </comp>
@@ -705,7 +791,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-0000680980ee</tstamps>
     </comp>
@@ -721,7 +809,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000068098102</tstamps>
     </comp>
@@ -737,7 +827,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006848a422</tstamps>
     </comp>
@@ -753,7 +845,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006848a436</tstamps>
     </comp>
@@ -769,7 +863,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006809636a</tstamps>
     </comp>
@@ -785,7 +881,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-0000680980f8</tstamps>
     </comp>
@@ -801,7 +899,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006848866e</tstamps>
     </comp>
@@ -817,7 +917,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006848a42c</tstamps>
     </comp>
@@ -833,7 +935,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006285c2af</tstamps>
     </comp>
@@ -849,7 +953,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006285c2f5</tstamps>
     </comp>
@@ -865,7 +971,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000062d5a6d3</tstamps>
     </comp>
@@ -881,7 +989,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000062d5a719</tstamps>
     </comp>
@@ -897,7 +1007,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006285c2eb</tstamps>
     </comp>
@@ -913,7 +1025,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006285c331</tstamps>
     </comp>
@@ -929,7 +1043,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006285c2cd</tstamps>
     </comp>
@@ -945,7 +1061,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006285c313</tstamps>
     </comp>
@@ -961,7 +1079,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000062d5a70f</tstamps>
     </comp>
@@ -977,7 +1097,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000062d5a755</tstamps>
     </comp>
@@ -993,7 +1115,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000062d5a6f1</tstamps>
     </comp>
@@ -1009,7 +1133,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000062d5a737</tstamps>
     </comp>
@@ -1025,7 +1151,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006285c2b9</tstamps>
     </comp>
@@ -1041,7 +1169,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006285c2ff</tstamps>
     </comp>
@@ -1057,7 +1187,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000062d5a6dd</tstamps>
     </comp>
@@ -1073,7 +1205,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000062d5a723</tstamps>
     </comp>
@@ -1089,7 +1223,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006285c2d7</tstamps>
     </comp>
@@ -1105,7 +1241,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006285c31d</tstamps>
     </comp>
@@ -1121,7 +1259,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006285c2e1</tstamps>
     </comp>
@@ -1137,7 +1277,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006285c327</tstamps>
     </comp>
@@ -1153,7 +1295,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000062d5a6fb</tstamps>
     </comp>
@@ -1169,7 +1313,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000062d5a741</tstamps>
     </comp>
@@ -1185,7 +1331,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000062d5a705</tstamps>
     </comp>
@@ -1201,7 +1349,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000062d5a74b</tstamps>
     </comp>
@@ -1217,7 +1367,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006285c2c3</tstamps>
     </comp>
@@ -1233,7 +1385,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006285c309</tstamps>
     </comp>
@@ -1249,7 +1403,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000062d5a6e7</tstamps>
     </comp>
@@ -1265,7 +1421,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000062d5a72d</tstamps>
     </comp>
@@ -1281,7 +1439,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006001453c</tstamps>
     </comp>
@@ -1297,7 +1457,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000060013164</tstamps>
     </comp>
@@ -1313,7 +1475,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000060011df1</tstamps>
     </comp>
@@ -1329,7 +1493,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000060010a49</tstamps>
     </comp>
@@ -1345,7 +1511,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005ff172a7</tstamps>
     </comp>
@@ -1361,7 +1529,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005ff2c2e5</tstamps>
     </comp>
@@ -1377,7 +1547,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005ff30dd0</tstamps>
     </comp>
@@ -1393,7 +1565,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005ff3138c</tstamps>
     </comp>
@@ -1409,7 +1583,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005ff395d9</tstamps>
     </comp>
@@ -1425,7 +1601,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000060093846</tstamps>
     </comp>
@@ -1441,7 +1619,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005ff1e2e1</tstamps>
     </comp>
@@ -1457,7 +1637,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005ff1baee</tstamps>
     </comp>
@@ -1473,7 +1655,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005ff2c7ef</tstamps>
     </comp>
@@ -1489,7 +1673,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005ff31382</tstamps>
     </comp>
@@ -1505,7 +1691,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005ff2c7d1</tstamps>
     </comp>
@@ -1521,7 +1709,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005ff31364</tstamps>
     </comp>
@@ -1537,7 +1727,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005ff313c8</tstamps>
     </comp>
@@ -1553,7 +1745,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005ff39cdb</tstamps>
     </comp>
@@ -1569,7 +1763,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005ff313aa</tstamps>
     </comp>
@@ -1585,7 +1781,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005ff39cbd</tstamps>
     </comp>
@@ -1601,7 +1799,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005ff18904</tstamps>
     </comp>
@@ -1617,7 +1817,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000060095641</tstamps>
     </comp>
@@ -1633,7 +1835,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005ff2c7bd</tstamps>
     </comp>
@@ -1649,7 +1853,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005ff31350</tstamps>
     </comp>
@@ -1665,7 +1871,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005ff31396</tstamps>
     </comp>
@@ -1681,7 +1889,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005ff39ca9</tstamps>
     </comp>
@@ -1697,7 +1907,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005ff1c685</tstamps>
     </comp>
@@ -1713,7 +1925,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005ff1d1cf</tstamps>
     </comp>
@@ -1729,7 +1943,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005ff2c7db</tstamps>
     </comp>
@@ -1745,7 +1961,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005ff3136e</tstamps>
     </comp>
@@ -1761,7 +1979,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005ff2c7e5</tstamps>
     </comp>
@@ -1777,7 +1997,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005ff31378</tstamps>
     </comp>
@@ -1793,7 +2015,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005ff313b4</tstamps>
     </comp>
@@ -1809,7 +2033,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005ff39cc7</tstamps>
     </comp>
@@ -1825,7 +2051,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005ff313be</tstamps>
     </comp>
@@ -1841,7 +2069,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005ff39cd1</tstamps>
     </comp>
@@ -1857,7 +2087,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005ff19bc5</tstamps>
     </comp>
@@ -1873,7 +2105,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000060097791</tstamps>
     </comp>
@@ -1889,7 +2123,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005ff2c7c7</tstamps>
     </comp>
@@ -1905,7 +2141,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005ff3135a</tstamps>
     </comp>
@@ -1921,7 +2159,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005ff313a0</tstamps>
     </comp>
@@ -1937,7 +2177,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005ff39cb3</tstamps>
     </comp>
@@ -1953,7 +2195,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006a987bb0</tstamps>
     </comp>
@@ -1969,7 +2213,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006a9899c4</tstamps>
     </comp>
@@ -1985,7 +2231,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006a9899ce</tstamps>
     </comp>
@@ -2001,7 +2249,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006a9899d8</tstamps>
     </comp>
@@ -2017,7 +2267,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000060899b03</tstamps>
     </comp>
@@ -2033,7 +2285,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-0000657f0879</tstamps>
     </comp>
@@ -2049,7 +2303,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006089ad93</tstamps>
     </comp>
@@ -2065,7 +2321,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006089add9</tstamps>
     </comp>
@@ -2081,7 +2339,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006089ae1f</tstamps>
     </comp>
@@ -2097,7 +2357,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006089ae65</tstamps>
     </comp>
@@ -2113,7 +2375,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006089ad89</tstamps>
     </comp>
@@ -2129,7 +2393,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006089ad6b</tstamps>
     </comp>
@@ -2145,7 +2411,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006089adcf</tstamps>
     </comp>
@@ -2161,7 +2429,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006089ae15</tstamps>
     </comp>
@@ -2177,7 +2447,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006089adb1</tstamps>
     </comp>
@@ -2193,7 +2465,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006089adf7</tstamps>
     </comp>
@@ -2209,7 +2483,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006089ae5b</tstamps>
     </comp>
@@ -2225,7 +2501,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006089aea1</tstamps>
     </comp>
@@ -2241,7 +2519,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006089ae3d</tstamps>
     </comp>
@@ -2257,7 +2537,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006089ae83</tstamps>
     </comp>
@@ -2273,7 +2555,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-0000657f24dd</tstamps>
     </comp>
@@ -2289,7 +2573,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006089ad57</tstamps>
     </comp>
@@ -2305,7 +2591,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006089ad9d</tstamps>
     </comp>
@@ -2321,7 +2609,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006089ade3</tstamps>
     </comp>
@@ -2337,7 +2627,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006089ae29</tstamps>
     </comp>
@@ -2353,7 +2645,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006089ae6f</tstamps>
     </comp>
@@ -2369,7 +2663,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006089ad75</tstamps>
     </comp>
@@ -2385,7 +2681,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006089ad7f</tstamps>
     </comp>
@@ -2401,7 +2699,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006089adbb</tstamps>
     </comp>
@@ -2417,7 +2717,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006089ae01</tstamps>
     </comp>
@@ -2433,7 +2735,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006089adc5</tstamps>
     </comp>
@@ -2449,7 +2753,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006089ae0b</tstamps>
     </comp>
@@ -2465,7 +2771,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006089ae47</tstamps>
     </comp>
@@ -2481,7 +2789,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006089ae8d</tstamps>
     </comp>
@@ -2497,7 +2807,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006089ae51</tstamps>
     </comp>
@@ -2513,7 +2825,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006089ae97</tstamps>
     </comp>
@@ -2529,7 +2843,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-0000657f24e7</tstamps>
     </comp>
@@ -2545,7 +2861,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006089ad61</tstamps>
     </comp>
@@ -2561,7 +2879,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006089ada7</tstamps>
     </comp>
@@ -2577,7 +2897,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006089aded</tstamps>
     </comp>
@@ -2593,7 +2915,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006089ae33</tstamps>
     </comp>
@@ -2609,7 +2933,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006089ae79</tstamps>
     </comp>
@@ -2625,7 +2951,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006aae7dbe</tstamps>
     </comp>
@@ -2641,7 +2969,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006aae9c62</tstamps>
     </comp>
@@ -2657,7 +2987,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006aae9c6c</tstamps>
     </comp>
@@ -2673,7 +3005,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006aae9c76</tstamps>
     </comp>
@@ -2689,7 +3023,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-0000659362f7</tstamps>
     </comp>
@@ -2705,7 +3041,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000060a0f8cd</tstamps>
     </comp>
@@ -2721,7 +3059,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000060a1103d</tstamps>
     </comp>
@@ -2737,7 +3077,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000060a11083</tstamps>
     </comp>
@@ -2753,7 +3095,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000060a110c9</tstamps>
     </comp>
@@ -2769,7 +3113,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000060a1110f</tstamps>
     </comp>
@@ -2785,7 +3131,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000060a11033</tstamps>
     </comp>
@@ -2801,7 +3149,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000060a11015</tstamps>
     </comp>
@@ -2817,7 +3167,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000060a11079</tstamps>
     </comp>
@@ -2833,7 +3185,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000060a110bf</tstamps>
     </comp>
@@ -2849,7 +3203,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000065937fa3</tstamps>
     </comp>
@@ -2865,7 +3221,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000060a1105b</tstamps>
     </comp>
@@ -2881,7 +3239,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000060a110a1</tstamps>
     </comp>
@@ -2897,7 +3257,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000060a11105</tstamps>
     </comp>
@@ -2913,7 +3275,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000060a1114b</tstamps>
     </comp>
@@ -2929,7 +3293,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000060a110e7</tstamps>
     </comp>
@@ -2945,7 +3311,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000060a1112d</tstamps>
     </comp>
@@ -2961,7 +3329,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000060a11001</tstamps>
     </comp>
@@ -2977,7 +3347,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000060a11047</tstamps>
     </comp>
@@ -2993,7 +3365,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000060a1108d</tstamps>
     </comp>
@@ -3009,7 +3383,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000060a110d3</tstamps>
     </comp>
@@ -3025,7 +3401,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000060a11119</tstamps>
     </comp>
@@ -3041,7 +3419,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000060a1101f</tstamps>
     </comp>
@@ -3057,7 +3437,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000065937fad</tstamps>
     </comp>
@@ -3073,7 +3455,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000060a11029</tstamps>
     </comp>
@@ -3089,7 +3473,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000060a11065</tstamps>
     </comp>
@@ -3105,7 +3491,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000060a110ab</tstamps>
     </comp>
@@ -3121,7 +3509,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000060a1106f</tstamps>
     </comp>
@@ -3137,7 +3527,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000060a110b5</tstamps>
     </comp>
@@ -3153,7 +3545,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000060a110f1</tstamps>
     </comp>
@@ -3169,7 +3563,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000060a11137</tstamps>
     </comp>
@@ -3185,7 +3581,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000060a110fb</tstamps>
     </comp>
@@ -3201,7 +3599,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000060a11141</tstamps>
     </comp>
@@ -3217,7 +3617,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000060a1100b</tstamps>
     </comp>
@@ -3233,7 +3635,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000060a11051</tstamps>
     </comp>
@@ -3249,7 +3653,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000060a11097</tstamps>
     </comp>
@@ -3265,7 +3671,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000060a110dd</tstamps>
     </comp>
@@ -3281,7 +3689,9 @@
       <property name="Description" value="LED GREEN CLEAR 0805 SMD"/>
       <property name="Digi-Key_PN" value="&#x9;1830-1079-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000060a11123</tstamps>
     </comp>
@@ -3294,7 +3704,9 @@
       <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
       <property name="Description" value="DIODE SCHOTTKY 40V 500MA SOD123"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Schottky diode"/>
+      <property name="ki_keywords" value="diode Schottky"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-0000615d0a98</tstamps>
     </comp>
@@ -3307,7 +3719,9 @@
       <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
       <property name="Description" value="DIODE SCHOTTKY 40V 500MA SOD123"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Schottky diode"/>
+      <property name="ki_keywords" value="diode Schottky"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-0000603e3602</tstamps>
     </comp>
@@ -3324,7 +3738,7 @@
         <field name="Field7">Molex</field>
         <field name="Field8">Conn Micro USB Type B RCP 5 POS 0.65mm Solder RA SMD 5 Terminal 1 Port Embossed T/R</field>
       </fields>
-      <libsource lib="project-symbols" part="105133-0001" description=""/>
+      <libsource lib="" part="105133-0001_1" description=""/>
       <property name="Field4" value="None"/>
       <property name="Field5" value="105133-0001"/>
       <property name="Field6" value="Good"/>
@@ -3333,7 +3747,7 @@
       <property name="Description" value="CONN RCPT USB2.0 MICRO B SMD"/>
       <property name="Digi-Key_PN" value="&#x9;WM9734CT-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000060176296</tstamps>
     </comp>
@@ -3349,7 +3763,7 @@
       <property name="Description" value="CONN HEADER SMD 10POS 1.27MM&#x9;"/>
       <property name="Digi-Key_PN" value="1175-2649-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000060596593</tstamps>
     </comp>
@@ -3364,7 +3778,7 @@
       <property name="Description" value="CONN HEADER SMD 4POS 2.54MM"/>
       <property name="Digi-Key_PN" value="SAM13287CT-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-0000605bf087</tstamps>
     </comp>
@@ -3379,7 +3793,9 @@
       <property name="Description" value="RES SMD 1.5K OHM 1% 1/10W 0603&#x9;"/>
       <property name="Digi-Key_PN" value="541-1781-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000060004567</tstamps>
     </comp>
@@ -3394,7 +3810,9 @@
       <property name="Description" value="RES SMD 1.5K OHM 1% 1/10W 0603&#x9;"/>
       <property name="Digi-Key_PN" value="541-1781-1-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005ff2682d</tstamps>
     </comp>
@@ -3409,7 +3827,9 @@
       <property name="Description" value="RES SMD 4.7K OHM 5% 1/10W 0603"/>
       <property name="Digi-Key_PN" value="&#x9;541-4.7KGCT-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006c242885</tstamps>
     </comp>
@@ -3424,7 +3844,9 @@
       <property name="Description" value="RES SMD 1K OHM 5% 1/10W 0603"/>
       <property name="Digi-Key_PN" value="&#x9;541-4.7KGCT-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006c245d51</tstamps>
     </comp>
@@ -3439,7 +3861,9 @@
       <property name="Description" value="RES SMD 1K OHM 5% 1/10W 0603"/>
       <property name="Digi-Key_PN" value="&#x9;541-4.7KGCT-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006c248a68</tstamps>
     </comp>
@@ -3454,7 +3878,9 @@
       <property name="Description" value="RES SMD 1K OHM 5% 1/10W 0603"/>
       <property name="Digi-Key_PN" value="&#x9;541-4.7KGCT-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006c24b688</tstamps>
     </comp>
@@ -3469,7 +3895,9 @@
       <property name="Description" value="RES SMD 1K OHM 5% 1/10W 0603"/>
       <property name="Digi-Key_PN" value="&#x9;541-4.7KGCT-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-0000611c165b</tstamps>
     </comp>
@@ -3484,7 +3912,9 @@
       <property name="Description" value="RES SMD 1K OHM 5% 1/10W 0603"/>
       <property name="Digi-Key_PN" value="&#x9;541-4.7KGCT-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-0000611bc4c2</tstamps>
     </comp>
@@ -3499,7 +3929,9 @@
       <property name="Description" value="RES SMD 3.65K OHM 1% 1/3W 0603&#x9;"/>
       <property name="Digi-Key_PN" value="541-3.65KSCT-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000060f05842</tstamps>
     </comp>
@@ -3514,7 +3946,9 @@
       <property name="Description" value="RES SMD 3.65K OHM 1% 1/3W 0603&#x9;"/>
       <property name="Digi-Key_PN" value="541-3.65KSCT-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-0000612e4cf4</tstamps>
     </comp>
@@ -3529,7 +3963,9 @@
       <property name="Description" value="RES SMD 3.65K OHM 1% 1/3W 0603&#x9;"/>
       <property name="Digi-Key_PN" value="541-3.65KSCT-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-0000610f7fcc</tstamps>
     </comp>
@@ -3544,7 +3980,9 @@
       <property name="Description" value="RES SMD 3.65K OHM 1% 1/3W 0603&#x9;"/>
       <property name="Digi-Key_PN" value="541-3.65KSCT-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-0000614d17c4</tstamps>
     </comp>
@@ -3559,7 +3997,9 @@
       <property name="Description" value="RES SMD 3.65K OHM 1% 1/3W 0603&#x9;"/>
       <property name="Digi-Key_PN" value="541-3.65KSCT-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000061c8c361</tstamps>
     </comp>
@@ -3574,7 +4014,9 @@
       <property name="Description" value="RES SMD 3.65K OHM 1% 1/3W 0603&#x9;"/>
       <property name="Digi-Key_PN" value="541-3.65KSCT-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000061a982e3</tstamps>
     </comp>
@@ -3589,7 +4031,9 @@
       <property name="Description" value="RES SMD 1K OHM 5% 1/10W 0603"/>
       <property name="Digi-Key_PN" value="&#x9;541-4.7KGCT-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-0000611b6491</tstamps>
     </comp>
@@ -3604,7 +4048,9 @@
       <property name="Description" value="RES SMD 1K OHM 5% 1/10W 0603"/>
       <property name="Digi-Key_PN" value="&#x9;541-4.7KGCT-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006125dffa</tstamps>
     </comp>
@@ -3619,7 +4065,9 @@
       <property name="Description" value="RES SMD 1K OHM 5% 1/10W 0603"/>
       <property name="Digi-Key_PN" value="&#x9;541-4.7KGCT-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000061260150</tstamps>
     </comp>
@@ -3632,7 +4080,7 @@
       <libsource lib="project-symbols" part="SWITCH_TACT_SMT4.6X2.8" description=""/>
       <property name="Description" value="SWITCH TACTILE SPST-NO 0.05A 32V"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006019e380</tstamps>
     </comp>
@@ -3648,7 +4096,9 @@
       <property name="Description" value="IC REG LINEAR 3.3V 150MA SOT23-5&#x9;"/>
       <property name="Digi-Key_PN" value="&#x9;AP2204K-3.3TRG1DICT-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="150mA low dropout linear regulator, wide input voltage range, 3.3V fixed positive output, SOT-23-5"/>
+      <property name="ki_keywords" value="linear regulator ldo fixed positive"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005ff14918</tstamps>
     </comp>
@@ -3664,7 +4114,9 @@
       <property name="Description" value="LED DRIVER"/>
       <property name="Digi-Key_PN" value="&#x9;296-LP5036RJVRCT-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="36-Channel 12-Bit PWM Ultra-low Quiescent Current I2C RGB LED Driver"/>
+      <property name="ki_keywords" value="PWM LED driver I2C"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005ff95f70</tstamps>
     </comp>
@@ -3680,7 +4132,9 @@
       <property name="Description" value="LED DRIVER"/>
       <property name="Digi-Key_PN" value="&#x9;296-LP5036RJVRCT-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="36-Channel 12-Bit PWM Ultra-low Quiescent Current I2C RGB LED Driver"/>
+      <property name="ki_keywords" value="PWM LED driver I2C"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000060b19f5a</tstamps>
     </comp>
@@ -3696,7 +4150,9 @@
       <property name="Description" value="LED DRIVER"/>
       <property name="Digi-Key_PN" value="&#x9;296-LP5036RJVRCT-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="36-Channel 12-Bit PWM Ultra-low Quiescent Current I2C RGB LED Driver"/>
+      <property name="ki_keywords" value="PWM LED driver I2C"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00006095565c</tstamps>
     </comp>
@@ -3712,7 +4168,9 @@
       <property name="Description" value="LED DRIVER"/>
       <property name="Digi-Key_PN" value="&#x9;296-LP5036RJVRCT-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="36-Channel 12-Bit PWM Ultra-low Quiescent Current I2C RGB LED Driver"/>
+      <property name="ki_keywords" value="PWM LED driver I2C"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005ffa0ea9</tstamps>
     </comp>
@@ -3728,7 +4186,9 @@
       <property name="Description" value="IC MCU 32BIT 256KB FLASH 32TQFP"/>
       <property name="Digi-Key_PN" value="ATSAMD21E18A-AU-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="SAM D21 Microchip SMART ARM-based Flash MCU, 48Mhz, 256K Flash, 32K SRAM, TQFP-32"/>
+      <property name="ki_keywords" value="32-bit ARM Cortex-M0+ MCU Microcontroller"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005ff30278</tstamps>
     </comp>
@@ -3744,7 +4204,9 @@
       <property name="Description" value="LED DRIVER"/>
       <property name="Digi-Key_PN" value="&#x9;296-LP5036RJVRCT-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="36-Channel 12-Bit PWM Ultra-low Quiescent Current I2C RGB LED Driver"/>
+      <property name="ki_keywords" value="PWM LED driver I2C"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005ffac28f</tstamps>
     </comp>
@@ -3760,7 +4222,9 @@
       <property name="Description" value="LED DRIVER"/>
       <property name="Digi-Key_PN" value="&#x9;296-LP5036RJVRCT-ND"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="ki_description" value="36-Channel 12-Bit PWM Ultra-low Quiescent Current I2C RGB LED Driver"/>
+      <property name="ki_keywords" value="PWM LED driver I2C"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005ffa5a6c</tstamps>
     </comp>
@@ -3769,12 +4233,34 @@
       <footprint>Package_SO:SOIC-14_3.9x8.7mm_P1.27mm</footprint>
       <libsource lib="project-symbols" part="TCA9543ADR" description=""/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="C:/Users/riley/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
+      <property name="Sheetfile" value="C:/Users/rrain/OneDrive/Documents/GitHub/DSKY-digital-indicator-replica/pcb/DSKY_led_display.sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000060bb712f</tstamps>
     </comp>
   </components>
   <libparts>
+    <libpart lib="" part="105133-0001_1">
+      <docs>0.50 USD</docs>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">105133-0001</field>
+        <field name="Footprint">MOLEX_105133-0001</field>
+        <field name="Datasheet">0.50 USD</field>
+        <field name="">None</field>
+        <field name="">105133-0001</field>
+        <field name="">Good</field>
+        <field name="">Molex</field>
+        <field name="">Conn Micro USB Type B RCP 5 POS 0.65mm Solder RA SMD 5 Terminal 1 Port Embossed T/R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VBUS" type="power_out"/>
+        <pin num="2" name="D-" type="bidirectional"/>
+        <pin num="3" name="D+" type="bidirectional"/>
+        <pin num="4" name="ID" type="input"/>
+        <pin num="5" name="GND" type="power_out"/>
+        <pin num="S2" name="SHIELD" type="unspecified"/>
+      </pins>
+    </libpart>
     <libpart lib="Device" part="C_Small">
       <description>Unpolarized capacitor, small symbol</description>
       <docs>~</docs>
@@ -3973,28 +4459,6 @@
         <pin num="5" name="VOUT" type="power_out"/>
       </pins>
     </libpart>
-    <libpart lib="project-symbols" part="105133-0001">
-      <docs>0.50 USD</docs>
-      <fields>
-        <field name="Reference">J</field>
-        <field name="Value">105133-0001</field>
-        <field name="Footprint">MOLEX_105133-0001</field>
-        <field name="Datasheet">0.50 USD</field>
-        <field name="Field4">None</field>
-        <field name="Field5">105133-0001</field>
-        <field name="Field6">Good</field>
-        <field name="Field7">Molex</field>
-        <field name="Field8">Conn Micro USB Type B RCP 5 POS 0.65mm Solder RA SMD 5 Terminal 1 Port Embossed T/R</field>
-      </fields>
-      <pins>
-        <pin num="1" name="VBUS" type="power_out"/>
-        <pin num="2" name="D-" type="bidirectional"/>
-        <pin num="3" name="D+" type="bidirectional"/>
-        <pin num="4" name="ID" type="input"/>
-        <pin num="5" name="GND" type="power_out"/>
-        <pin num="S2" name="SHIELD" type="unspecified"/>
-      </pins>
-    </libpart>
     <libpart lib="project-symbols" part="20021221-00010C4LF">
       <fields>
         <field name="Reference">JP</field>
@@ -4066,19 +4530,19 @@
   </libparts>
   <libraries>
     <library logical="Device">
-      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Device.kicad_sym</uri>
+      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Device.kicad_sym</uri>
     </library>
     <library logical="Driver_LED">
-      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Driver_LED.kicad_sym</uri>
+      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Driver_LED.kicad_sym</uri>
     </library>
     <library logical="MCU_Microchip_SAMD">
-      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/MCU_Microchip_SAMD.kicad_sym</uri>
+      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/MCU_Microchip_SAMD.kicad_sym</uri>
     </library>
     <library logical="Regulator_Linear">
-      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Regulator_Linear.kicad_sym</uri>
+      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Regulator_Linear.kicad_sym</uri>
     </library>
     <library logical="project-symbols">
-      <uri>C:\Users\riley\Documents\GitHub\DSKY-digital-indicator-replica\pcb/project-symbols.lib</uri>
+      <uri>C:\Users\rrain\OneDrive\Documents\GitHub\DSKY-digital-indicator-replica\pcb/project-symbols.lib</uri>
     </library>
   </libraries>
   <nets>
@@ -4253,88 +4717,88 @@
       <node ref="U9" pin="2" pinfunction="A1" pintype="input"/>
       <node ref="U9" pin="7" pinfunction="GND" pintype="power_in"/>
     </net>
-    <net code="23" name="Net-(C8-Pad1)">
-      <node ref="C8" pin="1" pintype="passive"/>
-      <node ref="U6" pin="29" pinfunction="VDDCORE" pintype="power_out"/>
-    </net>
-    <net code="24" name="Net-(C9-Pad1)">
-      <node ref="C9" pin="1" pintype="passive"/>
-      <node ref="U2" pin="45" pinfunction="VCAP" pintype="passive"/>
-    </net>
-    <net code="25" name="Net-(C10-Pad1)">
-      <node ref="C10" pin="1" pintype="passive"/>
-      <node ref="U3" pin="45" pinfunction="VCAP" pintype="passive"/>
-    </net>
-    <net code="26" name="Net-(C11-Pad1)">
-      <node ref="C11" pin="1" pintype="passive"/>
-      <node ref="U5" pin="45" pinfunction="VCAP" pintype="passive"/>
-    </net>
-    <net code="27" name="Net-(C12-Pad1)">
-      <node ref="C12" pin="1" pintype="passive"/>
-      <node ref="U4" pin="45" pinfunction="VCAP" pintype="passive"/>
-    </net>
-    <net code="28" name="Net-(C13-Pad1)">
-      <node ref="C13" pin="1" pintype="passive"/>
-      <node ref="U7" pin="45" pinfunction="VCAP" pintype="passive"/>
-    </net>
-    <net code="29" name="Net-(C14-Pad1)">
-      <node ref="C14" pin="1" pintype="passive"/>
-      <node ref="U8" pin="45" pinfunction="VCAP" pintype="passive"/>
-    </net>
-    <net code="30" name="Net-(D1-Pad2)">
+    <net code="23" name="Net-(D1-A)">
       <node ref="D1" pin="2" pinfunction="A" pintype="passive"/>
       <node ref="R4" pin="2" pintype="passive"/>
     </net>
-    <net code="31" name="Net-(D2-Pad2)">
+    <net code="24" name="Net-(D2-A)">
       <node ref="D2" pin="2" pinfunction="A" pintype="passive"/>
       <node ref="R5" pin="2" pintype="passive"/>
     </net>
-    <net code="32" name="Net-(D191-Pad1)">
+    <net code="25" name="Net-(D191-K)">
       <node ref="D191" pin="1" pinfunction="K" pintype="passive"/>
       <node ref="D192" pin="1" pinfunction="K" pintype="passive"/>
       <node ref="U1" pin="1" pinfunction="VIN" pintype="power_in"/>
       <node ref="U1" pin="3" pinfunction="EN" pintype="input"/>
     </net>
-    <net code="33" name="Net-(R5-Pad1)">
-      <node ref="R5" pin="1" pintype="passive"/>
-      <node ref="U6" pin="13" pinfunction="PA10" pintype="bidirectional"/>
-    </net>
-    <net code="34" name="Net-(R15-Pad1)">
-      <node ref="R15" pin="1" pintype="passive"/>
-      <node ref="U2" pin="44" pinfunction="IREF" pintype="passive"/>
-    </net>
-    <net code="35" name="Net-(R16-Pad1)">
-      <node ref="R16" pin="1" pintype="passive"/>
-      <node ref="U3" pin="44" pinfunction="IREF" pintype="passive"/>
-    </net>
-    <net code="36" name="Net-(R17-Pad1)">
-      <node ref="R17" pin="1" pintype="passive"/>
-      <node ref="U4" pin="44" pinfunction="IREF" pintype="passive"/>
-    </net>
-    <net code="37" name="Net-(R18-Pad1)">
-      <node ref="R18" pin="1" pintype="passive"/>
-      <node ref="U5" pin="44" pinfunction="IREF" pintype="passive"/>
-    </net>
-    <net code="38" name="Net-(R19-Pad1)">
-      <node ref="R19" pin="1" pintype="passive"/>
-      <node ref="U7" pin="44" pinfunction="IREF" pintype="passive"/>
-    </net>
-    <net code="39" name="Net-(R20-Pad1)">
-      <node ref="R20" pin="1" pintype="passive"/>
-      <node ref="U8" pin="44" pinfunction="IREF" pintype="passive"/>
-    </net>
-    <net code="40" name="Net-(R22-Pad2)">
-      <node ref="R22" pin="2" pintype="passive"/>
-      <node ref="U9" pin="4" pinfunction="INT0" pintype="input"/>
-    </net>
-    <net code="41" name="Net-(R23-Pad2)">
-      <node ref="R23" pin="2" pintype="passive"/>
-      <node ref="U9" pin="8" pinfunction="INT1" pintype="input"/>
-    </net>
-    <net code="42" name="Net-(SW1-PadB')">
+    <net code="26" name="Net-(SW1-S)">
       <node ref="SW1" pin="B" pinfunction="S" pintype="passive"/>
       <node ref="SW1" pin="B'" pinfunction="S1" pintype="passive"/>
       <node ref="U6" pin="26" pinfunction="~{RESET}" pintype="input"/>
+    </net>
+    <net code="27" name="Net-(U2-IREF)">
+      <node ref="R15" pin="1" pintype="passive"/>
+      <node ref="U2" pin="44" pinfunction="IREF" pintype="passive"/>
+    </net>
+    <net code="28" name="Net-(U2-VCAP)">
+      <node ref="C9" pin="1" pintype="passive"/>
+      <node ref="U2" pin="45" pinfunction="VCAP" pintype="passive"/>
+    </net>
+    <net code="29" name="Net-(U3-IREF)">
+      <node ref="R16" pin="1" pintype="passive"/>
+      <node ref="U3" pin="44" pinfunction="IREF" pintype="passive"/>
+    </net>
+    <net code="30" name="Net-(U3-VCAP)">
+      <node ref="C10" pin="1" pintype="passive"/>
+      <node ref="U3" pin="45" pinfunction="VCAP" pintype="passive"/>
+    </net>
+    <net code="31" name="Net-(U4-IREF)">
+      <node ref="R17" pin="1" pintype="passive"/>
+      <node ref="U4" pin="44" pinfunction="IREF" pintype="passive"/>
+    </net>
+    <net code="32" name="Net-(U4-VCAP)">
+      <node ref="C12" pin="1" pintype="passive"/>
+      <node ref="U4" pin="45" pinfunction="VCAP" pintype="passive"/>
+    </net>
+    <net code="33" name="Net-(U5-IREF)">
+      <node ref="R18" pin="1" pintype="passive"/>
+      <node ref="U5" pin="44" pinfunction="IREF" pintype="passive"/>
+    </net>
+    <net code="34" name="Net-(U5-VCAP)">
+      <node ref="C11" pin="1" pintype="passive"/>
+      <node ref="U5" pin="45" pinfunction="VCAP" pintype="passive"/>
+    </net>
+    <net code="35" name="Net-(U6-PA10)">
+      <node ref="R5" pin="1" pintype="passive"/>
+      <node ref="U6" pin="13" pinfunction="PA10" pintype="bidirectional"/>
+    </net>
+    <net code="36" name="Net-(U6-VDDCORE)">
+      <node ref="C8" pin="1" pintype="passive"/>
+      <node ref="U6" pin="29" pinfunction="VDDCORE" pintype="power_out"/>
+    </net>
+    <net code="37" name="Net-(U7-IREF)">
+      <node ref="R19" pin="1" pintype="passive"/>
+      <node ref="U7" pin="44" pinfunction="IREF" pintype="passive"/>
+    </net>
+    <net code="38" name="Net-(U7-VCAP)">
+      <node ref="C13" pin="1" pintype="passive"/>
+      <node ref="U7" pin="45" pinfunction="VCAP" pintype="passive"/>
+    </net>
+    <net code="39" name="Net-(U8-IREF)">
+      <node ref="R20" pin="1" pintype="passive"/>
+      <node ref="U8" pin="44" pinfunction="IREF" pintype="passive"/>
+    </net>
+    <net code="40" name="Net-(U8-VCAP)">
+      <node ref="C14" pin="1" pintype="passive"/>
+      <node ref="U8" pin="45" pinfunction="VCAP" pintype="passive"/>
+    </net>
+    <net code="41" name="Net-(U9-INT0)">
+      <node ref="R22" pin="2" pintype="passive"/>
+      <node ref="U9" pin="4" pinfunction="INT0" pintype="input"/>
+    </net>
+    <net code="42" name="Net-(U9-INT1)">
+      <node ref="R23" pin="2" pintype="passive"/>
+      <node ref="U9" pin="8" pinfunction="INT1" pintype="input"/>
     </net>
     <net code="43" name="VBUS">
       <node ref="D192" pin="2" pinfunction="A" pintype="passive"/>
@@ -5277,10 +5741,10 @@
       <node ref="D152" pin="1" pinfunction="K" pintype="passive"/>
       <node ref="U7" pin="8" pinfunction="OUT7" pintype="power_out"/>
     </net>
-    <net code="240" name="unconnected-(J1-Pad4)">
+    <net code="240" name="unconnected-(J1-ID-Pad4)">
       <node ref="J1" pin="4" pinfunction="ID" pintype="input+no_connect"/>
     </net>
-    <net code="241" name="unconnected-(J1-PadS2)">
+    <net code="241" name="unconnected-(J1-SHIELD-PadS2)">
       <node ref="J1" pin="S2" pinfunction="SHIELD" pintype="unspecified+no_connect"/>
     </net>
     <net code="242" name="unconnected-(J2-Pad6)">
@@ -5301,148 +5765,148 @@
     <net code="247" name="unconnected-(J3-Pad4)">
       <node ref="J3" pin="4" pinfunction="4" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="248" name="unconnected-(U1-Pad4)">
+    <net code="248" name="unconnected-(U1-NC-Pad4)">
       <node ref="U1" pin="4" pinfunction="NC" pintype="no_connect"/>
     </net>
-    <net code="249" name="unconnected-(U2-Pad36)">
+    <net code="249" name="unconnected-(U2-OUT35-Pad36)">
       <node ref="U2" pin="36" pinfunction="OUT35" pintype="power_out+no_connect"/>
     </net>
-    <net code="250" name="unconnected-(U3-Pad36)">
+    <net code="250" name="unconnected-(U3-OUT35-Pad36)">
       <node ref="U3" pin="36" pinfunction="OUT35" pintype="power_out+no_connect"/>
     </net>
-    <net code="251" name="unconnected-(U4-Pad36)">
+    <net code="251" name="unconnected-(U4-OUT35-Pad36)">
       <node ref="U4" pin="36" pinfunction="OUT35" pintype="power_out+no_connect"/>
     </net>
-    <net code="252" name="unconnected-(U6-Pad2)">
+    <net code="252" name="unconnected-(U6-PA01-Pad2)">
       <node ref="U6" pin="2" pinfunction="PA01" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="253" name="unconnected-(U6-Pad3)">
+    <net code="253" name="unconnected-(U6-PA02-Pad3)">
       <node ref="U6" pin="3" pinfunction="PA02" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="254" name="unconnected-(U6-Pad4)">
+    <net code="254" name="unconnected-(U6-PA03-Pad4)">
       <node ref="U6" pin="4" pinfunction="PA03" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="255" name="unconnected-(U6-Pad5)">
+    <net code="255" name="unconnected-(U6-PA04-Pad5)">
       <node ref="U6" pin="5" pinfunction="PA04" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="256" name="unconnected-(U6-Pad6)">
+    <net code="256" name="unconnected-(U6-PA05-Pad6)">
       <node ref="U6" pin="6" pinfunction="PA05" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="257" name="unconnected-(U6-Pad7)">
+    <net code="257" name="unconnected-(U6-PA06-Pad7)">
       <node ref="U6" pin="7" pinfunction="PA06" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="258" name="unconnected-(U6-Pad8)">
+    <net code="258" name="unconnected-(U6-PA07-Pad8)">
       <node ref="U6" pin="8" pinfunction="PA07" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="259" name="unconnected-(U6-Pad14)">
+    <net code="259" name="unconnected-(U6-PA11-Pad14)">
       <node ref="U6" pin="14" pinfunction="PA11" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="260" name="unconnected-(U6-Pad15)">
+    <net code="260" name="unconnected-(U6-PA14-Pad15)">
       <node ref="U6" pin="15" pinfunction="PA14" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="261" name="unconnected-(U6-Pad16)">
+    <net code="261" name="unconnected-(U6-PA15-Pad16)">
       <node ref="U6" pin="16" pinfunction="PA15" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="262" name="unconnected-(U6-Pad17)">
+    <net code="262" name="unconnected-(U6-PA16-Pad17)">
       <node ref="U6" pin="17" pinfunction="PA16" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="263" name="unconnected-(U6-Pad18)">
+    <net code="263" name="unconnected-(U6-PA17-Pad18)">
       <node ref="U6" pin="18" pinfunction="PA17" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="264" name="unconnected-(U6-Pad19)">
+    <net code="264" name="unconnected-(U6-PA18-Pad19)">
       <node ref="U6" pin="19" pinfunction="PA18" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="265" name="unconnected-(U6-Pad20)">
+    <net code="265" name="unconnected-(U6-PA19-Pad20)">
       <node ref="U6" pin="20" pinfunction="PA19" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="266" name="unconnected-(U6-Pad21)">
+    <net code="266" name="unconnected-(U6-PA22-Pad21)">
       <node ref="U6" pin="21" pinfunction="PA22" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="267" name="unconnected-(U6-Pad22)">
+    <net code="267" name="unconnected-(U6-PA23-Pad22)">
       <node ref="U6" pin="22" pinfunction="PA23" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="268" name="unconnected-(U6-Pad25)">
+    <net code="268" name="unconnected-(U6-PA27-Pad25)">
       <node ref="U6" pin="25" pinfunction="PA27" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="269" name="unconnected-(U6-Pad27)">
+    <net code="269" name="unconnected-(U6-PA28-Pad27)">
       <node ref="U6" pin="27" pinfunction="PA28" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="270" name="unconnected-(U7-Pad13)">
+    <net code="270" name="unconnected-(U7-OUT12-Pad13)">
       <node ref="U7" pin="13" pinfunction="OUT12" pintype="power_out+no_connect"/>
     </net>
-    <net code="271" name="unconnected-(U7-Pad14)">
+    <net code="271" name="unconnected-(U7-OUT13-Pad14)">
       <node ref="U7" pin="14" pinfunction="OUT13" pintype="power_out+no_connect"/>
     </net>
-    <net code="272" name="unconnected-(U7-Pad15)">
+    <net code="272" name="unconnected-(U7-OUT14-Pad15)">
       <node ref="U7" pin="15" pinfunction="OUT14" pintype="power_out+no_connect"/>
     </net>
-    <net code="273" name="unconnected-(U7-Pad16)">
+    <net code="273" name="unconnected-(U7-OUT15-Pad16)">
       <node ref="U7" pin="16" pinfunction="OUT15" pintype="power_out+no_connect"/>
     </net>
-    <net code="274" name="unconnected-(U7-Pad17)">
+    <net code="274" name="unconnected-(U7-OUT16-Pad17)">
       <node ref="U7" pin="17" pinfunction="OUT16" pintype="power_out+no_connect"/>
     </net>
-    <net code="275" name="unconnected-(U7-Pad18)">
+    <net code="275" name="unconnected-(U7-OUT17-Pad18)">
       <node ref="U7" pin="18" pinfunction="OUT17" pintype="power_out+no_connect"/>
     </net>
-    <net code="276" name="unconnected-(U7-Pad19)">
+    <net code="276" name="unconnected-(U7-OUT18-Pad19)">
       <node ref="U7" pin="19" pinfunction="OUT18" pintype="power_out+no_connect"/>
     </net>
-    <net code="277" name="unconnected-(U7-Pad20)">
+    <net code="277" name="unconnected-(U7-OUT19-Pad20)">
       <node ref="U7" pin="20" pinfunction="OUT19" pintype="power_out+no_connect"/>
     </net>
-    <net code="278" name="unconnected-(U7-Pad21)">
+    <net code="278" name="unconnected-(U7-OUT20-Pad21)">
       <node ref="U7" pin="21" pinfunction="OUT20" pintype="power_out+no_connect"/>
     </net>
-    <net code="279" name="unconnected-(U7-Pad22)">
+    <net code="279" name="unconnected-(U7-OUT21-Pad22)">
       <node ref="U7" pin="22" pinfunction="OUT21" pintype="power_out+no_connect"/>
     </net>
-    <net code="280" name="unconnected-(U7-Pad23)">
+    <net code="280" name="unconnected-(U7-OUT22-Pad23)">
       <node ref="U7" pin="23" pinfunction="OUT22" pintype="power_out+no_connect"/>
     </net>
-    <net code="281" name="unconnected-(U7-Pad24)">
+    <net code="281" name="unconnected-(U7-OUT23-Pad24)">
       <node ref="U7" pin="24" pinfunction="OUT23" pintype="power_out+no_connect"/>
     </net>
-    <net code="282" name="unconnected-(U7-Pad25)">
+    <net code="282" name="unconnected-(U7-OUT24-Pad25)">
       <node ref="U7" pin="25" pinfunction="OUT24" pintype="power_out+no_connect"/>
     </net>
-    <net code="283" name="unconnected-(U7-Pad26)">
+    <net code="283" name="unconnected-(U7-OUT25-Pad26)">
       <node ref="U7" pin="26" pinfunction="OUT25" pintype="power_out+no_connect"/>
     </net>
-    <net code="284" name="unconnected-(U7-Pad27)">
+    <net code="284" name="unconnected-(U7-OUT26-Pad27)">
       <node ref="U7" pin="27" pinfunction="OUT26" pintype="power_out+no_connect"/>
     </net>
-    <net code="285" name="unconnected-(U7-Pad28)">
+    <net code="285" name="unconnected-(U7-OUT27-Pad28)">
       <node ref="U7" pin="28" pinfunction="OUT27" pintype="power_out+no_connect"/>
     </net>
-    <net code="286" name="unconnected-(U7-Pad29)">
+    <net code="286" name="unconnected-(U7-OUT28-Pad29)">
       <node ref="U7" pin="29" pinfunction="OUT28" pintype="power_out+no_connect"/>
     </net>
-    <net code="287" name="unconnected-(U7-Pad30)">
+    <net code="287" name="unconnected-(U7-OUT29-Pad30)">
       <node ref="U7" pin="30" pinfunction="OUT29" pintype="power_out+no_connect"/>
     </net>
-    <net code="288" name="unconnected-(U7-Pad31)">
+    <net code="288" name="unconnected-(U7-OUT30-Pad31)">
       <node ref="U7" pin="31" pinfunction="OUT30" pintype="power_out+no_connect"/>
     </net>
-    <net code="289" name="unconnected-(U7-Pad32)">
+    <net code="289" name="unconnected-(U7-OUT31-Pad32)">
       <node ref="U7" pin="32" pinfunction="OUT31" pintype="power_out+no_connect"/>
     </net>
-    <net code="290" name="unconnected-(U7-Pad33)">
+    <net code="290" name="unconnected-(U7-OUT32-Pad33)">
       <node ref="U7" pin="33" pinfunction="OUT32" pintype="power_out+no_connect"/>
     </net>
-    <net code="291" name="unconnected-(U7-Pad34)">
+    <net code="291" name="unconnected-(U7-OUT33-Pad34)">
       <node ref="U7" pin="34" pinfunction="OUT33" pintype="power_out+no_connect"/>
     </net>
-    <net code="292" name="unconnected-(U7-Pad35)">
+    <net code="292" name="unconnected-(U7-OUT34-Pad35)">
       <node ref="U7" pin="35" pinfunction="OUT34" pintype="power_out+no_connect"/>
     </net>
-    <net code="293" name="unconnected-(U7-Pad36)">
+    <net code="293" name="unconnected-(U7-OUT35-Pad36)">
       <node ref="U7" pin="36" pinfunction="OUT35" pintype="power_out+no_connect"/>
     </net>
-    <net code="294" name="unconnected-(U8-Pad36)">
+    <net code="294" name="unconnected-(U8-OUT35-Pad36)">
       <node ref="U8" pin="36" pinfunction="OUT35" pintype="power_out+no_connect"/>
     </net>
-    <net code="295" name="unconnected-(U9-Pad11)">
+    <net code="295" name="unconnected-(U9-INT-Pad11)">
       <node ref="U9" pin="11" pinfunction="INT" pintype="output+no_connect"/>
     </net>
   </nets>
