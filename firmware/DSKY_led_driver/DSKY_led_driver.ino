@@ -157,7 +157,7 @@ const uint16_t group[MAX_GROUPS][LED_GROUP_SIZE] =
 
 /*
  * Ben Krasnow's original driver used this table to map logical DSKY display digits to the actual EL Driver lines to
- * be driven to illuminate each segment.  We do something similar here, although this table refernces the address
+ * be driven to illuminate each segment.  We do something similar here, although this table references the address
  * of both single LEDs and in some cases groups of LEDs that are illuminated as a single unit.
  */
 
