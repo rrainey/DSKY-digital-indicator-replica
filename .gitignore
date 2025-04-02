@@ -23,3 +23,6 @@ fp-info-cache
 
 #Mac files
 .DS_Store
+
+# KiCad backups
+DSKY_led_display-backups
