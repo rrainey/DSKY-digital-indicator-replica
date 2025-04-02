@@ -3,7 +3,7 @@
 This is a scale functional replica of the Digital Indicator panel for the Apollo Guidance Computer. It is
 designed to be part of a larger replica of the Display and Keyboard (DSKY) module of the AGC.
 
-![See through view](images/render-01.PNG)
+![See through view](images/render-01.png)
 
 This project is composed of these component subfolders:
 
