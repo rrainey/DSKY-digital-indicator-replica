@@ -13,7 +13,21 @@ This project is composed of these component subfolders:
 
 * **firmware** - Arduino-based controller firmware.  This module is designed to be controlled via the USB serial interface.
 
-* **hardware** - 3D-printable frame components designed using Fusion 360. STEP and Fusion source files available. Hardware models used in thie replica were derived from models found in the [AGC Mechanical CAD project](https://github.com/rrainey/agc-mechanical-cad).
+* **hardware** - 3D-printable frame components designed using Fusion 360. STEP and Fusion source files available. Hardware models used in thie replica were derived from models that are part of in the [AGC Mechanical CAD project](https://github.com/rrainey/agc-mechanical-cad).
+
+## Bill of Materials
+
+|  Part                   | Grainger Part |   MFR Part  | QTY | Description |
+|------------------------|:---------------:|-------------|:-----:|-------------|
+|  M2.5-0.45 Brass Insert| [1GNL7](https://www.grainger.com/product/Heat-Set-Insert-M2-5-0-45-1GNL7?searchQuery=1GNL7&searchBar=true) |  TH-M25-SV-PK100 | 4 | Brass inserts (sold as 100 pack) |
+|  M2.5 x 6mm Screw      | [6HB66](https://www.grainger.com/product/Machine-Screw-M2-5-Thread-6HB66) |  MPFD025060-100P1 | 4 | Machine screw: M2.5 Thread Size, 6 mm Lg, Steel, Zinc Plated, Flat, Phillips, Metric (sold as 100 pack) |
+| Body                   | - | - | 1 | 3D Printable part |
+| Retainer               | - | - | 1 | 3D Printable part |
+| Light Guide            | - | - | 1 | CNC or 3D Printable part |
+| PCB to Light Guide Adapter | - | - | 1 | 3D Printable part |
+| Indicator face         | - | - | 1 | Paper Printable part |
+
+Models for all printable parts are located in the hardware subfolder.
 
 ## Interfaces
 
