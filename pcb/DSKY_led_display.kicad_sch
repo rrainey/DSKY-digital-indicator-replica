@@ -4589,6 +4589,18 @@
 			(embedded_fonts no)
 		)
 	)
+	(rectangle
+		(start 15.24 74.93)
+		(end 50.8 93.98)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid c112c6a4-14ce-4560-a2a5-ad8471e54e18)
+	)
 	(text "I2C Bus 1"
 		(exclude_from_sim no)
 		(at 129.54 213.36 0)
@@ -4659,6 +4671,17 @@
 			(justify left bottom)
 		)
 		(uuid "fe381eda-5ecd-4978-a261-40c12a15e503")
+	)
+	(text "Single Power Source Mod\n---------------------\n\nSwitch U1 to TLV75533PDYDR, \nremove D191, and connect \nU1 VOUT to VCC. This upgrades \nthe LDO regulator output to \n500mA.\nOr AP2210K-3.3TRE1 for 300mA"
+		(exclude_from_sim no)
+		(at 16.51 84.836 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ff763c41-b743-441e-956d-4ad23b6eb002")
 	)
 	(junction
 		(at 170.18 201.93)
