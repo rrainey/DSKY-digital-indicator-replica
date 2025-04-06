@@ -4590,8 +4590,20 @@
 		)
 	)
 	(rectangle
+		(start 100.33 19.05)
+		(end 165.1 31.75)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 44883a98-f982-4210-bd01-b5e6fbfc98da)
+	)
+	(rectangle
 		(start 15.24 74.93)
-		(end 50.8 93.98)
+		(end 50.8 95.25)
 		(stroke
 			(width 0)
 			(type default)
@@ -4636,6 +4648,17 @@
 			(justify left bottom)
 		)
 		(uuid "a1f898da-1549-4215-8d4f-9c3999a609b0")
+	)
+	(text "VCC   is an externl 3.3V source. It powers the LED array, \n       6 LP5036 LED drivers, and two I2C busses.\n+3V3 powers the SAMD21 MCU and the main I2C bus.\nVBUS is the incoming 5V USB power source"
+		(exclude_from_sim no)
+		(at 104.14 25.146 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a8b6742d-259e-4a5f-b8a9-b44ba0510a7a")
 	)
 	(text "USB Micro-B"
 		(exclude_from_sim no)
@@ -22003,6 +22026,16 @@
 	)
 	(wire
 		(pts
+			(xy 74.93 58.42) (xy 74.93 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b92c020a-4a95-467a-be74-53f817cbe7d7")
+	)
+	(wire
+		(pts
 			(xy 594.36 189.23) (xy 633.73 189.23)
 		)
 		(stroke
@@ -35522,7 +35555,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 74.93 69.85 0)
+		(at 74.93 58.42 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -35530,7 +35563,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005ff472f3")
 		(property "Reference" "#PWR012"
-			(at 74.93 73.66 0)
+			(at 74.93 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35539,7 +35572,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 75.311 65.4558 0)
+			(at 75.311 54.0258 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35547,7 +35580,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 74.93 69.85 0)
+			(at 74.93 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35556,7 +35589,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 74.93 69.85 0)
+			(at 74.93 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35565,7 +35598,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 74.93 69.85 0)
+			(at 74.93 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
